@@ -1,0 +1,15 @@
+@use "../helpers"as *;
+
+.transportation-cost {
+    padding-block: 150px;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+
+        .h2 {
+            margin-bottom: 100px;
+        }
+    }
+}
+

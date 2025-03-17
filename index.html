@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAR-CARGO</title>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/main.js"  defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
+    <!--—BEGIN HEADER -->
     <div class="header__wrap">
         <header class="header">
             <div class="header__top">
@@ -64,27 +65,27 @@
                     <ul class="menu-mob__list">
                         <li class="menu-mob__item">
                             <a href="javascript:void(0);" class="menu-mob__link">
-                                Расчёт стоимости
+                                Расчёт стоимости<span class="icon icon--right-arrow"> </span>
                             </a>
                         </li>
                         <li class="menu-mob__item">
                             <a href="javascript:void(0);" class="menu-mob__link">
-                                Преимущества
+                                Преимущества <span class="icon icon--right-arrow"> </span>
                             </a>
                         </li>
                         <li class="menu-mob__item">
                             <a href="javascript:void(0);" class="menu-mob__link">
-                                Какие грузы
+                                Какие грузы<span class="icon icon--right-arrow"> </span>
                             </a>
                         </li>
                         <li class="menu-mob__item">
                             <a href="javascript:void(0);" class="menu-mob__link">
-                                Отзывы
+                                Отзывы<span class="icon icon--right-arrow"> </span>
                             </a>
                         </li>
                         <li class="menu-mob__item">
                             <a href="javascript:void(0);" class="menu-mob__link">
-                                Как мы работаем
+                                Как мы работаем<span class="icon icon--right-arrow"> </span>
                             </a>
                         </li>
                     </ul>
@@ -115,6 +116,309 @@
             </div>
         </div>
     </div>
+    <!--—END HEADER -->
+    <main>
+        <!-- <section class="hero">
+            <div class="hero__main container">
+                <div class="hero__body"></div>
+
+
+                <a href="" class="button button-calc">Расчёт стоимости <span class="icon icon--right-arrow"> <span>
+                </a>
+
+            </div>
+
+        </section> -->
+        <!--—BEGIN SECTION COST OF TRANSPORTATION-->
+        <section class="transportation-cost">
+            <div class=" transportation-cost__wrap container">
+                <h2 class="h2">
+                    <span>Рассчитайте</span> <br>
+                    стоимость<br> перевозки
+                </h2>
+                <div class="transportation-cost__inner">
+                    <form class="form-request">
+                        <div class="form-request__cell field">
+                            <label class="field__label" for="from">Откуда</label>
+                            <input class="field__control" list="from_city" name="from" value="" type="text"
+                                placeholder="Москва" />
+                            <datalist id="from_city">
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Абакан">Абакан</option>
+                                <option value="Анадырь">Анадырь</option>
+                                <option value="Анапа">Анапа
+                                </option>
+                                <option value="Архангельск">Архангельск</option>
+                                <option value="Астрахань">Астрахань</option>
+                                <option value="Барнаул">Барнаул</option>
+                                <option value="Белгород">Белгород
+                                </option>
+                                <option value="Благовещенск">Благовещенск
+                                </option>
+                                <option value="Братск">Братск
+                                </option>
+                                <option value="Владивосток">Владивосток
+                                </option>
+                                <option value="Владикавказ">Владикавказ</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Курган">Курган
+                                </option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Грозный">Грозный</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Иркутск">Иркутск</option>
+                                <option value="Калининград">Калининград
+                                </option>
+                                <option value="Кемерово">Кемерово</option>
+                                <option value="Когалым">Когалым</option>
+                                <option value="Краснодар">Краснодар
+                                </option>
+                                <option value="Мурманск">Мурманск
+                                </option>
+                                <option value="Мирный">Мирный</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Махачкала">Махачкала
+                                </option>
+                                <option value="Минеральные Воды">Минеральные Воды
+                                </option>
+                                <option value="Новосибирск">Новосибирск
+                                </option>
+                                <option value="Новый Уренгой">Новый Уренгой
+                                </option>
+                                <option value="Норильск">Норильск
+                                </option>
+                                <option value="Ноябрьск">Ноябрьск
+                                </option>
+                                <option value="Омск">Омск
+                                </option>
+                                <option value="Пермь">Пермь
+
+                                </option>
+                                <option value="Надым">Надым
+                                </option>
+                                <option value="Нарьян-Мар">Нарьян-Мар
+                                </option>
+                                <option value="Нижневартовск">Нижневартовск
+
+                                </option>
+                                <option value="Нижний Новгород">Нижний Новгород
+                                </option>
+                                <option value="Новокузнецк">Новокузнецк
+
+                                </option>
+                                <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+                                <option value="Полярный">Полярный
+                                </option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону
+                                </option>
+                                <option value="Салехард">Салехард
+
+                                </option>
+                                <option value="Самара">Самара
+
+                                </option>
+                                <option value="Санкт-Петербург">Санкт-Петербург
+                                </option>
+                                <option value="Симферополь">Симферополь
+                                </option>
+                                <option value="Сочи">Сочи
+                                </option>
+                                <option value="Ставрополь">Ставрополь
+                                </option>
+                                <option value="Сургут">Сургут
+                                </option>
+                                <option value="Сыктывкар">Сыктывкар
+                                </option>
+                                <option value="Томск">Томск
+                                </option>
+                                <option value="Тюмень">Тюмень
+                                </option>
+                                <option value="Улан-Удэ">Улан-Удэ</option>
+                                <option value="Усинск">Усинск
+                                </option>
+                                <option value="Уфа">Уфа
+
+
+                                </option>
+                                <option value="Хабаровск">Хабаровск
+                                </option>
+                                <option value="Ханты-Мансийск">Ханты-Мансийск
+                                </option>
+                                <option value="Челябинск">Челябинск
+                                </option>
+                                <option value="Чита">Чита
+                                </option>
+                                <option value="Южно-Сахалинск">Южно-Сахалинск
+                                </option>
+                                <option value="Якутск">Якутск
+                                </option>
+                                <option value="Ухта">Ухта </option>
+                                <option value="Алматы">Алматы</option>
+                                <option value="Магадан">Магадан</option>
+                            </datalist>
+                        </div>
+                        <div class="form-request__cell field">
+                            <label class="field__label" for="to">Куда</label>
+                            <input class="field__control" list="to_city" name="to" value="" type="text"
+                                placeholder="Абакан" />
+                            <datalist id="to_city">
+                                <option value="Абакан">Абакан</option>
+                                <option value="Анадырь">Анадырь</option>
+                                <option value="Анапа">Анапа
+                                </option>
+                                <option value="Архангельск">Архангельск</option>
+                                <option value="Астрахань">Астрахань</option>
+                                <option value="Барнаул">Барнаул</option>
+                                <option value="Белгород">Белгород
+                                </option>
+                                <option value="Благовещенск">Благовещенск
+                                </option>
+                                <option value="Братск">Братск
+                                </option>
+                                <option value="Владивосток">Владивосток
+                                </option>
+                                <option value="Владикавказ">Владикавказ</option>
+                                <option value="Казань">Казань</option>
+                                <option value="Волгоград">Волгоград</option>
+                                <option value="Курган">Курган
+                                </option>
+                                <option value="Красноярск">Красноярск</option>
+                                <option value="Грозный">Грозный</option>
+                                <option value="Екатеринбург">Екатеринбург</option>
+                                <option value="Ижевск">Ижевск</option>
+                                <option value="Иркутск">Иркутск</option>
+                                <option value="Калининград">Калининград
+                                </option>
+                                <option value="Кемерово">Кемерово</option>
+                                <option value="Когалым">Когалым</option>
+                                <option value="Краснодар">Краснодар
+                                </option>
+                                <option value="Мурманск">Мурманск
+                                </option>
+                                <option value="Мирный">Мирный</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Махачкала">Махачкала
+                                </option>
+                                <option value="Минеральные Воды">Минеральные Воды
+                                </option>
+                                <option value="Новосибирск">Новосибирск
+                                </option>
+                                <option value="Новый Уренгой">Новый Уренгой
+                                </option>
+                                <option value="Норильск">Норильск
+                                </option>
+                                <option value="Ноябрьск">Ноябрьск
+                                </option>
+                                <option value="Омск">Омск
+                                </option>
+                                <option value="Пермь">Пермь
+
+                                </option>
+                                <option value="Надым">Надым
+                                </option>
+                                <option value="Нарьян-Мар">Нарьян-Мар
+                                </option>
+                                <option value="Нижневартовск">Нижневартовск
+
+                                </option>
+                                <option value="Нижний Новгород">Нижний Новгород
+                                </option>
+                                <option value="Новокузнецк">Новокузнецк
+
+                                </option>
+                                <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+                                <option value="Полярный">Полярный
+                                </option>
+                                <option value="Ростов-на-Дону">Ростов-на-Дону
+                                </option>
+                                <option value="Салехард">Салехард
+
+                                </option>
+                                <option value="Самара">Самара</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург
+                                </option>
+                                <option value="Симферополь">Симферополь
+                                </option>
+                                <option value="Сочи">Сочи
+                                </option>
+                                <option value="Ставрополь">Ставрополь
+                                </option>
+                                <option value="Сургут">Сургут
+                                </option>
+                                <option value="Сыктывкар">Сыктывкар
+                                </option>
+                                <option value="desТомскt51">Томск
+                                </option>
+                                <option value="Тюмень">Тюмень
+                                </option>
+                                <option value="Улан-Удэ">Улан-Удэ</option>
+                                <option value="Усинск">Усинск
+                                </option>
+                                <option value="Уфа">Уфа</option>
+                                <option value="Хабаровск">Хабаровск
+                                </option>
+                                <option value="Ханты-Мансийск">Ханты-Мансийск
+                                </option>
+                                <option value="Челябинск">Челябинск
+                                </option>
+                                <option value="Чита">Чита
+                                </option>
+                                <option value="Южно-Сахалинск">Южно-Сахалинск
+                                </option>
+                                <option value="Якутск">Якутск
+                                </option>
+                                <option value="Ухта">Ухта </option>
+                                <option value="Алматы">Алматы</option>
+                                <option value="Магадан">Магадан</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Казань">Казань</option>
+
+                            </datalist>
+                        </div>
+                        <div class="form-request__cell field">
+                            <label class="field__label" for="weight">Вес груза (от 25 кг)</label>
+                            <input class="field__control" type="number" id="weight" name="weight" placeholder=">25 кг"
+                                min="25" required>
+                        </div>
+                        <div class="form-request__cell field">
+                            <label class="field__label" for="phone">Номер телефона</label>
+                            <input class="field__control" type="tel" id="phone" name="phone"
+                                placeholder="+791 775 509 29" required>
+                        </div>
+                        <div class="form-request__cell field">
+                            <label class="field__label" for="message">Комментарий к грузу</label>
+                            <textarea class="field__control" id="message" name="message"
+                                placeholder="Груз имеет высокую ценность" required></textarea>
+                        </div>
+
+                        <div class="form-request__actions">
+                            <p>Свяжемся с вами в течение 15 минут для уточнения деталей</p>
+                        </div>
+                        <button class="button button-calc" type="submit">
+                            Рассчитать стоимость <span class="icon icon--right-arrow"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+         <!--—END SECTION COST OF TRANSPORTATION-->
+    </main>
+    <!--—BEGIN FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__body">
+
+            </div>
+            <div class="footer__extra"></div>
+    </footer>
+    <!--—END  FOOTER -->
 </body>
 
 </html>

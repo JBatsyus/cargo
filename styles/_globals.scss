@@ -4,10 +4,17 @@
 body {
     @include fluid-text(24, 14);
 
+    display: flex;
+    flex-direction: column;
+
     font-family: var(--font-family-base);
-    letter-spacing: -0.03em;
+    // letter-spacing: -0.03em;
     color: var(--color-gray);
-    background-color: var( --color-light);
+    background-color: var(--color-base);
+}
+
+main {
+    flex-grow: 1;
 }
 
 h1,
@@ -23,17 +30,10 @@ h5,
 h6,
 .h6 {
     color: var(--color-gray);
+
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-    font-family: var(--font-family-accent);
-    font-weight: 500;
-}
+
 
 h4,
 .h4,
@@ -47,15 +47,20 @@ h6,
 h1,
 .h1 {
     @include fluid-text(70, 30);
-
+    text-transform: uppercase;
     line-height: 1.2;
 }
 
 h2,
 .h2 {
-    @include fluid-text(58, 28);
+    @include fluid-text(42, 26);
+    text-transform: uppercase;
+    line-height: 1.4;
 
-    line-height: 1.3;
+}
+
+.h2 span {
+    color: var(--color-blue);
 }
 
 h3,
@@ -78,7 +83,6 @@ h6,
     @include fluid-text(20, 16);
 }
 
-добавить интерактивносит элементам
 a,
 button,
 label,
@@ -91,7 +95,8 @@ svg * {
 
 a {
     color: inherit;
-    @include hover{
+
+    @include hover {
         color: var(--color-blue);
     }
 
@@ -100,8 +105,13 @@ a {
         text-decoration: none;
     }
 }
+
+.color-blue {
+    color: var(--color-blue);
+}
+
 // при фокусе на элементе, который доступен с клавиатуры, добавить аутлайн
-:focus-visible{
+:focus-visible {
     outline: rem(2) dashed var(--color-gray);
     outline-offset: rem(4);
     transition-duration: 0s !important;

@@ -3,8 +3,10 @@
 :root {
     --color-base: #f8f8f8;
     --color-light: #FFFFFF;
+    --color-input-form: #cecece;
     --color-gray: #1e1e1e;
     --color-light-gray: #D9D9D9;
+    --color-notes: #a3a3a3;
 
     --color-blue: #0063c7;
     --color-accent: #003366;
@@ -26,9 +28,11 @@
     @include laptop {
         --container-width: #{rem(1280)};
     }
+
     @include tablet {
         --container-padding-x: #{rem(32)};
     }
+
     @include mobile {
         --container-padding-x: #{rem(24)};
     }

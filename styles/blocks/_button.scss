@@ -1,0 +1,28 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    min-width: max-content;
+    padding: 7px 7px 7px 20px;
+    font-family: var(--font-family-accent);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-light);
+    white-space: nowrap;
+    background-color: var(--color-blue);
+    border-radius: 10px;
+
+
+    background-image: linear-gradient(var(--color-accent), var(--color-accent));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.2s, color 0.2s ease-in-out;
+
+
+    &:hover {
+        background-size: 100% 100%;
+        color: var(--color-light-gray);
+    }
+}
