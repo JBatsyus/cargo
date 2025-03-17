@@ -1,0 +1,39 @@
+@use "../helpers"as *;
+
+.about {
+    padding-bottom: 150px;
+
+    @include tablet {
+        padding-bottom: 130px;
+    }
+    @include mobile {
+        padding-bottom: 100px;
+    }
+   
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+        @include mobile {
+            row-gap: 75px;
+        }
+    }
+
+    &__header {
+        display: grid;
+        row-gap: 30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(16);
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns:  1fr;
+        }
+    }
+}

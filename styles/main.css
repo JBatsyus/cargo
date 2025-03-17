@@ -394,7 +394,22 @@ h2,
 
 h3,
 .h3 {
-  font-size: clamp(1.3333333333rem, 1.1282051282rem + 1.0256410256vw, 2.2222222222rem);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 700;
+}
+@media (width <= 63.99875rem) {
+  h3,
+  .h3 {
+    font-size: 2rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
 }
 
 h4,
@@ -443,6 +458,20 @@ a {
 }
 a[class] {
   text-decoration: none;
+}
+
+.desc {
+  color: var(--color-notes);
+}
+@media (width <= 63.99875rem) {
+  .desc {
+    font-size: 1.5rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .desc {
+    font-size: 1.125rem;
+  }
 }
 
 .color-blue {
@@ -1032,6 +1061,141 @@ a[class] {
   .form-request textarea.field__control {
     padding: 16px 18px;
     min-height: 240px;
+  }
+}
+
+.about {
+  padding-bottom: 150px;
+}
+@media (width <= 63.99875rem) {
+  .about {
+    padding-bottom: 130px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .about {
+    padding-bottom: 100px;
+  }
+}
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+@media (width <= 47.99875rem) {
+  .about__inner {
+    row-gap: 75px;
+  }
+}
+.about__header {
+  display: grid;
+  row-gap: 30px;
+}
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (width <= 90.06125rem) {
+  .about__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width <= 47.99875rem) {
+  .about__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  min-height: 558px;
+  padding: 22px 13px 25px 25px;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--color-light);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color var(--transition-duration);
+}
+.about-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity var(--transition-duration);
+  z-index: 0;
+}
+.about-card * {
+  position: relative;
+  z-index: 1;
+}
+.about-card:hover .about-card__title,
+.about-card:hover .about-card__description {
+  color: var(--color-light);
+}
+.about-card:hover::before {
+  opacity: 1;
+}
+.about__item:nth-child(1) .about-card::before {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.8)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3vlT5dDAjGcfFMvv4WTu5P-go2UphNmvbQ&s");
+}
+.about__item:nth-child(2) .about-card::before {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.8)), url("https://kartinkof.club/uploads/posts/2022-12/1670445222_kartinkof-club-p-kartinki-gubka-bob-3.png");
+}
+@media (width <= 63.99875rem) {
+  .about-card {
+    min-height: 482px;
+    padding: 18px 11px 25px 22px;
+  }
+  .about__item:nth-child(2) .about-card {
+    background-color: var(--color-blue);
+  }
+}
+@media (width <= 47.99875rem) {
+  .about-card {
+    padding: 18px 21px 25px 20px;
+  }
+}
+.about-card__icon {
+  aspect-ratio: 1;
+  margin-bottom: 50px;
+}
+@media (width <= 63.99875rem) {
+  .about-card__icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 45px;
+  }
+}
+.about-card__title {
+  font-size: clamp(1.7777777778rem, 1.7264957265rem + 0.2564102564vw, 2rem);
+}
+@media (width <= 63.99875rem) {
+  .about-card__title {
+    font-size: 32px;
+  }
+  .about__item:nth-child(2) .about-card__title {
+    color: var(--color-light);
+  }
+}
+@media (width <= 47.99875rem) {
+  .about-card__title {
+    font-size: 28px;
+  }
+}
+.about-card__description {
+  font-size: 1.125rem;
+  margin-top: auto;
+}
+@media (width <= 63.99875rem) {
+  .about__item:nth-child(2) .about-card__description {
+    color: var(--color-light);
   }
 }
 

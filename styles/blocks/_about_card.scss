@@ -1,0 +1,108 @@
+@use "../helpers"as *;
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    min-height: 558px;
+    padding: 22px 13px 25px 25px;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--color-light);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--transition-duration);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity var(--transition-duration);
+        z-index: 0;
+    }
+
+    // Все дочерние элементы должны быть поверх фона
+    * {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+
+        .about-card__title,
+        .about-card__description {
+            color: var(--color-light);
+        }
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    .about__item:nth-child(1) &::before {
+        background-image: linear-gradient(rgba(0, 0, 255, 0.8),
+                rgba(0, 0, 255, 0.8)),
+            url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3vlT5dDAjGcfFMvv4WTu5P-go2UphNmvbQ&s");
+    }
+
+    .about__item:nth-child(2) &::before {
+        background-image: linear-gradient(rgba(0, 0, 255, 0.8),
+                rgba(0, 0, 255, 0.8)),
+            url("https://kartinkof.club/uploads/posts/2022-12/1670445222_kartinkof-club-p-kartinki-gubka-bob-3.png");
+    }
+
+    @include tablet {
+        min-height: 482px;
+        padding: 18px 11px 25px 22px;
+
+        .about__item:nth-child(2) & {
+            background-color: var(--color-blue);
+        }
+    }
+
+    @include mobile {
+        padding: 18px 21px 25px 20px;
+    }
+
+    &__icon {
+        aspect-ratio: 1;
+        margin-bottom: 50px;
+
+        @include tablet {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__title {
+        @include fluid-text(36, 32);
+
+        @include tablet {
+            font-size: 32px;
+
+            .about__item:nth-child(2) & {
+                color: var(--color-light);
+            }
+        }
+
+        @include mobile {
+            font-size: 28px;
+        }
+    }
+
+    &__description {
+        font-size: rem(18);
+        margin-top: auto;
+
+        @include tablet {
+            .about__item:nth-child(2) & {
+                color: var(--color-light);
+            }
+        }
+    }
+}
