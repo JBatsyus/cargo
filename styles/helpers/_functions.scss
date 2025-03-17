@@ -4,10 +4,10 @@
     $maxViewportWidth: 1920;
     $minViewportWidth: 360;
 
-    $maxSize: math.div($max, 16);
-    $minSize: math.div($min, 16);
-    $maxWidth: math.div($maxViewportWidth, 16);
-    $minWidth: math.div($minViewportWidth, 16);
+    $maxSize: math.div($max, 18);
+    $minSize: math.div($min, 18);
+    $maxWidth: math.div($maxViewportWidth, 18);
+    $minWidth: math.div($minViewportWidth, 18);
 
     $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
     $yAxisIntersection: -$minWidth * $slope + $minSize;

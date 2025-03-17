@@ -1,9 +1,11 @@
+@use "../helpers"as *;
 .button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
     min-width: max-content;
+    max-height: max-content;
     padding: 7px 7px 7px 20px;
     font-family: var(--font-family-accent);
     font-size: 24px;
@@ -24,5 +26,9 @@
     &:hover {
         background-size: 100% 100%;
         color: var(--color-light-gray);
+    }
+
+    @include mobile {
+        font-size: 18px;
     }
 }

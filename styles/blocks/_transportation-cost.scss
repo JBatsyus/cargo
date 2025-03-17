@@ -3,13 +3,20 @@
 .transportation-cost {
     padding-block: 150px;
 
+    @include tablet {
+        padding-block: 100px;
+    }
+
     &__wrap {
         display: flex;
         flex-direction: column;
 
         .h2 {
             margin-bottom: 100px;
+
+            @include mobile {
+                margin-bottom: 75px;
+            }
         }
     }
 }
-
