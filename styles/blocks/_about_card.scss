@@ -32,7 +32,7 @@
     }
 
     &:hover {
-
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
         .about-card__title,
         .about-card__description {
             color: var(--color-light);
@@ -44,14 +44,14 @@
     }
 
     .about__item:nth-child(1) &::before {
-        background-image: linear-gradient(rgba(0, 0, 255, 0.8),
-                rgba(0, 0, 255, 0.8)),
+        background-image: 
+        linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
             url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3vlT5dDAjGcfFMvv4WTu5P-go2UphNmvbQ&s");
     }
 
     .about__item:nth-child(2) &::before {
-        background-image: linear-gradient(rgba(0, 0, 255, 0.8),
-                rgba(0, 0, 255, 0.8)),
+        background-image: 
+        linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
             url("https://kartinkof.club/uploads/posts/2022-12/1670445222_kartinkof-club-p-kartinki-gubka-bob-3.png");
     }
 
