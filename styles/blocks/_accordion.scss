@@ -1,0 +1,107 @@
+@use "../helpers"as *;
+
+.accordion-group {
+    display: grid;
+    row-gap: 30px;
+}
+
+.accordion {
+    &__details {
+        background-color: var(--color-blue);
+        height: 60px;
+        border-radius: 10px;
+        padding: 7px 8px 7px 20px;
+        margin-inline: auto;
+
+        &[open] {
+            .accordion__title {
+                .square {
+
+                    &::before,
+                    &::after {
+                        background-color: var(--color-blue);
+                    }
+
+                    &::after {
+                        rotate: 0deg;
+                    }
+                }
+            }
+
+            &+.accordion__content {
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+
+    &__summary {
+        color: var(--color-light);
+        list-style: none;
+
+        @include hover {
+            color: var(--color-accent);
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-light);
+        transition-duration: var(--transition-duration);
+
+        .square {
+            position: relative;
+            display: block;
+            width: 45px;
+            height: 45px;
+            aspect-ratio: 1;
+            border-radius: 6px;
+            background-color: var(--color-light);
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+            margin-left: 10px;
+
+            &::before,
+            &::after {
+                @include abs-center;
+
+                content: "";
+                right: 0;
+                width: rem(16);
+                height: rem(2);
+                background-color: var(--color-blue);
+                border-radius: 1rem;
+                transition-duration: var(--transition-duration);
+            }
+
+            &::after {
+                rotate: 90deg;
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition-duration: 0.3s;
+
+        &-inner {
+            background-color: var(--color-light);
+            overflow: hidden;
+        }
+
+        &-body {
+            font-size: 18px;
+            padding: 40px 20px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+            margin-top: -5px;
+        }
+    }
+}

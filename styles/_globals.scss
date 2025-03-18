@@ -94,7 +94,18 @@ h3,
 
 h4,
 .h4 {
-    @include fluid-text(26, 18);
+    font-size: rem(24);
+    font-family: var(--font-family-accent);
+    font-weight: 700;
+    color: var(--color-light);
+    @include tablet {
+        font-size: rem(20);
+        line-height: 1;
+    }
+
+    @include mobile {
+        font-size: rem(14);
+    }
 }
 
 h5,
@@ -136,12 +147,26 @@ a {
     }
 }
 
+.section {
+    padding-bottom: 150px;
+
+    @include tablet {
+        padding-bottom: 130px;
+    }
+
+    @include mobile {
+        padding-bottom: 100px;
+    }
+
+}
+
 .desc {
     color: var(--color-notes);
 
     @include tablet {
         font-size: rem(24);
     }
+
     @include mobile {
         font-size: rem(18);
     }
