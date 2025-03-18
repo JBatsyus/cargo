@@ -21,7 +21,7 @@
     --container-padding-x: #{rem(16)};
 
     --transition-duration: 0.4s;
-
+    --box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
     --100vw: calc(100vw - var(--scrollbar-width));
 
     // контейнер на лэптопе

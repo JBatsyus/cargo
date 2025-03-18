@@ -70,7 +70,7 @@
 
         &:nth-child(even) {
             background-color: var(--color-light);
-            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: var(--box-shadow);
 
             &::before {
                 background-color: var(--color-blue);

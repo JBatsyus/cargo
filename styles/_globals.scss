@@ -98,6 +98,7 @@ h4,
     font-family: var(--font-family-accent);
     font-weight: 700;
     color: var(--color-light);
+
     @include tablet {
         font-size: rem(20);
         line-height: 1;
@@ -158,6 +159,25 @@ a {
         padding-bottom: 100px;
     }
 
+}
+
+.header-block {
+    display: grid;
+    row-gap: 30px;
+    margin-bottom: 100px;
+
+    @include mobile {
+        row-gap: 20px;
+        margin-bottom: 75px;
+    }
+}
+
+.header-block-on {
+    margin-bottom: 100px;
+
+    @include mobile {
+        margin-bottom: 75px;
+    }
 }
 
 .desc {

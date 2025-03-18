@@ -6,7 +6,7 @@
     border-radius: 20px;
     min-height: 558px;
     padding: 22px 13px 25px 25px;
-    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow);
     background-color: var(--color-light);
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+        box-shadow: var(--box-shadow);
 
         .about-card__title,
         .about-card__description {

@@ -6,16 +6,9 @@
     &__inner {
         display: flex;
         flex-direction: column;
-        row-gap: 100px;
-        @include mobile {
-            row-gap: 75px;
-        }
     }
 
-    &__header {
-        display: grid;
-        row-gap: 30px;
-    }
+   
 
     &__list {
         display: grid;
