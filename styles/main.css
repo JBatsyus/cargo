@@ -1724,4 +1724,59 @@ a[class] {
   }
 }
 
+.workflow-gallery__swiper {
+  width: 100%;
+}
+.workflow-gallery__wrap {
+  position: relative;
+}
+.workflow-gallery__inner {
+  aspect-ratio: 12/5;
+  max-height: 800px;
+  width: 100%;
+}
+@media (width <= 63.99875rem) {
+  .workflow-gallery__inner {
+    aspect-ratio: 48/35;
+  }
+}
+@media (width <= 47.99875rem) {
+  .workflow-gallery__inner {
+    aspect-ratio: 45/64;
+  }
+}
+.workflow-gallery__slide-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.workflow-gallery .container {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.workflow-gallery__nav {
+  display: flex;
+  column-gap: 15px;
+  height: 45px;
+  margin-bottom: 5rem;
+}
+@media (width <= 63.99875rem) {
+  .workflow-gallery__nav {
+    margin-bottom: 2.8125rem;
+  }
+}
+@media (width <= 63.99875rem) {
+  .workflow-gallery__nav {
+    margin-bottom: 2.1875rem;
+  }
+}
+.workflow-gallery__nav img {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

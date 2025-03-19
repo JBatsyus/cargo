@@ -19,3 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+var swiperWorkflowGallery = new Swiper(".workflowGallery", {
+    loop: true,
+    effect: "fade",
+    navigation: {
+        nextEl: ".workflow-gallery__next",
+        prevEl: ".workflow-gallery__prev",
+    },
+});

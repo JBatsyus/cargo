@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAR-CARGO</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="./scripts/main.js" defer></script>
+
 </head>
 
 <body>
@@ -673,7 +675,7 @@
         </section> -->
         <!--—END SECTION WORK PROCESS-->
         <!--—BEGIN ADVANTAGES SECTION-->
-        <section class="section advantages">
+        <!-- <section class="section advantages">
             <div class="advantages__inner container">
                 <h2 class="h2 header-block-on">
                     Почему авиаперевозки?<br>
@@ -712,9 +714,42 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--—END ADVANTAGES SECTION-->
-
+        <!--—BEGIN WORKFLOW GALLERY-->
+        <section class="workflow-gallery">
+            <div class="workflow-gallery__swiper">
+                <div class="swiper mySwiper workflowGallery workflow-gallery__wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="workflow-gallery__inner">
+                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/01.webp"
+                                    alt="" width="1920" height="800" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="workflow-gallery__inner">
+                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/02.webp"
+                                    alt="" width="1920" height="800" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="workflow-gallery__inner">
+                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/03.webp"
+                                    alt="" width="1920" height="800" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" container">
+                        <div class="workflow-gallery__nav">
+                            <img class="workflow-gallery__prev" src="./icons/prev.svg" alt="">
+                            <img class="workflow-gallery__next" src="./icons/next.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--—END WORKFLOW GALLERY-->
     </main>
     <!--—BEGIN FOOTER -->
     <footer class="footer">
@@ -725,6 +760,7 @@
             <div class="footer__extra"></div>
     </footer>
     <!--—END  FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
