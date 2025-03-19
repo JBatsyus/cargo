@@ -1,0 +1,62 @@
+@use "../helpers"as *;
+
+.banner {
+    &__wrap {
+        position: relative;
+        display: flex;
+        aspect-ratio: 96 / 25;
+        height: 500px;
+        width: 100%;
+        background-image: url("../../images/banner.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include tablet {
+            aspect-ratio: 32 / 25;
+            height: 600px;
+        }
+
+        @include mobile {
+            aspect-ratio: 45 / 64;
+            height: 500px;
+        }
+    }
+
+    &__inner {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 100px;
+
+        @include mobile {
+            row-gap: 60px;
+        }
+    }
+
+    &__title {
+        @include fluid-text(60, 50);
+        font-weight: 700;
+
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--color-light);
+
+        @include mobile {
+            font-size: 28px;
+        }
+
+        span {
+            display: inline-block;
+
+            @include tablet {
+                display: inline;
+            }
+        }
+    }
+}

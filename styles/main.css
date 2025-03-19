@@ -1781,4 +1781,64 @@ a[class] {
   cursor: pointer;
 }
 
+.banner__wrap {
+  position: relative;
+  display: flex;
+  aspect-ratio: 96/25;
+  height: 500px;
+  width: 100%;
+  background-image: url("../../images/banner.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (width <= 63.99875rem) {
+  .banner__wrap {
+    aspect-ratio: 32/25;
+    height: 600px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .banner__wrap {
+    aspect-ratio: 45/64;
+    height: 500px;
+  }
+}
+.banner__inner {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+}
+@media (width <= 47.99875rem) {
+  .banner__inner {
+    row-gap: 60px;
+  }
+}
+.banner__title {
+  font-size: clamp(2.7777777778rem, 2.6495726496rem + 0.641025641vw, 3.3333333333rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-light);
+}
+@media (width <= 47.99875rem) {
+  .banner__title {
+    font-size: 28px;
+  }
+}
+.banner__title span {
+  display: inline-block;
+}
+@media (width <= 63.99875rem) {
+  .banner__title span {
+    display: inline;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
