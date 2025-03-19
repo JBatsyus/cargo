@@ -27,4 +27,5 @@ var swiperWorkflowGallery = new Swiper(".workflowGallery", {
         nextEl: ".workflow-gallery__next",
         prevEl: ".workflow-gallery__prev",
     },
+    
 });
