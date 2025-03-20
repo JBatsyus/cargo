@@ -59,3 +59,4 @@ var swiperReviews = new Swiper(".reviews__swiper", {
     },
 
 });
+
