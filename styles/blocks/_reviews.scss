@@ -77,6 +77,9 @@
             border-radius: 20px;
             overflow: hidden;
             width: 100%;
+            @include mobile {
+                border-radius: 10px;
+            }
         }
 
         &-photo {
@@ -92,7 +95,7 @@
 
             @include mobile-s {
                 height: 200px;
-                object-position: center bottom;
+
             }
         }
 

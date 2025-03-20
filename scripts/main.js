@@ -24,6 +24,11 @@ var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
     lazy: true,
     loop: true,
     effect: "fade",
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     navigation: {
         nextEl: ".workflow-gallery__next",
         prevEl: ".workflow-gallery__prev",
@@ -34,7 +39,7 @@ var swiperAirparnets = new Swiper(".airparnets__swiper", {
     slidesPerView: "auto",
     slidesPerGroup: 1,
     loop: true,
-    speed: 1000,
+    speed: 3000,
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -59,4 +64,3 @@ var swiperReviews = new Swiper(".reviews__swiper", {
     },
 
 });
-

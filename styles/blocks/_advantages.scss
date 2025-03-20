@@ -34,6 +34,7 @@
         }
 
         @include mobile {
+            border-radius: 10px;
             height: rem(250);
         }
 

@@ -53,13 +53,13 @@
     .about__item:nth-child(2) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/02.png");
+            url("../../images/about/03.png");
     }
 
     .about__item:nth-child(3) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/03.png");
+            url("../../images/about/02.png");
     }
 
     .about__item:nth-child(4) &::before {
@@ -78,7 +78,12 @@
     }
 
     @include mobile {
+        min-height: 390px;
         padding: 18px 21px 25px 20px;
+    }
+    @include mobile-s {
+        min-height: 482px;
+        
     }
 
     &__icon {
