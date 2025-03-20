@@ -40,6 +40,22 @@ var swiperAirparnets = new Swiper(".airparnets__swiper", {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
+});
+var swiperReviews = new Swiper(".reviews__swiper", {
 
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true, // Включаем перекрестное fade-затухание
+    },
+    //   autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    //     pauseOnMouseEnter: true,
+    // },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+    },
 
 });
