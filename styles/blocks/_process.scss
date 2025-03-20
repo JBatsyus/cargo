@@ -1,0 +1,88 @@
+@use "../helpers"as *;
+
+.process {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Три колонки
+        grid-template-rows: repeat(2, auto); // Две строки
+        row-gap: 117px;
+        column-gap: 30px;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+            row-gap: 70px;
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, auto);
+            row-gap: 75px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        &--active {
+            .process__text {
+                color: var(--color-gray);
+            }
+
+            .process__circle {
+                background-color: var(--color-blue);
+                box-shadow: 0 0 10px rgba(0, 99, 199, 0.5);
+            }
+
+            .process__circle-inner {
+                border: 1px solid var(--color-blue);
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__text {
+        color: var(--color-light-gray);
+        align-content: end;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        transition: color 0.4s ease-in-out;
+        margin-bottom: 47px;
+
+        @include tablet {
+            margin-bottom: 35px;
+        }
+        @include mobile{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__circle {
+        width: 24px;
+        height: 24px;
+
+        background-color: var(--color-light-gray);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.4s ease-in-out;
+
+        &-inner {
+            aspect-ratio: 1;
+            width: 50px;
+            height: 50px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+    }
+}
