@@ -53,11 +53,11 @@ var swiperReviews = new Swiper(".reviews__swiper", {
     fadeEffect: {
         crossFade: true, // Включаем перекрестное fade-затухание
     },
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true,
-    // },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: false,

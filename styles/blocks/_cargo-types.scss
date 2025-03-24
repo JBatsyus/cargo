@@ -1,0 +1,176 @@
+@use "../helpers"as *;
+
+.cargo-types {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        height: 344px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+
+        @include tablet {
+            height: 220px;
+            padding: 24px 13px 16px 16px;
+        }
+
+        @include mobile {
+            border-radius: 10px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 20px;
+
+            @include mobile {
+                border-radius: 10px;
+            }
+        }
+
+        &:nth-child(odd) {
+            &::before {
+                background: linear-gradient(125deg, #000 0%, #4a4a4a 100%);
+            }
+
+            .cargo-types__item-title,
+            .cargo-types__item-description {
+                color: var(--color-light);
+            }
+        }
+
+        &:nth-child(1) {
+            background-image: url("../../images/cargo-types/1.png");
+            order: 1;
+        }
+
+        &:nth-child(2) {
+            background-image: url("../../images/cargo-types/2.png");
+            order: 2;
+        }
+
+        &:nth-child(3) {
+            background-image: url("../../images/cargo-types/3.png");
+            order: 3;
+
+            @include laptop {
+                order: 4;
+            }
+
+            @include mobile {
+                order: 3;
+            }
+        }
+
+        &:nth-child(4) {
+            background-image: url("../../images/cargo-types/4.png");
+            order: 4;
+
+            @include laptop {
+                order: 3;
+            }
+
+            @include mobile {
+                order: 4;
+            }
+        }
+
+        &:nth-child(5) {
+            background-image: url("../../images/cargo-types/5.png");
+            order: 5;
+        }
+
+        &:nth-child(6) {
+            background-image: url("../../images/cargo-types/6.png");
+            background-position-y: 35px;
+            order: 6;
+        }
+
+        &-title {
+            width: 100%;
+            max-width: 360px;
+            margin-bottom: 30px;
+
+            @include tablet {
+                font-size: 24px;
+                margin-bottom: 16px;
+                max-width: 285px;
+            }
+        }
+
+        &-tag {
+            font-family: var(--font-family-accent);
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--color-light);
+            border-radius: 5px;
+            padding: 5px 19px;
+            background-color: var(--color-blue);
+            max-width: max-content;
+
+            @include tablet {
+                padding: 1px 15px;
+            }
+        }
+
+        &-description {
+            display: flex;
+            align-items: flex-end;
+            margin-top: auto;
+            font-size: 18px;
+
+            @include tablet {
+                font-size: 14px;
+            }
+
+            p {
+                margin-bottom: 0;
+                width: 100%;
+                max-width: 275px;
+                line-height: 1.1;
+            }
+
+            .icon {
+                margin-left: auto;
+
+                &::after {
+                    @include tablet {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+}

@@ -4,8 +4,8 @@
     &__list {
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(3, 1fr); // Три колонки
-        grid-template-rows: repeat(2, auto); // Две строки
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto); 
         row-gap: 117px;
         column-gap: 10%;
 
