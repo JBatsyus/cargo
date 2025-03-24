@@ -3,16 +3,18 @@
 .process {
     &__list {
         display: grid;
+        justify-content: space-between;
         grid-template-columns: repeat(3, 1fr); // Три колонки
         grid-template-rows: repeat(2, auto); // Две строки
         row-gap: 117px;
-        column-gap: 30px;
+        column-gap: 10%;
 
         @include tablet {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, auto);
             row-gap: 70px;
         }
+
         @include mobile {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, auto);
@@ -26,6 +28,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
+        align-self: end;
         text-align: center;
 
         &--active {
@@ -46,6 +49,7 @@
     }
 
     &__text {
+        width: 100%;
         color: var(--color-light-gray);
         align-content: end;
         font-weight: 700;
@@ -53,12 +57,13 @@
         text-transform: uppercase;
         text-align: center;
         transition: color 0.4s ease-in-out;
-        margin-bottom: 47px;
+        padding-bottom: 47px;
 
         @include tablet {
             margin-bottom: 35px;
         }
-        @include mobile{
+
+        @include mobile {
             font-size: 20px;
             margin-bottom: 30px;
         }

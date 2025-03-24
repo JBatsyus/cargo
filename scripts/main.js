@@ -65,61 +65,8 @@ var swiperReviews = new Swiper(".reviews__swiper", {
 
 });
 
-// Функция для выравнивания высоты блоков
-function equalizeHeights(containerSelector) {
-    const items = document.querySelectorAll(containerSelector);
 
-    if (items.length === 0) {
-        return;
-    }
 
-    let maxHeight = 0;
-
-    // Сброс высоты
-    items.forEach(item => (item.style.height = 'auto'));
-
-    // Определяем максимальную высоту
-    items.forEach(item => {
-        const height = item.offsetHeight;
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    });
-
-    // Устанавливаем всем элементам одинаковую высоту
-    items.forEach(item => (item.style.height = `${maxHeight}px`));
-}
-
-// Проверка ширины экрана
-function isScreenWidthAboveBreakpoint(breakpoint) {
-    return window.innerWidth > breakpoint;
-}
-
-// Выполнение после полной загрузки страницы
-window.addEventListener('load', () => {
-    const selector = '.process__text';
-    const breakpoint = 993; // Ширина, ниже которой скрипт не работает
-
-    const runEqualizeHeights = () => {
-        // Проверяем ширину экрана
-        if (isScreenWidthAboveBreakpoint(breakpoint)) {
-            equalizeHeights(selector);
-        } else {
-            // Сброс высоты для всех элементов
-            document.querySelectorAll(selector).forEach(item => {
-                item.style.height = 'auto';
-            });
-        }
-    };
-
-    runEqualizeHeights(); // Выполнить при загрузке
-
-    // Пересчёт при изменении размера окна
-    window.addEventListener('resize', runEqualizeHeights);
-
-    // Дополнительный пересчёт при переходах или динамических изменениях контента
-    setTimeout(runEqualizeHeights, 500);
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".process__item");
@@ -130,11 +77,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // Удаляем класс active у всех элементов
         items.forEach((item) => item.classList.remove("process__item--active"));
 
-        // Добавляем класс active к текущему элементу
-        items[currentIndex].classList.add("process__item--active");
+        if (currentIndex < items.length) {
+            // Добавляем класс active к текущему элементу
+            items[currentIndex].classList.add("process__item--active");
 
-        // Переходим к следующему элементу
-        currentIndex = (currentIndex + 1) % items.length;
+            // Переходим к следующему элементу
+            currentIndex++;
+        } else {
+            // Когда доходим до последнего элемента, активируем все элементы
+            items.forEach((item) => item.classList.add("process__item--active"));
+
+            // Сбрасываем индекс для начала цикла заново
+            setTimeout(() => {
+                items.forEach((item) => item.classList.remove("process__item--active"));
+                currentIndex = 0;
+            }, 1500); // Задержка перед началом нового цикла
+        }
     }
 
     // Запускаем анимацию каждые 2 секунды

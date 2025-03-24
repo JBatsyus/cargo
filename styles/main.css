@@ -2088,10 +2088,11 @@ a[class] {
 
 .process__list {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   row-gap: 117px;
-  column-gap: 30px;
+  column-gap: 10%;
 }
 @media (width <= 63.99875rem) {
   .process__list {
@@ -2113,6 +2114,7 @@ a[class] {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  align-self: end;
   text-align: center;
 }
 .process__item--active .process__text {
@@ -2127,6 +2129,7 @@ a[class] {
   background-color: transparent;
 }
 .process__text {
+  width: 100%;
   color: var(--color-light-gray);
   align-content: end;
   font-weight: 700;
@@ -2134,7 +2137,7 @@ a[class] {
   text-transform: uppercase;
   text-align: center;
   transition: color 0.4s ease-in-out;
-  margin-bottom: 47px;
+  padding-bottom: 47px;
 }
 @media (width <= 63.99875rem) {
   .process__text {
