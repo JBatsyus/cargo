@@ -98,3 +98,53 @@ document.addEventListener("DOMContentLoaded", () => {
     // Запускаем анимацию каждые 2 секунды
     setInterval(animateProcess, 2000);
 });
+
+
+// Модальное окно
+
+// Получаем все ссылки для открытия модальных окон
+const links = document.querySelectorAll('.stretched-link');
+
+// Получаем все кнопки закрытия модальных окон
+const closeButtons = document.querySelectorAll('.cargo-types__modal-close');
+
+// Функция для открытия модального окна
+function openModal(modal) {
+    modal.classList.add('show'); // Показываем модальное окно
+    document.body.classList.add('no-scroll'); // Отключаем прокрутку
+}
+
+// Функция для закрытия модального окна
+function closeModal(modal) {
+    modal.classList.remove('show'); // Скрываем модальное окно
+    document.body.classList.remove('no-scroll'); // Включаем прокрутку
+}
+
+// Добавляем обработчики событий для открытия модальных окон
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        const modalId = link.getAttribute('data-src'); // Получаем ID модального окна
+        const modal = document.querySelector(modalId); // Находим модальное окно
+        if (modal) {
+            openModal(modal);
+        }
+    });
+});
+
+// Добавляем обработчики событий для закрытия модальных окон
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.cargo-types__modal'); // Находим родительское модальное окно
+        if (modal) {
+            closeModal(modal);
+        }
+    });
+});
+
+// Закрытие модального окна при клике на фон
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('cargo-types__modal')) {
+        const modal = event.target;
+        closeModal(modal);
+    }
+});
