@@ -1,0 +1,131 @@
+@use "../helpers"as *;
+
+/* Блок footer */
+.footer {
+    background-color: var(--color-gray);
+    color: var(--color-light);
+    padding-block: 60px 45px;
+
+    .footer-label {
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--color-line);
+        margin-bottom: 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--color-line);
+        padding-bottom: 50px;
+    }
+
+    &__logo img {
+        filter: brightness(0) invert(1);
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 70px 0;
+    }
+
+    &__left {
+        display: flex;
+    }
+
+    &__navigation {
+        padding-right: rem(120);
+        border-right: 1px solid var(--color-line);
+
+        &-list {
+            display: grid;
+            row-gap: 30px;
+            padding-block: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            color: (--color-light);
+        }
+    }
+
+    &__contacts {
+        padding-left: rem(120);
+
+        &-list {
+            display: grid;
+            row-gap: 40px;
+            padding-top: 20px;
+        }
+
+        &-item {
+            display: grid;
+        }
+
+        &-link {
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--color-light);
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+
+    &__social-link:hover svg circle {
+        fill: var(--color-accent);
+    }
+
+    &__social-list {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    &__ticker {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__marquee {
+        display: flex;
+        width: fit-content;
+        margin-bottom: 80px;
+        will-change: transform; // Оптимизация для анимации
+        animation: marquee 40s linear infinite;
+
+        &-text {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: clamp(105px, 13.95vw, 268px);
+            line-height: 0.7;
+            color: #2b2b2b;
+            white-space: nowrap;
+            padding-right: 50px;
+            flex-shrink: 0;
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%); // Смещаем на половину ширины
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        color: var(--color-light);
+    }
+}

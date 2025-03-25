@@ -155,11 +155,6 @@ label {
    (за исключением тех, у которых уже указан
    атрибут fill со значением 'none' или начинается с 'url')
   */
-:where([fill]:not([fill=none],
-[fill^=url])) {
-  fill: currentColor;
-}
-
 /**
    Приводим к единому цвету svg-элементы
    (за исключением тех, у которых уже указан
@@ -262,6 +257,7 @@ svg * {
   --color-gray: #1e1e1e;
   --color-light-gray: #D9D9D9;
   --color-notes: #a3a3a3;
+  --color-line: #6b6b6b;
   --color-blue: #0063c7;
   --color-accent: #003366;
   --font-family-base: "Montserrat",
@@ -2495,6 +2491,116 @@ a[class] {
 
 .modal.show .cargo-types__modal-inner {
   transform: scale(1);
+}
+
+/* Блок footer */
+.footer {
+  background-color: var(--color-gray);
+  color: var(--color-light);
+  padding-block: 60px 45px;
+}
+.footer .footer-label {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-line);
+  margin-bottom: 30px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 50px;
+}
+.footer__logo img {
+  filter: brightness(0) invert(1);
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 0;
+}
+.footer__left {
+  display: flex;
+}
+.footer__navigation {
+  padding-right: 7.5rem;
+  border-right: 1px solid var(--color-line);
+}
+.footer__navigation-list {
+  display: grid;
+  row-gap: 30px;
+  padding-block: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: --color-light;
+}
+.footer__contacts {
+  padding-left: 7.5rem;
+}
+.footer__contacts-list {
+  display: grid;
+  row-gap: 40px;
+  padding-top: 20px;
+}
+.footer__contacts-item {
+  display: grid;
+}
+.footer__contacts-link {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-light);
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+.footer__social-link:hover svg circle {
+  fill: var(--color-accent);
+}
+.footer__social-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.footer__ticker {
+  overflow: hidden;
+  position: relative;
+}
+.footer__marquee {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 80px;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+}
+.footer__marquee-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(105px, 13.95vw, 268px);
+  line-height: 0.7;
+  color: #2b2b2b;
+  white-space: nowrap;
+  padding-right: 50px;
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: var(--color-light);
 }
 
 /*# sourceMappingURL=main.css.map */
