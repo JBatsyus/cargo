@@ -315,9 +315,18 @@ body.no-scroll {
   overflow: hidden;
 }
 
-@media (width > 47.99875rem) {
+@media (width <= 47.99875rem) {
   .visible-mobile {
     display: none !important;
+  }
+}
+
+.visible-mobile-only {
+  display: none !important;
+}
+@media (width <= 47.99875rem) {
+  .visible-mobile-only {
+    display: block !important;
   }
 }
 
@@ -2493,17 +2502,32 @@ a[class] {
   transform: scale(1);
 }
 
-/* Блок footer */
 .footer {
   background-color: var(--color-gray);
   color: var(--color-light);
   padding-block: 60px 45px;
+}
+@media (width <= 63.99875rem) {
+  .footer {
+    padding-block: 50px 100px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer {
+    padding-block: 25px 35px;
+  }
 }
 .footer .footer-label {
   font-weight: 500;
   font-size: 18px;
   color: var(--color-line);
   margin-bottom: 30px;
+}
+@media (width <= 47.99875rem) {
+  .footer .footer-label {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
 .footer__top {
   display: flex;
@@ -2512,21 +2536,62 @@ a[class] {
   border-bottom: 1px solid var(--color-line);
   padding-bottom: 50px;
 }
+@media (width <= 47.99875rem) {
+  .footer__top {
+    padding-bottom: 25px;
+  }
+  .footer__top .visible-mobile-only .icon::after {
+    --size: 2.8125rem;
+  }
+}
 .footer__logo img {
   filter: brightness(0) invert(1);
 }
 .footer__body {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (width <= 63.99875rem) {
+  .footer__body {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 90px;
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__body {
+    row-gap: 60px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
 }
 .footer__left {
   display: flex;
 }
+@media (width <= 47.99875rem) {
+  .footer__left {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
 .footer__navigation {
   padding-right: 7.5rem;
   border-right: 1px solid var(--color-line);
+}
+@media (width <= 63.99875rem) {
+  .footer__navigation {
+    padding-right: 3.75rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__navigation {
+    border-right: none;
+    padding-right: 0;
+  }
 }
 .footer__navigation-list {
   display: grid;
@@ -2534,15 +2599,39 @@ a[class] {
   padding-block: 20px;
   font-weight: 500;
   font-size: 18px;
-  color: --color-light;
+  color: var(--color-light);
+}
+@media (width <= 47.99875rem) {
+  .footer__navigation-list {
+    font-size: 16px;
+    padding-block: 0px;
+  }
 }
 .footer__contacts {
   padding-left: 7.5rem;
+  padding-right: 20px;
+}
+@media (width <= 63.99875rem) {
+  .footer__contacts {
+    padding-left: 3.75rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .footer__contacts-list {
   display: grid;
   row-gap: 40px;
   padding-top: 20px;
+}
+@media (width <= 47.99875rem) {
+  .footer__contacts-list {
+    row-gap: 30px;
+    padding-top: 0px;
+  }
 }
 .footer__contacts-item {
   display: grid;
@@ -2550,6 +2639,7 @@ a[class] {
 .footer__contacts-link {
   font-weight: 700;
   font-size: 24px;
+  line-height: 1;
   color: var(--color-light);
 }
 .footer__right {
@@ -2557,6 +2647,11 @@ a[class] {
   flex-direction: column;
   align-items: flex-end;
   padding-top: 20px;
+}
+@media (width <= 63.99875rem) {
+  .footer__right {
+    align-items: flex-start;
+  }
 }
 .footer__social-link:hover svg circle {
   fill: var(--color-accent);
@@ -2577,6 +2672,16 @@ a[class] {
   will-change: transform;
   animation: marquee 40s linear infinite;
 }
+@media (width <= 63.99875rem) {
+  .footer__marquee {
+    margin-bottom: 120px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__marquee {
+    margin-bottom: 35px;
+  }
+}
 .footer__marquee-text {
   text-transform: uppercase;
   font-weight: 700;
@@ -2586,6 +2691,16 @@ a[class] {
   white-space: nowrap;
   padding-right: 50px;
   flex-shrink: 0;
+}
+@media (width <= 63.99875rem) {
+  .footer__marquee-text {
+    font-size: 186px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__marquee-text {
+    font-size: 105px;
+  }
 }
 @keyframes marquee {
   0% {

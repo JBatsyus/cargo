@@ -16,12 +16,23 @@
         display: none !important;
     }
 }
+
 body.no-scroll {
     overflow: hidden;
 }
+
 // скрыть элемент на ширине 768 и более
 .visible-mobile {
-    @include mobile-above {
+    @include mobile {
         display: none !important;
+    }
+}
+
+// Показывать ТОЛЬКО на мобильных (скрывать на планшетах и десктопах)
+.visible-mobile-only {
+    display: none !important;
+
+    @include mobile {
+        display: block !important;
     }
 }
