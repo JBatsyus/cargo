@@ -269,6 +269,7 @@ svg * {
   --transition-duration: 0.4s;
   --box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
   --100vw: calc(100vw - var(--scrollbar-width));
+  --header-height: 130px;
 }
 @media (width <= 90.06125rem) {
   :root {
@@ -278,6 +279,7 @@ svg * {
 @media (width <= 63.99875rem) {
   :root {
     --container-padding-x: 2rem;
+    --header-height: 80px;
   }
 }
 @media (width <= 47.99875rem) {
@@ -370,9 +372,12 @@ h6,
 
 h1,
 .h1 {
-  font-size: clamp(1.6666666667rem, 1.1538461538rem + 2.5641025641vw, 3.8888888889rem);
+  font-size: clamp(1.3333333333rem, 1rem + 1.6666666667vw, 2.7777777778rem);
   text-transform: uppercase;
   line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2,
@@ -394,6 +399,7 @@ h2,
   }
 }
 
+.h1 span,
 .h2 span {
   color: var(--color-blue);
 }
@@ -930,6 +936,100 @@ a[class] {
 /*---------MOBILE MENU (END)--------*/
 .tile {
   border-radius: 20px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: calc(100vh - var(--header-height));
+}
+.hero .header-block {
+  justify-items: center;
+  row-gap: 50px;
+}
+@media (width <= 47.99875rem) {
+  .hero .header-block {
+    row-gap: 25px;
+  }
+}
+.hero__container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+@media (width <= 63.99875rem) {
+  .hero__container {
+    grid-template-columns: 1fr;
+  }
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5.9375rem;
+}
+@media (width <= 63.99875rem) {
+  .hero__content {
+    padding-right: 0;
+  }
+}
+.hero__title {
+  line-height: 1.2;
+}
+@media (width <= 63.99875rem) {
+  .hero__title {
+    color: var(--color-light);
+    font-size: 50px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .hero__title {
+    font-size: 24px;
+  }
+}
+@media (width <= 63.99875rem) {
+  .hero__title span {
+    color: var(--color-light);
+  }
+}
+.hero__subtitle {
+  width: 100%;
+  max-width: 687px;
+  text-align: center;
+}
+@media (width <= 63.99875rem) {
+  .hero__subtitle {
+    color: var(--color-light);
+  }
+}
+.hero__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.6vw;
+  height: 100%;
+  z-index: 1;
+}
+@media (width <= 63.99875rem) {
+  .hero__media {
+    width: 100%;
+  }
+}
+.hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .transportation-cost {

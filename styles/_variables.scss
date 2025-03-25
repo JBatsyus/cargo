@@ -24,6 +24,7 @@
     --transition-duration: 0.4s;
     --box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.05);
     --100vw: calc(100vw - var(--scrollbar-width));
+    --header-height: 130px;
 
     // контейнер на лэптопе
     @include laptop {
@@ -32,10 +33,10 @@
 
     @include tablet {
         --container-padding-x: #{rem(32)};
+        --header-height: 80px;
     }
 
     @include mobile {
         --container-padding-x: #{rem(24)};
     }
 }
-
