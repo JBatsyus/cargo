@@ -16,7 +16,9 @@
         display: none !important;
     }
 }
-
+body.no-scroll {
+    overflow: hidden;
+}
 // скрыть элемент на ширине 768 и более
 .visible-mobile {
     @include mobile-above {

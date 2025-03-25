@@ -315,6 +315,10 @@ svg * {
   }
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media (width > 47.99875rem) {
   .visible-mobile {
     display: none !important;
@@ -545,6 +549,23 @@ a[class] {
 }
 .icon--right-arrow::after {
   background-image: url("../../icons/arrow.svg");
+}
+
+.icon-close::after {
+  --size: 2.8125rem;
+  width: var(--size);
+  height: var(--size);
+  content: "";
+  flex-shrink: 0;
+  background-image: url("../../icons/close.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (width <= 47.99875rem) {
+  .icon-close::after {
+    --size: 1.875rem;
+  }
 }
 
 .button-calc .icon::after {
@@ -2367,9 +2388,19 @@ a[class] {
   justify-content: center;
   background-color: var(--color-base);
   width: 100%;
+  max-width: 1000px;
+  padding-left: 3.125rem;
+  padding-right: 15px;
   transform: scale(0.9);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   overflow-y: auto;
+  order: 1;
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__modal-inner {
+    order: 2;
+    padding-left: 1.5rem;
+  }
 }
 .cargo-types__modal-close {
   display: flex;
@@ -2377,6 +2408,14 @@ a[class] {
   position: sticky;
   top: 0;
   right: 0;
+  padding-left: 15px;
+  order: 2;
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__modal-close {
+    order: 1;
+    margin-left: auto;
+  }
 }
 .cargo-types__modal-list {
   display: flex;
@@ -2390,11 +2429,31 @@ a[class] {
   font-size: 24px;
   color: var(--color-blue);
 }
+@media (width <= 63.99875rem) {
+  .cargo-types__modal-list ::marker {
+    font-size: 18px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__modal-list ::marker {
+    font-size: 14px;
+  }
+}
 .cargo-types__modal-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.20833;
   color: var(--color-blue);
+}
+@media (width <= 63.99875rem) {
+  .cargo-types__modal-title {
+    font-size: 18px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__modal-title {
+    font-size: 14px;
+  }
 }
 .cargo-types__modal-sublist ::marker {
   font-weight: 400;
@@ -2407,12 +2466,26 @@ a[class] {
 .cargo-types__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: auto 75px;
-  width: 100%;
+  grid-template-columns: auto 60px;
+  justify-content: center;
+  width: 99%;
   height: 100%;
   background-color: var(--color-base);
-  padding: 100px;
+  padding-block: 6.25rem;
   border-radius: 20px;
+}
+@media (width <= 63.99875rem) {
+  .cargo-types__wrapper {
+    padding-block: 3.75rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding-block: 1.875rem 3.75rem;
+    border-radius: 10px;
+  }
 }
 
 .modal.show {
@@ -2422,10 +2495,6 @@ a[class] {
 
 .modal.show .cargo-types__modal-inner {
   transform: scale(1);
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

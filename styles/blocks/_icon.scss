@@ -24,6 +24,25 @@
     }
 }
 
+.icon-close {
+    &::after {
+        --size: #{rem(45)};
+
+        @include square(var(--size));
+        content: '';
+        flex-shrink: 0;
+        background-image: url('../../icons/close.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include mobile {
+            --size: #{rem(30)};
+        }
+    }
+   
+}
+
+
 .button-calc .icon {
     &::after {
         --size: #{rem(45)};
