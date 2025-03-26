@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Запускаем анимацию каждые 2 секунды
-    setInterval(animateProcess, 2000);
+    setInterval(animateProcess, 1500);
 });
 
 var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
@@ -133,8 +133,8 @@ var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
         pauseOnMouseEnter: true,
     },
     navigation: {
-        nextEl: ".workflow-gallery__next",
-        prevEl: ".workflow-gallery__prev",
+        nextEl: ".to-right",
+        prevEl: ".to-left",
     },
 
 });

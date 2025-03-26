@@ -19,7 +19,7 @@
 
     &--right-arrow {
         &::after {
-            background-image: url('../../icons/arrow.svg');
+            background-image: url('/icons/arrow.svg');
         }
     }
 }
@@ -31,15 +31,16 @@
         @include square(var(--size));
         content: '';
         flex-shrink: 0;
-        background-image: url('../../icons/close.svg');
+        background-image: url('/icons/close.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
         @include mobile {
             --size: #{rem(30)};
         }
     }
-   
+
 }
 
 
@@ -51,3 +52,53 @@
     }
 
 }
+
+
+
+.icon-arrow {
+    --size: #{rem(45)};
+
+    @include square(var(--size));
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--color-light);
+
+    /* Градиент для анимации заливки */
+    background-image: linear-gradient(var(--color-blue), var(--color-blue));
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.to-right {
+    background-position: 0% 50%;
+}
+
+.to-left {
+    background-position: 100% 50%;
+}
+
+.to-left,
+.to-right {
+    background-size: 0% 100%;
+}
+
+
+.icon-arrow svg {
+    width: 21px;
+    height: 14px;
+    transition: stroke 0.4s ease-in-out;
+}
+
+.icon-arrow:hover {
+    background-size: 100% 100%;
+}
+
+
+.icon-arrow:hover svg path {
+    stroke: var(--color-light);
+}
+

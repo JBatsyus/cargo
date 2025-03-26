@@ -160,11 +160,6 @@ label {
    (за исключением тех, у которых уже указан
    атрибут stroke со значением 'none')
   */
-:where([stroke]:not([stroke=none],
-[stroke^=url])) {
-  stroke: currentColor;
-}
-
 /**
    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
   */
@@ -330,6 +325,17 @@ body.no-scroll {
   .visible-mobile-only {
     display: block !important;
   }
+}
+
+.wow {
+  opacity: 0;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.wow[style*="visibility: visible;"] {
+  opacity: 1;
 }
 
 body {
@@ -559,7 +565,7 @@ a[class] {
   background-repeat: no-repeat;
 }
 .icon--right-arrow::after {
-  background-image: url("../../icons/arrow.svg");
+  background-image: url("/icons/arrow.svg");
 }
 
 .icon-close::after {
@@ -568,7 +574,7 @@ a[class] {
   height: var(--size);
   content: "";
   flex-shrink: 0;
-  background-image: url("../../icons/close.svg");
+  background-image: url("/icons/close.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -583,6 +589,50 @@ a[class] {
   --size: 2.8125rem;
   width: var(--size);
   height: var(--size);
+}
+
+.icon-arrow {
+  --size: 2.8125rem;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: var(--color-light);
+  /* Градиент для анимации заливки */
+  background-image: linear-gradient(var(--color-blue), var(--color-blue));
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.to-right {
+  background-position: 0% 50%;
+}
+
+.to-left {
+  background-position: 100% 50%;
+}
+
+.to-left,
+.to-right {
+  background-size: 0% 100%;
+}
+
+.icon-arrow svg {
+  width: 21px;
+  height: 14px;
+  transition: stroke 0.4s ease-in-out;
+}
+
+.icon-arrow:hover {
+  background-size: 100% 100%;
+}
+
+.icon-arrow:hover svg path {
+  stroke: var(--color-light);
 }
 
 .button {
@@ -1282,16 +1332,16 @@ a.is-active {
   opacity: 1;
 }
 .about__item:nth-child(1) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("../../images/about/01.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/01.png");
 }
 .about__item:nth-child(2) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("../../images/about/03.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/03.png");
 }
 .about__item:nth-child(3) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("../../images/about/02.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/02.png");
 }
 .about__item:nth-child(4) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("../../images/about/04.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/04.png");
 }
 @media (width <= 63.99875rem) {
   .about-card {
@@ -1568,7 +1618,7 @@ a.is-active {
 }
 .work-process__description {
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.1;
   margin-top: auto;
 }
 @media (width <= 47.99875rem) {
@@ -1834,7 +1884,7 @@ a.is-active {
 }
 .advantages__description {
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.1;
 }
 @media (width <= 47.99875rem) {
   .advantages__description {
@@ -1905,7 +1955,7 @@ a.is-active {
   aspect-ratio: 96/25;
   height: 500px;
   width: 100%;
-  background-image: url("../../images/banner.webp");
+  background-image: url("/images/banner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2180,7 +2230,7 @@ a.is-active {
   margin-right: 25px;
   content: "";
   flex-shrink: 0;
-  background-image: url(../../icons/quotes.svg);
+  background-image: url(/icons/quotes.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2327,6 +2377,12 @@ a.is-active {
   background-position: right bottom;
   background-size: contain;
 }
+.cargo-types__item:hover .icon-arrow {
+  background-size: 100% 100%;
+}
+.cargo-types__item:hover .icon-arrow svg path {
+  stroke: var(--color-light);
+}
 @media (width <= 63.99875rem) {
   .cargo-types__item {
     height: 220px;
@@ -2361,15 +2417,15 @@ a.is-active {
   color: var(--color-light);
 }
 .cargo-types__item:nth-child(1) {
-  background-image: url("../../images/cargo-types/1.png");
+  background-image: url("/images/cargo-types/1.png");
   order: 1;
 }
 .cargo-types__item:nth-child(2) {
-  background-image: url("../../images/cargo-types/2.png");
+  background-image: url("/images/cargo-types/2.png");
   order: 2;
 }
 .cargo-types__item:nth-child(3) {
-  background-image: url("../../images/cargo-types/3.png");
+  background-image: url("/images/cargo-types/3.png");
   order: 3;
 }
 @media (width <= 90.06125rem) {
@@ -2383,7 +2439,7 @@ a.is-active {
   }
 }
 .cargo-types__item:nth-child(4) {
-  background-image: url("../../images/cargo-types/4.png");
+  background-image: url("/images/cargo-types/4.png");
   order: 4;
 }
 @media (width <= 90.06125rem) {
@@ -2397,11 +2453,11 @@ a.is-active {
   }
 }
 .cargo-types__item:nth-child(5) {
-  background-image: url("../../images/cargo-types/5.png");
+  background-image: url("/images/cargo-types/5.png");
   order: 5;
 }
 .cargo-types__item:nth-child(6) {
-  background-image: url("../../images/cargo-types/6.png");
+  background-image: url("/images/cargo-types/6.png");
   background-position-y: 35px;
   order: 6;
 }
@@ -2449,11 +2505,11 @@ a.is-active {
   max-width: 275px;
   line-height: 1.1;
 }
-.cargo-types__item-description .icon {
+.cargo-types__item-description .icon-arrow {
   margin-left: auto;
 }
 @media (width <= 63.99875rem) {
-  .cargo-types__item-description .icon::after {
+  .cargo-types__item-description .icon-arrow {
     width: 28px;
     height: 28px;
   }
@@ -2560,6 +2616,11 @@ a.is-active {
 .cargo-types__modal-subitem {
   list-style-type: disc;
   font-weight: 400;
+}
+@media (width <= 47.99875rem) {
+  .cargo-types__modal-subitem {
+    font-size: 14px;
+  }
 }
 .cargo-types__wrapper {
   position: relative;

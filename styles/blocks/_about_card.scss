@@ -47,25 +47,25 @@
     .about__item:nth-child(1) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/01.png");
+            url("/images/about/01.png");
     }
 
     .about__item:nth-child(2) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/03.png");
+            url("/images/about/03.png");
     }
 
     .about__item:nth-child(3) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/02.png");
+            url("/images/about/02.png");
     }
 
     .about__item:nth-child(4) &::before {
         background-image:
             linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)),
-            url("../../images/about/04.png");
+            url("/images/about/04.png");
     }
 
     @include tablet {

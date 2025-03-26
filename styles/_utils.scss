@@ -40,3 +40,12 @@ body.no-scroll {
 
 
 
+.wow {
+    opacity: 0;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.wow[style*="visibility: visible;"] {
+  opacity: 1; }
