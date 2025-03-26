@@ -2,11 +2,12 @@
 
 
 /*---------HEADER (START)--------*/
-.header__wrap{
+.header__wrap {
     z-index: 100;
     position: sticky;
     top: 0;
 }
+
 .header {
     backdrop-filter: blur(20px);
     background-color: rgba(248, 248, 248, 0.9);
@@ -121,15 +122,15 @@
 
         &-link {
             padding-block: rem(18);
-
-            &.is-active {
-                color: var(--color-blue);
-                pointer-events: none;
-            }
         }
+
+        
     }
 }
-
+a.is-active {
+    color: var(--color-blue);
+    pointer-events: none;
+}
 /*---------HEADER (END)--------*/
 /*---------MOBILE MENU (START)--------*/
 .menu-humb {

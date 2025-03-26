@@ -1,15 +1,8 @@
 @use "../helpers"as *;
 
 .transportation-cost {
-    padding-block: 150px;
-
-    @include tablet {
-        padding-block: 100px;
-    }
-
     &__wrap {
         display: flex;
         flex-direction: column;
-
     }
 }

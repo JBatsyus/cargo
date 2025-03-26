@@ -730,7 +730,8 @@ a[class] {
 .header__menu-link {
   padding-block: 1.125rem;
 }
-.header__menu-link.is-active {
+
+a.is-active {
   color: var(--color-blue);
   pointer-events: none;
 }
@@ -1032,14 +1033,6 @@ a[class] {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.transportation-cost {
-  padding-block: 150px;
-}
-@media (width <= 63.99875rem) {
-  .transportation-cost {
-    padding-block: 100px;
-  }
-}
 .transportation-cost__wrap {
   display: flex;
   flex-direction: column;

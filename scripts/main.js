@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuMob = document.querySelector('.menu-mob');
     const headerWrap = document.querySelector('.header__wrap');
 
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    const headerHeight = document.querySelector('.header').offsetHeight;
+
+
     // Обработчик клика на бургер
     menuHumb.addEventListener('click', function () {
         menuHumb.classList.toggle('active');
@@ -18,6 +22,105 @@ document.addEventListener('DOMContentLoaded', function () {
             headerWrap.classList.remove('menu_active');
         }
     });
+    // Закрытие меню при клике на ссылку
+    anchorLinks.forEach(anchor => {
+        anchor.addEventListener('click', function () {
+            menuHumb.classList.remove('active');
+            menuMob.classList.remove('active');
+            headerWrap.classList.remove('menu_active');
+        });
+    })
+
+    // якоря, доскроллы, активный пункт меню
+
+
+    // Добавляем обработчик клика для каждой ссылки
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault(); // Отменяем стандартное поведение ссылки
+
+            // Получаем ID целевого элемента из href
+            const targetId = link.getAttribute('href').substring(
+                1); // Убираем # из href
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Плавно прокручиваем до целевого элемента с учетом высоты шапки
+                const targetPosition = targetElement.getBoundingClientRect().top +
+                    window.pageYOffset;
+                const offsetPosition = targetPosition - headerHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Добавляем класс is-active к текущей ссылке и удаляем у остальных
+                anchorLinks.forEach(otherLink => {
+                    otherLink.classList.remove('is-active');
+                });
+                link.classList.add('is-active');
+            }
+        });
+    });
+
+    // Добавляем обработчик прокрутки для удаления класса is-active при изменении прокрутки
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        anchorLinks.forEach(link => {
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const targetPosition = targetElement.getBoundingClientRect().top +
+                    window.pageYOffset;
+                const offsetPosition = targetPosition - headerHeight;
+
+                if (window.pageYOffset >= offsetPosition - 100 && window.pageYOffset <
+                    offsetPosition + targetElement.offsetHeight - 100) {
+                    current = targetId;
+                }
+            }
+        });
+
+        anchorLinks.forEach(link => {
+            link.classList.remove('is-active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('is-active');
+            }
+        });
+    });
+
+    // Анимация процесса
+    const items = document.querySelectorAll(".process__item");
+
+    let currentIndex = 0;
+
+    function animateProcess() {
+        // Удаляем класс active у всех элементов
+        items.forEach((item) => item.classList.remove("process__item--active"));
+
+        if (currentIndex < items.length) {
+            // Добавляем класс active к текущему элементу
+            items[currentIndex].classList.add("process__item--active");
+
+            // Переходим к следующему элементу
+            currentIndex++;
+        } else {
+            // Когда доходим до последнего элемента, активируем все элементы
+            items.forEach((item) => item.classList.add("process__item--active"));
+
+            // Сбрасываем индекс для начала цикла заново
+            setTimeout(() => {
+                items.forEach((item) => item.classList.remove("process__item--active"));
+                currentIndex = 0;
+            }, 1500); // Задержка перед началом нового цикла
+        }
+    }
+
+    // Запускаем анимацию каждые 2 секунды
+    setInterval(animateProcess, 2000);
 });
 
 var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
@@ -63,40 +166,6 @@ var swiperReviews = new Swiper(".reviews__swiper", {
         clickable: false,
     },
 
-});
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".process__item");
-
-    let currentIndex = 0;
-
-    function animateProcess() {
-        // Удаляем класс active у всех элементов
-        items.forEach((item) => item.classList.remove("process__item--active"));
-
-        if (currentIndex < items.length) {
-            // Добавляем класс active к текущему элементу
-            items[currentIndex].classList.add("process__item--active");
-
-            // Переходим к следующему элементу
-            currentIndex++;
-        } else {
-            // Когда доходим до последнего элемента, активируем все элементы
-            items.forEach((item) => item.classList.add("process__item--active"));
-
-            // Сбрасываем индекс для начала цикла заново
-            setTimeout(() => {
-                items.forEach((item) => item.classList.remove("process__item--active"));
-                currentIndex = 0;
-            }, 1500); // Задержка перед началом нового цикла
-        }
-    }
-
-    // Запускаем анимацию каждые 2 секунды
-    setInterval(animateProcess, 2000);
 });
 
 
