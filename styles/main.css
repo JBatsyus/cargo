@@ -607,13 +607,91 @@ a[class] {
   transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
   cursor: pointer;
 }
+.icon-arrow:hover {
+  background-size: 100% 100%;
+}
+.icon-arrow:hover svg path {
+  stroke: var(--color-light);
+}
+.icon-arrow svg {
+  transition: stroke 0.4s ease-in-out;
+}
+
+.hover-circle-top {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.hover-circle-top::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--color-blue);
+  border-top-right-radius: 200%;
+  border-top-left-radius: 200%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.hover-circle-top:hover {
+  color: var(--color-light);
+}
+.hover-circle-top:hover::before {
+  height: 100%;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: var(--color-blue);
+}
+.hover-circle-top:hover h3 {
+  color: var(--color-light);
+}
+
+.hover-circle-left {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.hover-circle-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--color-blue);
+  border-top-left-radius: 200%;
+  border-bottom-left-radius: 200%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.hover-circle-left:hover {
+  color: var(--color-light);
+}
+.hover-circle-left:hover::before {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: var(--color-blue);
+}
+.hover-circle-left:hover h3 {
+  color: var(--color-light);
+}
+
+.to-left {
+  background-position: 100% 50%;
+}
 
 .to-right {
   background-position: 0% 50%;
 }
 
-.to-left {
-  background-position: 100% 50%;
+.to-top {
+  background-position: 50% 100%;
+}
+
+.to-bottom {
+  background-position: 50% 0%;
 }
 
 .to-left,
@@ -621,18 +699,8 @@ a[class] {
   background-size: 0% 100%;
 }
 
-.icon-arrow svg {
-  width: 21px;
-  height: 14px;
-  transition: stroke 0.4s ease-in-out;
-}
-
-.icon-arrow:hover {
-  background-size: 100% 100%;
-}
-
-.icon-arrow:hover svg path {
-  stroke: var(--color-light);
+.to-top {
+  background-size: 100% 0%;
 }
 
 .button {
@@ -1759,7 +1827,6 @@ a.is-active {
   justify-content: space-between;
   border-radius: 20px;
   row-gap: 35px;
-  background-color: var(--color-light);
   padding: 50px 15px 50px 25px;
   overflow: hidden;
 }
@@ -1870,6 +1937,7 @@ a.is-active {
   }
 }
 .advantages__title {
+  transition: color 0.4s ease-in-out;
   font-size: clamp(1.7777777778rem, 1.7264957265rem + 0.2564102564vw, 2rem);
 }
 @media (width <= 63.99875rem) {

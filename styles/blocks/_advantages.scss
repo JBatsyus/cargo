@@ -24,7 +24,7 @@
         justify-content: space-between;
         border-radius: 20px;
         row-gap: 35px;
-        background-color: var(--color-light);
+        // background-color: var(--color-light);
         padding: 50px 15px 50px 25px;
 
         overflow: hidden;
@@ -129,6 +129,7 @@
     }
 
     &__title {
+        transition: color 0.4s ease-in-out; 
         @include fluid-text(36, 32);
 
         @include tablet {

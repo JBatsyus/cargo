@@ -71,34 +71,114 @@
     background-repeat: no-repeat;
     transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
     cursor: pointer;
+
+    &:hover {
+        background-size: 100% 100%;
+
+        svg path {
+            stroke: var(--color-light);
+        }
+    }
+
+    svg {
+
+        transition: stroke 0.4s ease-in-out;
+    }
+}
+
+
+.hover-circle-top {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: var(--color-blue);
+        border-top-right-radius: 200%;
+        border-top-left-radius: 200%;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: var(--color-light);
+
+        &::before {
+            height: 100%;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            background-color: var(--color-blue);
+        }
+
+        h3 {
+            color: var(--color-light);
+        }
+    }
+}
+
+.hover-circle-left {
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--color-blue);
+        border-top-left-radius: 200%;
+        border-bottom-left-radius: 200%;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: var(--color-light);
+
+        &::before {
+            width: 100%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: var(--color-blue);
+        }
+
+        h3 {
+            color: var(--color-light);
+        }
+    }
+}
+
+
+.to-left {
+    background-position: 100% 50%;
 }
 
 .to-right {
     background-position: 0% 50%;
 }
 
-.to-left {
-    background-position: 100% 50%;
+.to-top {
+    background-position: 50% 100%;
 }
+
+.to-bottom {
+    background-position: 50% 0%;
+}
+
 
 .to-left,
 .to-right {
     background-size: 0% 100%;
 }
 
-
-.icon-arrow svg {
-    width: 21px;
-    height: 14px;
-    transition: stroke 0.4s ease-in-out;
+.to-top {
+    background-size: 100% 0%;
 }
-
-.icon-arrow:hover {
-    background-size: 100% 100%;
-}
-
-
-.icon-arrow:hover svg path {
-    stroke: var(--color-light);
-}
-
