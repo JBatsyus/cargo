@@ -617,65 +617,66 @@ a[class] {
   transition: stroke 0.4s ease-in-out;
 }
 
-.hover-circle-top {
+.hover-circle {
   position: relative;
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
-.hover-circle-top::before {
+.hover-circle::before {
   content: "";
   position: absolute;
+  background-color: var(--color-blue);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+@media (width <= 63.99875rem) {
+  .hover-circle::before {
+    display: none;
+  }
+}
+.hover-circle:hover {
+  color: var(--color-light);
+}
+.hover-circle:hover h3 {
+  color: var(--color-light);
+}
+@media (width <= 63.99875rem) {
+  .hover-circle:hover h3 {
+    color: inherit;
+  }
+}
+@media (width <= 63.99875rem) {
+  .hover-circle:hover {
+    color: inherit;
+  }
+}
+
+.hover-circle-top::before {
   bottom: 0;
   left: 0;
   width: 100%;
   height: 0;
-  background-color: var(--color-blue);
-  border-top-right-radius: 200%;
-  border-top-left-radius: 200%;
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-}
-.hover-circle-top:hover {
-  color: var(--color-light);
+  border-top-right-radius: 150%;
+  border-top-left-radius: 150%;
 }
 .hover-circle-top:hover::before {
   height: 100%;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  background-color: var(--color-blue);
-}
-.hover-circle-top:hover h3 {
-  color: var(--color-light);
 }
 
-.hover-circle-left {
-  position: relative;
-  transition: all 0.4s ease-in-out;
-}
 .hover-circle-left::before {
-  content: "";
-  position: absolute;
   top: 0;
   right: 0;
   width: 0;
-  width: 0;
   height: 100%;
-  background-color: var(--color-blue);
-  border-top-left-radius: 200%;
-  border-bottom-left-radius: 200%;
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-}
-.hover-circle-left:hover {
-  color: var(--color-light);
+  border-top-left-radius: 150%;
+  border-bottom-left-radius: 150%;
 }
 .hover-circle-left:hover::before {
   width: 100%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  background-color: var(--color-blue);
-}
-.hover-circle-left:hover h3 {
-  color: var(--color-light);
 }
 
 .to-left {
@@ -1829,6 +1830,15 @@ a.is-active {
   row-gap: 35px;
   padding: 50px 15px 50px 25px;
   overflow: hidden;
+}
+.advantages__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
+  z-index: -2;
 }
 @media (width <= 63.99875rem) {
   .advantages__item {
