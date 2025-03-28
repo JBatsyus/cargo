@@ -736,6 +736,10 @@ a[class] {
 }
 
 /*---------HEADER (START)--------*/
+.full-content {
+  display: none;
+}
+
 .header__wrap {
   z-index: 100;
   position: sticky;
@@ -1154,10 +1158,6 @@ a.is-active {
     transform: rotate(270deg);
   }
 }
-.main-content {
-  display: none;
-}
-
 .tile {
   border-radius: 20px;
 }
