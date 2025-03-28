@@ -617,12 +617,23 @@ a[class] {
   stroke-linejoin: round;
   transition: stroke var(--transition-duration) var(--transition-easing);
 }
-.icon-close1:hover {
-  background-color: var(--color-blue);
+@media (any-hover: hover) {
+  .icon-close1:hover {
+    background-color: var(--color-blue);
+  }
+  .icon-close1:hover svg path {
+    stroke: var(--color-light);
+    transition-delay: 0s;
+  }
 }
-.icon-close1:hover svg path {
-  stroke: var(--color-light);
-  transition-delay: 0s;
+@media (any-hover: none) {
+  .icon-close1:active {
+    background-color: var(--color-blue);
+  }
+  .icon-close1:active svg path {
+    stroke: var(--color-light);
+    transition-delay: 0s;
+  }
 }
 .icon-close1:active {
   transform: scale(0.95);
@@ -644,11 +655,21 @@ a[class] {
   transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
   cursor: pointer;
 }
-.icon-arrow:hover {
-  background-size: 100% 100%;
+@media (any-hover: hover) {
+  .icon-arrow:hover {
+    background-size: 100% 100%;
+  }
+  .icon-arrow:hover svg path {
+    stroke: var(--color-light);
+  }
 }
-.icon-arrow:hover svg path {
-  stroke: var(--color-light);
+@media (any-hover: none) {
+  .icon-arrow:active {
+    background-size: 100% 100%;
+  }
+  .icon-arrow:active svg path {
+    stroke: var(--color-light);
+  }
 }
 .icon-arrow svg {
   transition: stroke 0.4s ease-in-out;
@@ -671,19 +692,39 @@ a[class] {
     display: none;
   }
 }
-.hover-circle:hover {
-  color: var(--color-light);
+@media (any-hover: hover) {
+  .hover-circle:hover {
+    color: var(--color-light);
+  }
+  .hover-circle:hover h3 {
+    color: var(--color-light);
+  }
 }
-.hover-circle:hover h3 {
-  color: var(--color-light);
-}
-@media (width <= 63.99875rem) {
+@media (any-hover: hover) and (width <= 63.99875rem) {
   .hover-circle:hover h3 {
     color: inherit;
   }
 }
-@media (width <= 63.99875rem) {
+@media (any-hover: hover) and (width <= 63.99875rem) {
   .hover-circle:hover {
+    color: inherit;
+  }
+}
+@media (any-hover: none) {
+  .hover-circle:active {
+    color: var(--color-light);
+  }
+  .hover-circle:active h3 {
+    color: var(--color-light);
+  }
+}
+@media (any-hover: none) and (width <= 63.99875rem) {
+  .hover-circle:active h3 {
+    color: inherit;
+  }
+}
+@media (any-hover: none) and (width <= 63.99875rem) {
+  .hover-circle:active {
     color: inherit;
   }
 }

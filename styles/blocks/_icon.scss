@@ -85,7 +85,7 @@
         }
     }
 
-    &:hover {
+    @include hover {
         background-color: var(--color-blue);
 
         svg path {
@@ -93,6 +93,7 @@
             transition-delay: 0s;
         }
     }
+
 
     &:active {
         transform: scale(0.95);
@@ -116,7 +117,8 @@
     transition: background-size 0.4s ease-in-out, color 0.4s ease-in-out;
     cursor: pointer;
 
-    &:hover {
+
+    @include hover {
         background-size: 100% 100%;
 
         svg path {
@@ -148,8 +150,7 @@
             display: none;
         }
     }
-
-    &:hover {
+    @include hover {
         color: var(--color-light);
 
         h3 {
@@ -164,6 +165,7 @@
             color: inherit;
         }
     }
+   
 }
 
 
