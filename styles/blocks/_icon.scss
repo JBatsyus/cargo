@@ -53,7 +53,51 @@
 
 }
 
+.icon-close1 {
+    --size: #{rem(45)};
+    --transition-duration: 0.4s;
+    --transition-easing: ease-in-out;
 
+    @include square(var(--size));
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--color-light);
+    cursor: pointer;
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        transform 0.2s ease;
+
+    svg {
+        width: 17px;
+        height: 17px;
+        will-change: transform; // Оптимизация анимации
+
+        path {
+            stroke: var(--color-blue);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition:
+                stroke var(--transition-duration) var(--transition-easing);
+        }
+    }
+
+    &:hover {
+        background-color: var(--color-blue);
+
+        svg path {
+            stroke: var(--color-light);
+            transition-delay: 0s;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
 
 .icon-arrow {
     --size: #{rem(45)};
@@ -149,8 +193,8 @@
         right: 0;
         width: 0;
         height: 100%;
-        border-top-left-radius: 150%;
-        border-bottom-left-radius: 150%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
     }
 
     &:hover::before {

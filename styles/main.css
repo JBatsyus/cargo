@@ -543,8 +543,7 @@ a[class] {
 }
 
 :focus-visible {
-  outline: 0.125rem dashed var(--color-gray);
-  outline-offset: 0.25rem;
+  outline: 0.125rem solid transparent;
   transition-duration: 0s !important;
 }
 
@@ -589,6 +588,44 @@ a[class] {
   --size: 2.8125rem;
   width: var(--size);
   height: var(--size);
+}
+
+.icon-close1 {
+  --size: 2.8125rem;
+  --transition-duration: 0.4s;
+  --transition-easing: ease-in-out;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: var(--color-light);
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-easing), transform 0.2s ease;
+}
+.icon-close1 svg {
+  width: 17px;
+  height: 17px;
+  will-change: transform;
+}
+.icon-close1 svg path {
+  stroke: var(--color-blue);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke var(--transition-duration) var(--transition-easing);
+}
+.icon-close1:hover {
+  background-color: var(--color-blue);
+}
+.icon-close1:hover svg path {
+  stroke: var(--color-light);
+  transition-delay: 0s;
+}
+.icon-close1:active {
+  transform: scale(0.95);
 }
 
 .icon-arrow {
@@ -670,8 +707,8 @@ a[class] {
   right: 0;
   width: 0;
   height: 100%;
-  border-top-left-radius: 150%;
-  border-bottom-left-radius: 150%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 .hover-circle-left:hover::before {
   width: 100%;
@@ -1109,7 +1146,7 @@ a.is-active {
   background-color: transparent;
   z-index: 0;
   animation-name: rotation;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
@@ -2745,7 +2782,7 @@ a.is-active {
   position: sticky;
   top: 0;
   right: 0;
-  padding-left: 15px;
+  margin-left: 15px;
   order: 2;
 }
 @media (width <= 47.99875rem) {
@@ -3053,6 +3090,9 @@ a.is-active {
   align-items: center;
   font-size: 18px;
   color: var(--color-light);
+}
+.footer__copyright a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

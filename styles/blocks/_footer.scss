@@ -219,4 +219,9 @@
         font-size: 18px;
         color: var(--color-light);
     }
+    &__copyright{
+        a{
+            text-decoration: underline;
+        }
+    }
 }
