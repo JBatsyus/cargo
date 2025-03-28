@@ -137,7 +137,7 @@ var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
     loop: true,
     effect: "fade",
     autoplay: {
-        delay: 2000,
+        delay: 1500,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
