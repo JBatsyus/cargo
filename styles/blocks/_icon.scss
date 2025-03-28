@@ -19,7 +19,7 @@
 
     &--right-arrow {
         &::after {
-            background-image: url('/icons/arrow.svg');
+            background-image: url('./../icons/arrow.svg');
         }
     }
 }
@@ -31,7 +31,7 @@
         @include square(var(--size));
         content: '';
         flex-shrink: 0;
-        background-image: url('/icons/close.svg');
+        background-image: url('./../icons/close.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;

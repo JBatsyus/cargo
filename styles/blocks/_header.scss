@@ -332,15 +332,15 @@ a.is-active {
         }
 
         &:nth-child(1) .menu-mob__socials-link::before {
-            background: url("/icons/vk.svg") center/contain no-repeat;
+            background: url("./../icons/vk.svg") center/contain no-repeat;
         }
 
         &:nth-child(2) .menu-mob__socials-link::before {
-            background: url("/icons/whatsap.svg") center/contain no-repeat;
+            background: url("./../icons/whatsap.svg") center/contain no-repeat;
         }
 
         &:nth-child(3) .menu-mob__socials-link::before {
-            background: url("/icons/tg.svg") center/contain no-repeat;
+            background: url("./../icons/tg.svg") center/contain no-repeat;
         }
 
     }

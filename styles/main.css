@@ -564,7 +564,7 @@ a[class] {
   background-repeat: no-repeat;
 }
 .icon--right-arrow::after {
-  background-image: url("/icons/arrow.svg");
+  background-image: url("./../icons/arrow.svg");
 }
 
 .icon-close::after {
@@ -573,7 +573,7 @@ a[class] {
   height: var(--size);
   content: "";
   flex-shrink: 0;
-  background-image: url("/icons/close.svg");
+  background-image: url("./../icons/close.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1079,13 +1079,13 @@ a.is-active {
   }
 }
 .menu-mob__socials-item:nth-child(1) .menu-mob__socials-link::before {
-  background: url("/icons/vk.svg") center/contain no-repeat;
+  background: url("./../icons/vk.svg") center/contain no-repeat;
 }
 .menu-mob__socials-item:nth-child(2) .menu-mob__socials-link::before {
-  background: url("/icons/whatsap.svg") center/contain no-repeat;
+  background: url("./../icons/whatsap.svg") center/contain no-repeat;
 }
 .menu-mob__socials-item:nth-child(3) .menu-mob__socials-link::before {
-  background: url("/icons/tg.svg") center/contain no-repeat;
+  background: url("./../icons/tg.svg") center/contain no-repeat;
 }
 
 .menu-mob.active {
@@ -2450,7 +2450,7 @@ a.is-active {
   margin-right: 25px;
   content: "";
   flex-shrink: 0;
-  background-image: url(/icons/quotes.svg);
+  background-image: url(./../icons/quotes.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
