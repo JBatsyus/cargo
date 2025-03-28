@@ -13,496 +13,1127 @@
 </head>
 
 <body>
-    <!--—BEGIN HEADER -->
-    <div class="header__wrap">
-        <header class="header">
-            <div class="header__top">
-                <div class="header__top-inner container">
-                    <a class="header__logo logo" href="/" title="Home" aria-label="Home">
-                        <img src="./images/logo.svg" alt="" class="logo__image" width="140" height="32">
-                    </a>
-                    <div class="header__contacts">
-                        <a class="header__mail" href="mailto:info@jar-cargo.ru" title="Email" aria-label="Email">П:
-                            info@jar-cargo.ru
-                        </a>
-                        <a class="header__phone" href="tel:+78003510960" title="Phone" aria-label="Phone">
-                            Т: +7 (800) 351-09-60
-                        </a>
-                    </div>
-                    <div class="menu-humb">
-                        <div class="icon-humb">
-                            <div class="icon-humb__line"></div>
-                            <div class="icon-humb__line"></div>
-                        </div>
-                    </div>
+    <!--—BEGIN LOADING -->
+    <div class="loading-screen">
+        <div class="loading-screen__svg-wrap">
+            <svg class="loading-screen__circle" width="304" height="303" viewBox="0 0 304 303" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="152" cy="152" r="146" fill="#0063C7" fill-opacity="0.1" stroke="#0063C7" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="24 24" />
+                <circle cx="152" cy="297" r="6" fill="#0063C7" />
+                <circle cx="152" cy="6" r="6" fill="#0063C7" />
+                <circle cx="6" cy="151.5" r="6" transform="rotate(90 6 151.5)" fill="#0063C7" />
+                <circle cx="298" cy="151.5" r="6" transform="rotate(90 298 151.5)" fill="#0063C7" />
+            </svg>
 
-                </div>
+            <div class="loading-screen__aim-wrap">
+                <svg class="loading-screen__plan" width="37" height="35" viewBox="0 0 37 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.000384993 17.5C0.000384926 15.9635 1.24286 14.7266 2.77307 14.7396L12.9483 14.7396L22.1949 0.0130182L25.8962 -1.12263e-06L21.2533 14.7266L31.4546 14.7266L34.2142 11.0417L37 11.0547L35.1428 17.487L37 23.9453L34.2012 23.9714L31.4154 20.2344L21.2925 20.2344L25.8962 35L22.1949 34.987L12.9483 20.2604L2.77307 20.2604C1.2821 20.2865 -0.0257723 18.9844 0.000384993 17.5Z"
+                        fill="#0063C7" />
+                </svg>
             </div>
-            <div class="header__body">
-                <div class="header__body-inner container">
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link " href="#transportation-cost">Расчёт стоимости </a>
+            <div class="loading-screen__text">Сбор груза</div>
+        </div>
+    </div>
+    <!--— LOADING -->
+    <!--—BEGIN HEADER -->
+    <div class="main-content">
+        <div class="header__wrap">
+            <header class="header">
+                <div class="header__top">
+                    <div class="header__top-inner container">
+                        <a class="header__logo logo" href="/" title="Home" aria-label="Home">
+                            <img src="./images/logo.svg" alt="" class="logo__image" width="140" height="32">
+                        </a>
+                        <div class="header__contacts">
+                            <a class="header__mail" href="mailto:info@jar-cargo.ru" title="Email" aria-label="Email">П:
+                                info@jar-cargo.ru
+                            </a>
+                            <a class="header__phone" href="tel:+78003510960" title="Phone" aria-label="Phone">
+                                Т: +7 (800) 351-09-60
+                            </a>
+                        </div>
+                        <div class="menu-humb">
+                            <div class="icon-humb">
+                                <div class="icon-humb__line"></div>
+                                <div class="icon-humb__line"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header__body">
+                    <div class="header__body-inner container">
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link " href="#transportation-cost">Расчёт стоимости </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#about">Преимущества</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#cargo-types">Какие грузы</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#reviews">Отзывы</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#process">Как мы работаем</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="menu-mob">
+                <div class="menu-mob__inner">
+                    <nav class="menu-mob__nav">
+                        <ul class="menu-mob__list">
+                            <li class="menu-mob__item">
+                                <a href="#transportation-cost" class="menu-mob__link">
+                                    Расчёт стоимости<span class="icon icon--right-arrow"> </span>
+                                </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#about">Преимущества</a>
+                            <li class="menu-mob__item">
+                                <a href="#about" class="menu-mob__link">
+                                    Преимущества <span class="icon icon--right-arrow"> </span>
+                                </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#cargo-types">Какие грузы</a>
+                            <li class="menu-mob__item">
+                                <a href="#cargo-types" class="menu-mob__link">
+                                    Какие грузы<span class="icon icon--right-arrow"> </span>
+                                </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#reviews">Отзывы</a>
+                            <li class="menu-mob__item">
+                                <a href="#reviews" class="menu-mob__link">
+                                    Отзывы<span class="icon icon--right-arrow"> </span>
+                                </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#process">Как мы работаем</a>
+                            <li class="menu-mob__item">
+                                <a href="#process" class="menu-mob__link">
+                                    Как мы работаем<span class="icon icon--right-arrow"> </span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
-                </div>
-            </div>
-        </header>
-        <div class="menu-mob">
-            <div class="menu-mob__inner">
-                <nav class="menu-mob__nav">
-                    <ul class="menu-mob__list">
-                        <li class="menu-mob__item">
-                            <a href="#transportation-cost" class="menu-mob__link">
-                                Расчёт стоимости<span class="icon icon--right-arrow"> </span>
+                    <div class="menu-mob__bottom">
+                        <div class="menu-mob__contacts">
+                            <a class="menu-mob__phone" href="tel:+78003510960" title="Phone" aria-label="Phone">
+                                Т: +7 (800) 351-09-60
                             </a>
-                        </li>
-                        <li class="menu-mob__item">
-                            <a href="#about" class="menu-mob__link">
-                                Преимущества <span class="icon icon--right-arrow"> </span>
+                            <a class="menu-mob__mail" href="mailto:info@jar-cargo.ru" title="Email" aria-label="Email">
+                                П: info@jar-cargo.ru
                             </a>
-                        </li>
-                        <li class="menu-mob__item">
-                            <a href="#cargo-types" class="menu-mob__link">
-                                Какие грузы<span class="icon icon--right-arrow"> </span>
-                            </a>
-                        </li>
-                        <li class="menu-mob__item">
-                            <a href="#reviews" class="menu-mob__link">
-                                Отзывы<span class="icon icon--right-arrow"> </span>
-                            </a>
-                        </li>
-                        <li class="menu-mob__item">
-                            <a href="#process" class="menu-mob__link">
-                                Как мы работаем<span class="icon icon--right-arrow"> </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="menu-mob__bottom">
-                    <div class="menu-mob__contacts">
-                        <a class="menu-mob__phone" href="tel:+78003510960" title="Phone" aria-label="Phone">
-                            Т: +7 (800) 351-09-60
-                        </a>
-                        <a class="menu-mob__mail" href="mailto:info@jar-cargo.ru" title="Email" aria-label="Email">
-                            П: info@jar-cargo.ru
-                        </a>
-                    </div>
-                    <div class="menu-mob__socials">
-                        <ul class="menu-mob__socials-list">
-                            <li class="menu-mob__socials-item">
-                                <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
-                            </li>
-                            <li class="menu-mob__socials-item">
-                                <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
-                            </li>
-                            <li class="menu-mob__socials-item">
-                                <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="menu-mob__socials">
+                            <ul class="menu-mob__socials-list">
+                                <li class="menu-mob__socials-item">
+                                    <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
+                                </li>
+                                <li class="menu-mob__socials-item">
+                                    <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
+                                </li>
+                                <li class="menu-mob__socials-item">
+                                    <a href="javascript:void(0);" class="menu-mob__socials-link"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--—END HEADER -->
-    <main>
-        <!--—BEGIN SECTION HERO-->
-        <section class="hero">
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <div class="hero__header header-block">
-                        <h1 class="hero__title h1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <span>Срочная доставка </span>
-                            тяжёлых
-                            и&nbsp;крупногабаритных грузов за&nbsp;24&nbsp;часа</h1>
-                        <p class="hero__subtitle desc wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                            Организация доставки
-                            в&nbsp;любую точку России
-                            и&nbsp;за&nbsp;рубеж&nbsp;&mdash; быстро, безопасно и&nbsp;без лишних затрат</p>
+        <!--—END HEADER -->
+        <main>
+            <!--—BEGIN SECTION HERO-->
+            <section class="hero">
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <div class="hero__header header-block">
+                            <h1 class="hero__title h1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <span>Срочная доставка </span>
+                                тяжёлых
+                                и&nbsp;крупногабаритных грузов за&nbsp;24&nbsp;часа</h1>
+                            <p class="hero__subtitle desc wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                                Организация доставки
+                                в&nbsp;любую точку России
+                                и&nbsp;за&nbsp;рубеж&nbsp;&mdash; быстро, безопасно и&nbsp;без лишних затрат</p>
+                        </div>
+                        <a href="#transportation-cost" class="button button-calc wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay="1.5s">Расчёт
+                            стоимости <span class="icon icon--right-arrow"> <span>
+                        </a>
                     </div>
-                    <a href="#transportation-cost" class="button button-calc wow fadeInUp" data-wow-duration="1s"
-                        data-wow-delay="1.5s">Расчёт
-                        стоимости <span class="icon icon--right-arrow"> <span>
-                    </a>
                 </div>
-            </div>
 
-            <div class="hero__media wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
-                <video class="hero__video" autoplay muted loop playsinline>
-                    <source src="./video/video.mp4" type="video/mp4">
-                </video>
-                <div class="hero__overlay"></div>
-            </div>
-        </section>
-        <!--—END SECTION HERO-->
-        <!--—BEGIN SECTION COST OF TRANSPORTATION-->
-        <section class="section transportation-cost" id="transportation-cost">
-            <div class=" transportation-cost__wrap container">
-                <h2 class="h2 header-block-on">
-                    <span>Рассчитайте</span> <br>
-                    стоимость<br> перевозки
+                <div class="hero__media wow slideInRight" data-wow-duration="1s" data-wow-delay="0s">
+                    <video class="hero__video" autoplay muted loop playsinline>
+                        <source src="./video/video.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero__overlay"></div>
+                </div>
+            </section>
+            <!--—END SECTION HERO-->
+
+            <!--—BEGIN SECTION COST OF TRANSPORTATION-->
+            <section class="section transportation-cost" id="transportation-cost">
+                <div class=" transportation-cost__wrap container">
+                    <h2 class="h2 header-block-on">
+                        <span>Рассчитайте</span> <br>
+                        стоимость<br> перевозки
+                    </h2>
+                    <div class="transportation-cost__inner">
+                        <form class="form-request">
+                            <div class="form-request__cell field">
+                                <label class="field__label" for="from">Откуда</label>
+                                <input class="field__control" list="from_city" name="from" value="" type="text"
+                                    placeholder="Москва" />
+                                <datalist id="from_city">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Казань">Казань</option>
+                                    <option value="Абакан">Абакан</option>
+                                    <option value="Анадырь">Анадырь</option>
+                                    <option value="Анапа">Анапа
+                                    </option>
+                                    <option value="Архангельск">Архангельск</option>
+                                    <option value="Астрахань">Астрахань</option>
+                                    <option value="Барнаул">Барнаул</option>
+                                    <option value="Белгород">Белгород
+                                    </option>
+                                    <option value="Благовещенск">Благовещенск
+                                    </option>
+                                    <option value="Братск">Братск
+                                    </option>
+                                    <option value="Владивосток">Владивосток
+                                    </option>
+                                    <option value="Владикавказ">Владикавказ</option>
+                                    <option value="Казань">Казань</option>
+                                    <option value="Волгоград">Волгоград</option>
+                                    <option value="Курган">Курган
+                                    </option>
+                                    <option value="Красноярск">Красноярск</option>
+                                    <option value="Грозный">Грозный</option>
+                                    <option value="Екатеринбург">Екатеринбург</option>
+                                    <option value="Ижевск">Ижевск</option>
+                                    <option value="Иркутск">Иркутск</option>
+                                    <option value="Калининград">Калининград
+                                    </option>
+                                    <option value="Кемерово">Кемерово</option>
+                                    <option value="Когалым">Когалым</option>
+                                    <option value="Краснодар">Краснодар
+                                    </option>
+                                    <option value="Мурманск">Мурманск
+                                    </option>
+                                    <option value="Мирный">Мирный</option>
+                                    <option value="Воронеж">Воронеж</option>
+                                    <option value="Махачкала">Махачкала
+                                    </option>
+                                    <option value="Минеральные Воды">Минеральные Воды
+                                    </option>
+                                    <option value="Новосибирск">Новосибирск
+                                    </option>
+                                    <option value="Новый Уренгой">Новый Уренгой
+                                    </option>
+                                    <option value="Норильск">Норильск
+                                    </option>
+                                    <option value="Ноябрьск">Ноябрьск
+                                    </option>
+                                    <option value="Омск">Омск
+                                    </option>
+                                    <option value="Пермь">Пермь
+
+                                    </option>
+                                    <option value="Надым">Надым
+                                    </option>
+                                    <option value="Нарьян-Мар">Нарьян-Мар
+                                    </option>
+                                    <option value="Нижневартовск">Нижневартовск
+
+                                    </option>
+                                    <option value="Нижний Новгород">Нижний Новгород
+                                    </option>
+                                    <option value="Новокузнецк">Новокузнецк
+
+                                    </option>
+                                    <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+                                    <option value="Полярный">Полярный
+                                    </option>
+                                    <option value="Ростов-на-Дону">Ростов-на-Дону
+                                    </option>
+                                    <option value="Салехард">Салехард
+
+                                    </option>
+                                    <option value="Самара">Самара
+
+                                    </option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург
+                                    </option>
+                                    <option value="Симферополь">Симферополь
+                                    </option>
+                                    <option value="Сочи">Сочи
+                                    </option>
+                                    <option value="Ставрополь">Ставрополь
+                                    </option>
+                                    <option value="Сургут">Сургут
+                                    </option>
+                                    <option value="Сыктывкар">Сыктывкар
+                                    </option>
+                                    <option value="Томск">Томск
+                                    </option>
+                                    <option value="Тюмень">Тюмень
+                                    </option>
+                                    <option value="Улан-Удэ">Улан-Удэ</option>
+                                    <option value="Усинск">Усинск
+                                    </option>
+                                    <option value="Уфа">Уфа
+
+
+                                    </option>
+                                    <option value="Хабаровск">Хабаровск
+                                    </option>
+                                    <option value="Ханты-Мансийск">Ханты-Мансийск
+                                    </option>
+                                    <option value="Челябинск">Челябинск
+                                    </option>
+                                    <option value="Чита">Чита
+                                    </option>
+                                    <option value="Южно-Сахалинск">Южно-Сахалинск
+                                    </option>
+                                    <option value="Якутск">Якутск
+                                    </option>
+                                    <option value="Ухта">Ухта </option>
+                                    <option value="Алматы">Алматы</option>
+                                    <option value="Магадан">Магадан</option>
+                                </datalist>
+                            </div>
+                            <div class="form-request__cell field">
+                                <label class="field__label" for="to">Куда</label>
+                                <input class="field__control" list="to_city" name="to" value="" type="text"
+                                    placeholder="Абакан" />
+                                <datalist id="to_city">
+                                    <option value="Абакан">Абакан</option>
+                                    <option value="Анадырь">Анадырь</option>
+                                    <option value="Анапа">Анапа
+                                    </option>
+                                    <option value="Архангельск">Архангельск</option>
+                                    <option value="Астрахань">Астрахань</option>
+                                    <option value="Барнаул">Барнаул</option>
+                                    <option value="Белгород">Белгород
+                                    </option>
+                                    <option value="Благовещенск">Благовещенск
+                                    </option>
+                                    <option value="Братск">Братск
+                                    </option>
+                                    <option value="Владивосток">Владивосток
+                                    </option>
+                                    <option value="Владикавказ">Владикавказ</option>
+                                    <option value="Казань">Казань</option>
+                                    <option value="Волгоград">Волгоград</option>
+                                    <option value="Курган">Курган
+                                    </option>
+                                    <option value="Красноярск">Красноярск</option>
+                                    <option value="Грозный">Грозный</option>
+                                    <option value="Екатеринбург">Екатеринбург</option>
+                                    <option value="Ижевск">Ижевск</option>
+                                    <option value="Иркутск">Иркутск</option>
+                                    <option value="Калининград">Калининград
+                                    </option>
+                                    <option value="Кемерово">Кемерово</option>
+                                    <option value="Когалым">Когалым</option>
+                                    <option value="Краснодар">Краснодар
+                                    </option>
+                                    <option value="Мурманск">Мурманск
+                                    </option>
+                                    <option value="Мирный">Мирный</option>
+                                    <option value="Воронеж">Воронеж</option>
+                                    <option value="Махачкала">Махачкала
+                                    </option>
+                                    <option value="Минеральные Воды">Минеральные Воды
+                                    </option>
+                                    <option value="Новосибирск">Новосибирск
+                                    </option>
+                                    <option value="Новый Уренгой">Новый Уренгой
+                                    </option>
+                                    <option value="Норильск">Норильск
+                                    </option>
+                                    <option value="Ноябрьск">Ноябрьск
+                                    </option>
+                                    <option value="Омск">Омск
+                                    </option>
+                                    <option value="Пермь">Пермь
+
+                                    </option>
+                                    <option value="Надым">Надым
+                                    </option>
+                                    <option value="Нарьян-Мар">Нарьян-Мар
+                                    </option>
+                                    <option value="Нижневартовск">Нижневартовск
+
+                                    </option>
+                                    <option value="Нижний Новгород">Нижний Новгород
+                                    </option>
+                                    <option value="Новокузнецк">Новокузнецк
+
+                                    </option>
+                                    <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
+                                    <option value="Полярный">Полярный
+                                    </option>
+                                    <option value="Ростов-на-Дону">Ростов-на-Дону
+                                    </option>
+                                    <option value="Салехард">Салехард
+
+                                    </option>
+                                    <option value="Самара">Самара</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург
+                                    </option>
+                                    <option value="Симферополь">Симферополь
+                                    </option>
+                                    <option value="Сочи">Сочи
+                                    </option>
+                                    <option value="Ставрополь">Ставрополь
+                                    </option>
+                                    <option value="Сургут">Сургут
+                                    </option>
+                                    <option value="Сыктывкар">Сыктывкар
+                                    </option>
+                                    <option value="Томск">Томск
+                                    </option>
+                                    <option value="Тюмень">Тюмень
+                                    </option>
+                                    <option value="Улан-Удэ">Улан-Удэ</option>
+                                    <option value="Усинск">Усинск
+                                    </option>
+                                    <option value="Уфа">Уфа</option>
+                                    <option value="Хабаровск">Хабаровск
+                                    </option>
+                                    <option value="Ханты-Мансийск">Ханты-Мансийск
+                                    </option>
+                                    <option value="Челябинск">Челябинск
+                                    </option>
+                                    <option value="Чита">Чита
+                                    </option>
+                                    <option value="Южно-Сахалинск">Южно-Сахалинск
+                                    </option>
+                                    <option value="Якутск">Якутск
+                                    </option>
+                                    <option value="Ухта">Ухта </option>
+                                    <option value="Алматы">Алматы</option>
+                                    <option value="Магадан">Магадан</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Казань">Казань</option>
+
+                                </datalist>
+                            </div>
+                            <div class="form-request__cell field">
+                                <label class="field__label" for="weight">Вес груза (от 25 кг)</label>
+                                <input class="field__control" type="number" id="weight" name="weight"
+                                    placeholder=">25 кг" min="25" required>
+                            </div>
+                            <div class="form-request__cell field">
+                                <label class="field__label" for="phone">Номер телефона</label>
+                                <input class="field__control" type="tel" id="phone" name="phone"
+                                    placeholder="+791 775 509 29" required>
+                            </div>
+                            <div class="form-request__cell field">
+                                <label class="field__label" for="message">Комментарии к грузу</label>
+                                <textarea class="field__control" id="message" name="message"
+                                    placeholder="Груз имеет высокую ценность" required></textarea>
+                            </div>
+
+                            <div class="form-request__actions">
+                                <p>Свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут для уточнения деталей</p>
+                            </div>
+                            <button class="button button-calc" type="submit">
+                                Рассчитать стоимость <span class="icon icon--right-arrow"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--—END SECTION COST OF TRANSPORTATION-->
+            <!--—BEGIN ABOUT US SECTION-->
+            <section class="section about" id="about">
+                <div class="about__inner container">
+                    <div class="about__header header-block">
+                        <h2 class="about__title h2"> <span>Jar-cargo</span> — ваш надёжный<br> и опытный партнёр</h2>
+                        <p class="about__subtitle desc">10&nbsp;лет опыта в&nbsp;перевозках и&nbsp;логистике</p>
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <div class="about-card ">
+                                <img class="about-card__icon" src="./images/about/about-icon-1.svg" alt="" width="75"
+                                    height="75" loading="lazy">
+                                <h3 class="about-card__title">Гибкость и адаптивность</h3>
+                                <div class="about-card__description">
+                                    <p>Подстроимся под ваши задачи и&nbsp;требования к&nbsp;перевозкам особых грузов.
+                                        Оптимизируем логистику до&nbsp;самой выгодной стоимости.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about-card ">
+                                <img class="about-card__icon" src="./images/about/about-icon-2.svg" alt="" width="75"
+                                    height="75" loading="lazy">
+                                <h3 class="about-card__title ">Срочная доставка за&nbsp;24&nbsp;часа&nbsp;по России
+                                    и&nbsp;миру</h3>
+                                <div class="about-card__description">
+                                    <p>Подстроимся под ваши задачи и&nbsp;требования к&nbsp;перевозкам особых грузов.
+                                        Оптимизируем логистику до&nbsp;самой выгодной стоимости.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about-card ">
+                                <img class="about-card__icon" src="./images/about/about-icon-3.svg" alt="" width="75"
+                                    height="75" loading="lazy">
+                                <h3 class="about-card__title">Страхование доставки
+                                    и&nbsp;груза</h3>
+                                <div class="about-card__description">
+                                    <p>Ничего не&nbsp;случится. Если случится&nbsp;&mdash; возмещение по&nbsp;страховым
+                                        случаям.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <div class="about-card ">
+                                <img class="about-card__icon" src="./images/about/about-icon-4.svg" alt="" width="75"
+                                    height="75" loading="lazy">
+                                <h3 class="about-card__title">Отслеживание груза</h3>
+                                <div class="about-card__description">
+                                    <p>По&nbsp;системе бронирования мы&nbsp;всегда в&nbsp;курсе, где груз в&nbsp;данный
+                                        момент времени.
+                                        Фиксируем этапы на&nbsp;фото, видео.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--—END ABOUT US SECTION-->
+            <!-- BEGIN SECTION CARGO TYPES -->
+            <section class="section cargo-types" id="cargo-types">
+                <div class="cargo-types__inner container">
+                    <div class="cargo-types__header header-block">
+                        <h2 class="cargo-types__title h2"> Ваш груз — <span>наш приоритет</span> </h2>
+                        <p class="cargo-types__subtitle desc">Доставляем крупногабаритные, тяжеловесные грузы<br>
+                            с помощью авиа перевозки</p>
+                    </div>
+                    <ul class="cargo-types__list">
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Тяжеловесный груз</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <p>Специальные условия для тяжёлых грузов, включая
+                                        оформление спец. рейсов до получателя</p>
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-fancybox data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Строительная техника и оборудование</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Продукты</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Медикаменты</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Животные и&nbsp;цветы</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                        <li class="cargo-types__item">
+                            <div class="cargo-types__content">
+                                <h3 class="cargo-types__item-title">Различное оборудование</h3>
+                                <span class="cargo-types__item-tag">За 24 часа</span>
+                                <div class="cargo-types__item-description">
+                                    <div class="icon-arrow to-right">
+                                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
+                        </li>
+                    </ul>
+
+                    <!-- Modal window -->
+                    <div id="modal" class="cargo-types__modal modal">
+                        <div class="cargo-types__wrapper container">
+                            <div class=" cargo-types__modal-inner ">
+                                <ol class="cargo-types__modal-list  ">
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Строительная техника и оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Экскаваторы, бульдозеры, погрузчики.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Строительные машины (бетономешалки,
+                                                краны,
+                                                асфальтоукладчики).</li>
+                                            <li class="cargo-types__modal-subitem">Тяжёлое строительное оборудование
+                                                (лифты,
+                                                платформы).</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Сельскохозяйственная техника</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Тракторы, комбайны, сеялки, косилки.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Оборудование для фермерских хозяйств
+                                                (погрузчики, насосы, генераторы).</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Машины и автомобили</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Грузовые автомобили, фургоны,
+                                                автобусы.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Специализированные транспортные
+                                                средства
+                                                (автовышки, тягачи).</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Железнодорожное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Локомотивы, вагонные секции,
+                                                платформы.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Запасные части и детали для
+                                                железнодорожного
+                                                транспорта.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Тяжёлое промышленное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Генераторы, турбины, компрессоры.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Котлы, печи, агрегаты для переработки
+                                                металлов.</li>
+                                            <li class="cargo-types__modal-subitem">Оборудование для нефтегазовой и
+                                                горнодобывающей промышленности.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Мебель и интерьерные изделия</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Большие мебельные комплекты
+                                                (например,
+                                                офисная мебель, системы хранения).</li>
+                                            <li class="cargo-types__modal-subitem">Крупные элементы для гостиниц,
+                                                ресторанов
+                                                (столы, стойки, кресла).</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Производственное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Станки, пресс-формы, сварочные
+                                                установки.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Линии для упаковки и переработки
+                                                продукции.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Деревянные и строительные материалы</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Доски, балки, бетонные панели.</li>
+                                            <li class="cargo-types__modal-subitem">Строительные блоки, кирпичи,
+                                                металлические
+                                                конструкции.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Тяжёлые запчасти и агрегаты</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Двигатели, трансформаторы,
+                                                трансмиссии.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Машинные части для различных отраслей
+                                                промышленности.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Морское и речное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Лодки, катера, яхты, судовые моторы.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Плавучие платформы, части для
+                                                строительства
+                                                кораблей.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Металлоконструкции</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Сварные конструкции, мосты, элементы
+                                                каркасных зданий.</li>
+                                            <li class="cargo-types__modal-subitem">Стальные или алюминиевые конструкции
+                                                для
+                                                промышленных объектов.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Техникум, лабораторное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Лабораторные установки, большие
+                                                исследовательские приборы.</li>
+                                            <li class="cargo-types__modal-subitem">Оборудование для медицинских
+                                                учреждений,
+                                                включая диагностические устройства.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Специализированные производственные линии
+                                        </h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Линии для производства стекла,
+                                                бетона,
+                                                упаковки.</li>
+                                            <li class="cargo-types__modal-subitem">Оборудование для переработки отходов.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Энергетическое оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Трансформаторы, солнечные панели.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Газовые и угольные турбины,
+                                                генераторные
+                                                установки.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Товары для крупных торговых и складских
+                                            комплексов
+                                        </h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Рекламные конструкции, баннеры,
+                                                стеллажи.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Оборудование для хранения товаров,
+                                                паллеты с
+                                                крупными партиями товаров.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Крупные и тяжёлые упаковки товаров</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Большие партии промышленного
+                                                оборудования
+                                                в
+                                                специальной упаковке.</li>
+                                            <li class="cargo-types__modal-subitem">Погрузочные контейнеры с товаром для
+                                                оптовой
+                                                продажи.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Космическое и аэрокосмическое оборудование
+                                        </h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Компоненты спутников, ракеты.</li>
+                                            <li class="cargo-types__modal-subitem">Часть материалов для строительства
+                                                космических станций.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Военное оборудование</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Бронетехника, артиллерийские
+                                                установки.
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Части для военных судов, вертолётов,
+                                                других
+                                                вооружений.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Культуры и природные ресурсы</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Крупные партии сырья (нефть, уголь,
+                                                металлы).
+                                            </li>
+                                            <li class="cargo-types__modal-subitem">Продукция природных ресурсов,
+                                                например,
+                                                древесина, полезные ископаемые.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Животные в крупных количествах</h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Перевозка большого числа
+                                                сельскохозяйственных
+                                                животных (коровы, лошади, овцы).</li>
+                                            <li class="cargo-types__modal-subitem">Экзотические животные, которые
+                                                требуют
+                                                особых
+                                                условий транспортировки.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="cargo-types__modal-item">
+                                        <h5 class="cargo-types__modal-title">Электрические и энергетические установки
+                                        </h5>
+                                        <ul class="cargo-types__modal-sublist">
+                                            <li class="cargo-types__modal-subitem">Генераторные установки,
+                                                распределительные
+                                                панели.</li>
+                                        </ul>
+                                    </li>
+
+                                </ol>
+
+                            </div>
+                            <a class="cargo-types__modal-close icon-close" href="javascript:void(0);">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal window-->
+                </div>
+            </section>
+            <!-- END SECTION CARGO TYPES -->
+            <!--—BEGIN SECTION SECTION OUR CLIENTS-->
+            <section class="section our-clients">
+                <div class="our-clients__inner container">
+                    <div class="our-clients__header">
+                        <h2 class="our-clients__title h2">
+                            Наши <span>клиенты</span>
+                        </h2>
+                    </div>
+                    <div class="our-clients__body">
+                        <ul class="our-clients__list">
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1s">
+                                <h3 class="client_card h3">Строительные
+                                    компании</h3>
+                            </li>
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.30s" data-wow-duration="1s">
+                                <h3 class=" client_card h3 ">Производственные
+                                    компании</h3>
+                            </li>
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.45s" data-wow-duration="1s">
+                                <h3 class="client_card h3">Сельское хозяйство и&nbsp;агробизнес</h3>
+                            </li>
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+                                <h3 class="client_card h3">Энергетические
+                                    компании</h3>
+                            </li>
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="1s">
+                                <h3 class="client_card h3">Торговые и&nbsp;оптовые компании</h3>
+                            </li>
+                            <li class="our-clients__item wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
+                                <h3 class="client_card h3">Промышленные
+                                    компании</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--—END SECTION SECTION OUR CLIENTS-->
+            <!--—BEGINN SECTION REVIEWS-->
+            <section class="section reviews" id="reviews">
+                <h2 class="visually-hidden">Отзывы клиентов</h2>
+                <div class="reviews__wrap container">
+                    <div class="swiper reviews__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__item-left">
+                                        <img src="./images/reviews/01.png" alt="Клиент Станицкий Михаил"
+                                            class="reviews__item-photo" />
+                                    </div>
+                                    <div class="reviews__item-right">
+                                        <div class="reviews__item-info">
+                                            <span class="reviews__item-company">ООО "РосАвтоГабарит"</span>
+                                            <p class="reviews__item-name">
+                                                Станицкий Михаил
+                                            </p>
+                                        </div>
+                                        <blockquote class="reviews__item-quote">
+                                            Обычно мы отправляем грузы автотранспортом, но в режиме пандемии и проблем с
+                                            пропусками возникли накладки в доставке грузов. И благодаря компании
+                                            JAR-CARGO
+                                            наш груз прибыл в кратчайшие сроки.
+                                        </blockquote>
+                                        <a class="button button-calc" href="#transportation-cost">
+                                            Расчёт стоимости <span class="icon icon--right-arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__item-left">
+                                        <img src="./images/reviews/02.png" alt="Клиент Оксана Благодатова"
+                                            class="reviews__item-photo" />
+                                    </div>
+                                    <div class="reviews__item-right">
+                                        <div class="reviews__item-info">
+                                            <span class="reviews__item-company">INTERNATIONAL POST</span>
+                                            <p class="reviews__item-name">
+                                                Оксана Благодатова
+                                            </p>
+                                        </div>
+                                        <blockquote class="reviews__item-quote">
+                                            Именно в условиях резко изменяющегося рынка доставки грузов по миру
+                                            JAR-CARGO
+                                            дольше всех сохраняет неизменные условия доставки при достаточно высоком
+                                            качестве сервиса.
+                                        </blockquote>
+                                        <a class="button button-calc" href="#transportation-cost">
+                                            Расчёт стоимости <span class="icon icon--right-arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <div class="reviews__item-left">
+                                        <img src="./images/reviews/03.png" alt="Клиент Иван Корнер"
+                                            class="reviews__item-photo" />
+                                    </div>
+                                    <div class="reviews__item-right">
+                                        <div class="reviews__item-info">
+                                            <span class="reviews__item-company">Digital logistic ink.</span>
+                                            <p class="reviews__item-name">
+                                                Иван Корнер
+                                            </p>
+                                        </div>
+                                        <blockquote class="reviews__item-quote">
+                                            Мы уже несколько лет успешно сотрудничаем с Яр-Карго и готовы выразить
+                                            глубочайшее уважение к ответственным сотрудникам вашей компании, желаем вам
+                                            только увеличивать влияние на нашем рынке.
+                                        </blockquote>
+                                        <a class="button button-calc" href="#transportation-cost">
+                                            Расчёт стоимости <span class="icon icon--right-arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--—END SECTION REVIEWS-->
+            <!--—BEGIN ADVANTAGES SECTION-->
+            <section class="section advantages">
+                <div class="advantages__inner container">
+                    <h2 class="h2 header-block-on">
+                        Почему авиаперевозки?<br>
+                        <span>Это надёжно, срочно,<br> безопасно!</span>
+                    </h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item hover-circle hover-circle-top">
+                            <h3 class="advantages__title">Скорость и надёжность доставки</h3>
+                            <div class="advantages__description">
+                                <p>Срочная и прогнозируемая доставка, возможна только с помощью авиаперевозок. В небе
+                                    нет
+                                    пробок.
+                                    Действует ускоренный процесс таможенного оформления</p>
+                            </div>
+                        </li>
+                        <li class="advantages__item hover-circle hover-circle-left">
+                            <h3 class="advantages__title ">Доступ к труднодоступным регионам</h3>
+                            <div class="advantages__description">
+                                <p>Дальний Восток, Сибирь, Арктика? Нам не важно!
+                                    Преодолеем расстояния там, где другие не могут.</p>
+                            </div>
+                        </li>
+                        <li class="advantages__item hover-circle hover-circle-top">
+                            <h3 class="advantages__title">Широкие возможности для разных грузов</h3>
+                            <div class="advantages__description">
+                                <p>Для крупногабаритного груза проще подобрать транспортный самолёт, чем искать другой
+                                    способ везти по земле.</p>
+                            </div>
+                        </li>
+                        <li class="advantages__item hover-circle hover-circle-left">
+                            <h3 class="advantages__title ">Самая высокая безопасность груза</h3>
+                            <div class="advantages__description">
+                                <p>Более высокий уровень безопасности груза, специализированная упаковка, стандарты
+                                    безопасности.
+                                    Меньше времени в пути - меньше рисков.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--—END ADVANTAGES SECTION-->
+            <!--—BEGINN SECTION OUR AIR PARTNERS-->
+            <section class="section airparnets">
+                <h2 class="h2 header-block-on container">
+                    Наши <span>авиа партнёры</span>
                 </h2>
-                <div class="transportation-cost__inner">
-                    <form class="form-request">
-                        <div class="form-request__cell field">
-                            <label class="field__label" for="from">Откуда</label>
-                            <input class="field__control" list="from_city" name="from" value="" type="text"
-                                placeholder="Москва" />
-                            <datalist id="from_city">
-                                <option value="Москва">Москва</option>
-                                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                                <option value="Казань">Казань</option>
-                                <option value="Абакан">Абакан</option>
-                                <option value="Анадырь">Анадырь</option>
-                                <option value="Анапа">Анапа
-                                </option>
-                                <option value="Архангельск">Архангельск</option>
-                                <option value="Астрахань">Астрахань</option>
-                                <option value="Барнаул">Барнаул</option>
-                                <option value="Белгород">Белгород
-                                </option>
-                                <option value="Благовещенск">Благовещенск
-                                </option>
-                                <option value="Братск">Братск
-                                </option>
-                                <option value="Владивосток">Владивосток
-                                </option>
-                                <option value="Владикавказ">Владикавказ</option>
-                                <option value="Казань">Казань</option>
-                                <option value="Волгоград">Волгоград</option>
-                                <option value="Курган">Курган
-                                </option>
-                                <option value="Красноярск">Красноярск</option>
-                                <option value="Грозный">Грозный</option>
-                                <option value="Екатеринбург">Екатеринбург</option>
-                                <option value="Ижевск">Ижевск</option>
-                                <option value="Иркутск">Иркутск</option>
-                                <option value="Калининград">Калининград
-                                </option>
-                                <option value="Кемерово">Кемерово</option>
-                                <option value="Когалым">Когалым</option>
-                                <option value="Краснодар">Краснодар
-                                </option>
-                                <option value="Мурманск">Мурманск
-                                </option>
-                                <option value="Мирный">Мирный</option>
-                                <option value="Воронеж">Воронеж</option>
-                                <option value="Махачкала">Махачкала
-                                </option>
-                                <option value="Минеральные Воды">Минеральные Воды
-                                </option>
-                                <option value="Новосибирск">Новосибирск
-                                </option>
-                                <option value="Новый Уренгой">Новый Уренгой
-                                </option>
-                                <option value="Норильск">Норильск
-                                </option>
-                                <option value="Ноябрьск">Ноябрьск
-                                </option>
-                                <option value="Омск">Омск
-                                </option>
-                                <option value="Пермь">Пермь
 
-                                </option>
-                                <option value="Надым">Надым
-                                </option>
-                                <option value="Нарьян-Мар">Нарьян-Мар
-                                </option>
-                                <option value="Нижневартовск">Нижневартовск
+                <div class="airparnets__wrap">
+                    <div class="swiper airparnets__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="airparnets__item">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/russia.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/s7.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/ua.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/aeroflot.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
 
-                                </option>
-                                <option value="Нижний Новгород">Нижний Новгород
-                                </option>
-                                <option value="Новокузнецк">Новокузнецк
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/russia.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/s7.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/ua.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airparnets__inner">
+                                    <img class="airparnets__slide-image" src="./images/airparnets/aeroflot.svg" alt=""
+                                        width="300" height="103" loading="lazy">
+                                </div>
 
-                                </option>
-                                <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
-                                <option value="Полярный">Полярный
-                                </option>
-                                <option value="Ростов-на-Дону">Ростов-на-Дону
-                                </option>
-                                <option value="Салехард">Салехард
-
-                                </option>
-                                <option value="Самара">Самара
-
-                                </option>
-                                <option value="Санкт-Петербург">Санкт-Петербург
-                                </option>
-                                <option value="Симферополь">Симферополь
-                                </option>
-                                <option value="Сочи">Сочи
-                                </option>
-                                <option value="Ставрополь">Ставрополь
-                                </option>
-                                <option value="Сургут">Сургут
-                                </option>
-                                <option value="Сыктывкар">Сыктывкар
-                                </option>
-                                <option value="Томск">Томск
-                                </option>
-                                <option value="Тюмень">Тюмень
-                                </option>
-                                <option value="Улан-Удэ">Улан-Удэ</option>
-                                <option value="Усинск">Усинск
-                                </option>
-                                <option value="Уфа">Уфа
-
-
-                                </option>
-                                <option value="Хабаровск">Хабаровск
-                                </option>
-                                <option value="Ханты-Мансийск">Ханты-Мансийск
-                                </option>
-                                <option value="Челябинск">Челябинск
-                                </option>
-                                <option value="Чита">Чита
-                                </option>
-                                <option value="Южно-Сахалинск">Южно-Сахалинск
-                                </option>
-                                <option value="Якутск">Якутск
-                                </option>
-                                <option value="Ухта">Ухта </option>
-                                <option value="Алматы">Алматы</option>
-                                <option value="Магадан">Магадан</option>
-                            </datalist>
+                            </div>
                         </div>
-                        <div class="form-request__cell field">
-                            <label class="field__label" for="to">Куда</label>
-                            <input class="field__control" list="to_city" name="to" value="" type="text"
-                                placeholder="Абакан" />
-                            <datalist id="to_city">
-                                <option value="Абакан">Абакан</option>
-                                <option value="Анадырь">Анадырь</option>
-                                <option value="Анапа">Анапа
-                                </option>
-                                <option value="Архангельск">Архангельск</option>
-                                <option value="Астрахань">Астрахань</option>
-                                <option value="Барнаул">Барнаул</option>
-                                <option value="Белгород">Белгород
-                                </option>
-                                <option value="Благовещенск">Благовещенск
-                                </option>
-                                <option value="Братск">Братск
-                                </option>
-                                <option value="Владивосток">Владивосток
-                                </option>
-                                <option value="Владикавказ">Владикавказ</option>
-                                <option value="Казань">Казань</option>
-                                <option value="Волгоград">Волгоград</option>
-                                <option value="Курган">Курган
-                                </option>
-                                <option value="Красноярск">Красноярск</option>
-                                <option value="Грозный">Грозный</option>
-                                <option value="Екатеринбург">Екатеринбург</option>
-                                <option value="Ижевск">Ижевск</option>
-                                <option value="Иркутск">Иркутск</option>
-                                <option value="Калининград">Калининград
-                                </option>
-                                <option value="Кемерово">Кемерово</option>
-                                <option value="Когалым">Когалым</option>
-                                <option value="Краснодар">Краснодар
-                                </option>
-                                <option value="Мурманск">Мурманск
-                                </option>
-                                <option value="Мирный">Мирный</option>
-                                <option value="Воронеж">Воронеж</option>
-                                <option value="Махачкала">Махачкала
-                                </option>
-                                <option value="Минеральные Воды">Минеральные Воды
-                                </option>
-                                <option value="Новосибирск">Новосибирск
-                                </option>
-                                <option value="Новый Уренгой">Новый Уренгой
-                                </option>
-                                <option value="Норильск">Норильск
-                                </option>
-                                <option value="Ноябрьск">Ноябрьск
-                                </option>
-                                <option value="Омск">Омск
-                                </option>
-                                <option value="Пермь">Пермь
-
-                                </option>
-                                <option value="Надым">Надым
-                                </option>
-                                <option value="Нарьян-Мар">Нарьян-Мар
-                                </option>
-                                <option value="Нижневартовск">Нижневартовск
-
-                                </option>
-                                <option value="Нижний Новгород">Нижний Новгород
-                                </option>
-                                <option value="Новокузнецк">Новокузнецк
-
-                                </option>
-                                <option value="Петропавловск-Камчатский">Петропавловск-Камчатский</option>
-                                <option value="Полярный">Полярный
-                                </option>
-                                <option value="Ростов-на-Дону">Ростов-на-Дону
-                                </option>
-                                <option value="Салехард">Салехард
-
-                                </option>
-                                <option value="Самара">Самара</option>
-                                <option value="Санкт-Петербург">Санкт-Петербург
-                                </option>
-                                <option value="Симферополь">Симферополь
-                                </option>
-                                <option value="Сочи">Сочи
-                                </option>
-                                <option value="Ставрополь">Ставрополь
-                                </option>
-                                <option value="Сургут">Сургут
-                                </option>
-                                <option value="Сыктывкар">Сыктывкар
-                                </option>
-                                <option value="Томск">Томск
-                                </option>
-                                <option value="Тюмень">Тюмень
-                                </option>
-                                <option value="Улан-Удэ">Улан-Удэ</option>
-                                <option value="Усинск">Усинск
-                                </option>
-                                <option value="Уфа">Уфа</option>
-                                <option value="Хабаровск">Хабаровск
-                                </option>
-                                <option value="Ханты-Мансийск">Ханты-Мансийск
-                                </option>
-                                <option value="Челябинск">Челябинск
-                                </option>
-                                <option value="Чита">Чита
-                                </option>
-                                <option value="Южно-Сахалинск">Южно-Сахалинск
-                                </option>
-                                <option value="Якутск">Якутск
-                                </option>
-                                <option value="Ухта">Ухта </option>
-                                <option value="Алматы">Алматы</option>
-                                <option value="Магадан">Магадан</option>
-                                <option value="Москва">Москва</option>
-                                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                                <option value="Казань">Казань</option>
-
-                            </datalist>
-                        </div>
-                        <div class="form-request__cell field">
-                            <label class="field__label" for="weight">Вес груза (от 25 кг)</label>
-                            <input class="field__control" type="number" id="weight" name="weight" placeholder=">25 кг"
-                                min="25" required>
-                        </div>
-                        <div class="form-request__cell field">
-                            <label class="field__label" for="phone">Номер телефона</label>
-                            <input class="field__control" type="tel" id="phone" name="phone"
-                                placeholder="+791 775 509 29" required>
-                        </div>
-                        <div class="form-request__cell field">
-                            <label class="field__label" for="message">Комментарии к грузу</label>
-                            <textarea class="field__control" id="message" name="message"
-                                placeholder="Груз имеет высокую ценность" required></textarea>
-                        </div>
-
-                        <div class="form-request__actions">
-                            <p>Свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут для уточнения деталей</p>
-                        </div>
-                        <button class="button button-calc" type="submit">
-                            Рассчитать стоимость <span class="icon icon--right-arrow"></span>
-                        </button>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--—END SECTION COST OF TRANSPORTATION-->
-        <!--—BEGIN ABOUT US SECTION-->
-        <section class="section about" id="about">
-            <div class="about__inner container">
-                <div class="about__header header-block">
-                    <h2 class="about__title h2"> <span>Jar-cargo</span> — ваш надёжный<br> и опытный партнёр</h2>
-                    <p class="about__subtitle desc">10&nbsp;лет опыта в&nbsp;перевозках и&nbsp;логистике</p>
-                </div>
-                <ul class="about__list">
-                    <li class="about__item">
-                        <div class="about-card ">
-                            <img class="about-card__icon" src="./images/about/about-icon-1.svg" alt="" width="75"
-                                height="75" loading="lazy">
-                            <h3 class="about-card__title">Гибкость и адаптивность</h3>
-                            <div class="about-card__description">
-                                <p>Подстроимся под ваши задачи и&nbsp;требования к&nbsp;перевозкам особых грузов.
-                                    Оптимизируем логистику до&nbsp;самой выгодной стоимости.</p>
+
+            </section>
+            <!--—END SECTION OUR AIR PARTNERS-->
+            <!--—BEGIN WORKFLOW GALLERY-->
+            <section class="workflow-gallery section">
+                <h2 class="visually-hidden">Галерея рабочего процесса</h2>
+                <div class="workflow-gallery__wrap">
+                    <div class="swiper workflow-gallery__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="workflow-gallery__item">
+                                    <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/01.webp"
+                                        alt="" width="1920" height="800" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="workflow-gallery__item">
+                                    <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/02.webp"
+                                        alt="" width="1920" height="800" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="workflow-gallery__item">
+                                    <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/03.webp"
+                                        alt="" width="1920" height="800" loading="lazy">
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="about__item">
-                        <div class="about-card ">
-                            <img class="about-card__icon" src="./images/about/about-icon-2.svg" alt="" width="75"
-                                height="75" loading="lazy">
-                            <h3 class="about-card__title ">Срочная доставка за&nbsp;24&nbsp;часа&nbsp;по России
-                                и&nbsp;миру</h3>
-                            <div class="about-card__description">
-                                <p>Подстроимся под ваши задачи и&nbsp;требования к&nbsp;перевозкам особых грузов.
-                                    Оптимизируем логистику до&nbsp;самой выгодной стоимости.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="about__item">
-                        <div class="about-card ">
-                            <img class="about-card__icon" src="./images/about/about-icon-3.svg" alt="" width="75"
-                                height="75" loading="lazy">
-                            <h3 class="about-card__title">Страхование доставки
-                                и&nbsp;груза</h3>
-                            <div class="about-card__description">
-                                <p>Ничего не&nbsp;случится. Если случится&nbsp;&mdash; возмещение по&nbsp;страховым
-                                    случаям.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="about__item">
-                        <div class="about-card ">
-                            <img class="about-card__icon" src="./images/about/about-icon-4.svg" alt="" width="75"
-                                height="75" loading="lazy">
-                            <h3 class="about-card__title">Отслеживание груза</h3>
-                            <div class="about-card__description">
-                                <p>По&nbsp;системе бронирования мы&nbsp;всегда в&nbsp;курсе, где груз в&nbsp;данный
-                                    момент времени.
-                                    Фиксируем этапы на&nbsp;фото, видео.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--—END ABOUT US SECTION-->
-        <!-- BEGIN SECTION CARGO TYPES -->
-        <section class="section cargo-types" id="cargo-types">
-            <div class="cargo-types__inner container">
-                <div class="cargo-types__header header-block">
-                    <h2 class="cargo-types__title h2"> Ваш груз — <span>наш приоритет</span> </h2>
-                    <p class="cargo-types__subtitle desc">Доставляем крупногабаритные, тяжеловесные грузы<br>
-                        с помощью авиа перевозки</p>
-                </div>
-                <ul class="cargo-types__list">
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Тяжеловесный груз</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <p>Специальные условия для тяжёлых грузов, включая
-                                    оформление спец. рейсов до получателя</p>
+                        <div class=" container">
+                            <div class="workflow-gallery__nav">
+                                <div class="icon-arrow to-left">
+                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 7L1 7M1 7L7.38461 13M1 7L7.38462 0.999999" stroke="#0063C7"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                                 <div class="icon-arrow to-right">
                                     <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -512,938 +1143,380 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="stretched-link" data-fancybox data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Строительная техника и оборудование</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <div class="icon-arrow to-right">
-                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Продукты</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <div class="icon-arrow to-right">
-                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Медикаменты</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <div class="icon-arrow to-right">
-                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Животные и&nbsp;цветы</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <div class="icon-arrow to-right">
-                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                    <li class="cargo-types__item">
-                        <div class="cargo-types__content">
-                            <h3 class="cargo-types__item-title">Различное оборудование</h3>
-                            <span class="cargo-types__item-tag">За 24 часа</span>
-                            <div class="cargo-types__item-description">
-                                <div class="icon-arrow to-right">
-                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="stretched-link" data-src="#modal" href="javascript:void(0);"></a>
-                    </li>
-                </ul>
-
-                <!-- Modal window -->
-                <div id="modal" class="cargo-types__modal modal">
-                    <div class="cargo-types__wrapper container">
-                        <div class=" cargo-types__modal-inner ">
-                            <ol class="cargo-types__modal-list  ">
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Строительная техника и оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Экскаваторы, бульдозеры, погрузчики.</li>
-                                        <li class="cargo-types__modal-subitem">Строительные машины (бетономешалки,
-                                            краны,
-                                            асфальтоукладчики).</li>
-                                        <li class="cargo-types__modal-subitem">Тяжёлое строительное оборудование (лифты,
-                                            платформы).</li>
-                                    </ul>
-                                </li>
-
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Сельскохозяйственная техника</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Тракторы, комбайны, сеялки, косилки.</li>
-                                        <li class="cargo-types__modal-subitem">Оборудование для фермерских хозяйств
-                                            (погрузчики, насосы, генераторы).</li>
-                                    </ul>
-                                </li>
-
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Машины и автомобили</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Грузовые автомобили, фургоны, автобусы.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Специализированные транспортные средства
-                                            (автовышки, тягачи).</li>
-                                    </ul>
-                                </li>
-
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Железнодорожное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Локомотивы, вагонные секции, платформы.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Запасные части и детали для
-                                            железнодорожного
-                                            транспорта.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Тяжёлое промышленное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Генераторы, турбины, компрессоры.</li>
-                                        <li class="cargo-types__modal-subitem">Котлы, печи, агрегаты для переработки
-                                            металлов.</li>
-                                        <li class="cargo-types__modal-subitem">Оборудование для нефтегазовой и
-                                            горнодобывающей промышленности.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Мебель и интерьерные изделия</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Большие мебельные комплекты (например,
-                                            офисная мебель, системы хранения).</li>
-                                        <li class="cargo-types__modal-subitem">Крупные элементы для гостиниц, ресторанов
-                                            (столы, стойки, кресла).</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Производственное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Станки, пресс-формы, сварочные установки.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Линии для упаковки и переработки
-                                            продукции.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Деревянные и строительные материалы</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Доски, балки, бетонные панели.</li>
-                                        <li class="cargo-types__modal-subitem">Строительные блоки, кирпичи,
-                                            металлические
-                                            конструкции.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Тяжёлые запчасти и агрегаты</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Двигатели, трансформаторы, трансмиссии.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Машинные части для различных отраслей
-                                            промышленности.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Морское и речное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Лодки, катера, яхты, судовые моторы.</li>
-                                        <li class="cargo-types__modal-subitem">Плавучие платформы, части для
-                                            строительства
-                                            кораблей.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Металлоконструкции</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Сварные конструкции, мосты, элементы
-                                            каркасных зданий.</li>
-                                        <li class="cargo-types__modal-subitem">Стальные или алюминиевые конструкции для
-                                            промышленных объектов.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Техникум, лабораторное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Лабораторные установки, большие
-                                            исследовательские приборы.</li>
-                                        <li class="cargo-types__modal-subitem">Оборудование для медицинских учреждений,
-                                            включая диагностические устройства.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Специализированные производственные линии</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Линии для производства стекла, бетона,
-                                            упаковки.</li>
-                                        <li class="cargo-types__modal-subitem">Оборудование для переработки отходов.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Энергетическое оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Трансформаторы, солнечные панели.</li>
-                                        <li class="cargo-types__modal-subitem">Газовые и угольные турбины, генераторные
-                                            установки.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Товары для крупных торговых и складских
-                                        комплексов
-                                    </h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Рекламные конструкции, баннеры, стеллажи.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Оборудование для хранения товаров,
-                                            паллеты с
-                                            крупными партиями товаров.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Крупные и тяжёлые упаковки товаров</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Большие партии промышленного оборудования
-                                            в
-                                            специальной упаковке.</li>
-                                        <li class="cargo-types__modal-subitem">Погрузочные контейнеры с товаром для
-                                            оптовой
-                                            продажи.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Космическое и аэрокосмическое оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Компоненты спутников, ракеты.</li>
-                                        <li class="cargo-types__modal-subitem">Часть материалов для строительства
-                                            космических станций.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Военное оборудование</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Бронетехника, артиллерийские установки.
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Части для военных судов, вертолётов,
-                                            других
-                                            вооружений.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Культуры и природные ресурсы</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Крупные партии сырья (нефть, уголь,
-                                            металлы).
-                                        </li>
-                                        <li class="cargo-types__modal-subitem">Продукция природных ресурсов, например,
-                                            древесина, полезные ископаемые.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Животные в крупных количествах</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Перевозка большого числа
-                                            сельскохозяйственных
-                                            животных (коровы, лошади, овцы).</li>
-                                        <li class="cargo-types__modal-subitem">Экзотические животные, которые требуют
-                                            особых
-                                            условий транспортировки.</li>
-                                    </ul>
-                                </li>
-                                <li class="cargo-types__modal-item">
-                                    <h5 class="cargo-types__modal-title">Электрические и энергетические установки</h5>
-                                    <ul class="cargo-types__modal-sublist">
-                                        <li class="cargo-types__modal-subitem">Генераторные установки, распределительные
-                                            панели.</li>
-                                    </ul>
-                                </li>
-
-                            </ol>
-
-                        </div>
-                        <a class="cargo-types__modal-close icon-close" href="javascript:void(0);">
-                        </a>
                     </div>
                 </div>
+            </section>
+            <!--—END WORKFLOW GALLERY-->
 
-                <!-- Modal window-->
-            </div>
-        </section>
-        <!-- END SECTION CARGO TYPES -->
-        <!--—BEGIN SECTION SECTION OUR CLIENTS-->
-        <section class="section our-clients">
-            <div class="our-clients__inner container">
-                <div class="our-clients__header">
-                    <h2 class="our-clients__title h2">
-                        Наши <span>клиенты</span>
-                    </h2>
-                </div>
-                <div class="our-clients__body">
-                    <ul class="our-clients__list">
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.15s" data-wow-duration="1s">
-                            <h3 class="client_card h3">Строительные
-                                компании</h3>
+            <!--—BEGIN SECTION WORK PROCESS-->
+            <section class="section work-process">
+                <div class="work-process__inner container">
+                    <div class="work-process__header header-block">
+                        <h2 class="work-process__title h2"> <span>как</span> мы работаем ?</h2>
+                        <p class="work-process__subtitle desc">JAR-CARGO&nbsp;&mdash; организуем процесс доставки<br>
+                            &laquo;под ключ&raquo;, без головной боли для вас.</p>
+                    </div>
+                    <ul class="work-process__list">
+                        <li class="work-process__item wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+                            <h3 class="work-process__title">Упрощаем логистику</h3>
+                            <div class="work-process__description">
+                                <p>Авиаперевозчики, как правило, занимаются только транспортировкой с&nbsp;одного
+                                    аэродрома
+                                    на
+                                    другой. Это не&nbsp;включает в&nbsp;себя решение вопросов по&nbsp;упаковке,
+                                    погрузке/разгрузке,
+                                    таможенным вопросам, доставке от/до аэропорта и&nbsp;другие важные аспекты. <br>
+                                    Наша компания берёт всю работу и&nbsp;ответственность на&nbsp;себя.</p>
+                            </div>
                         </li>
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.30s" data-wow-duration="1s">
-                            <h3 class=" client_card h3 ">Производственные
-                                компании</h3>
+                        <li class="work-process__item wow fadeInUp" data-wow-delay="1.15s" data-wow-duration="1s">
+                            <h3 class="work-process__title">Решение юридических и административных вопросов</h3>
+                            <div class="work-process__description">
+                                <p>Таможенные процедуры, лицензии, разрешения&nbsp;&mdash; это отдельная область,
+                                    в&nbsp;которой у&nbsp;Jar-cargo
+                                    есть опыт и&nbsp;знания. Вы&nbsp;можете столкнуться с&nbsp;ситуациями, когда
+                                    перевозка
+                                    требует
+                                    специфических документов, мы&nbsp;позаботимся об&nbsp;этом заранее.</p>
+                            </div>
                         </li>
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.45s" data-wow-duration="1s">
-                            <h3 class="client_card h3">Сельское хозяйство и&nbsp;агробизнес</h3>
+                        <li class="work-process__item wow fadeInUp" data-wow-delay="1.30s" data-wow-duration="1s">
+                            <h3 class="work-process__title">Обеспечим защиту груза, гарантии и&nbsp;надёжность</h3>
+                            <div class="work-process__description">
+                                <p>Наши специалисты знают, как правильно упаковать и&nbsp;защитить груз, чтобы
+                                    минимизировать
+                                    риски повреждения. Мы&nbsp;работаем даже с&nbsp;самыми нетривиальными задачами,
+                                    включая
+                                    перевозку
+                                    животных или медицинского хрупкого оборудования.<br>
+                                    Мы&nbsp;страхуем груз и&nbsp;доставку.</p>
+                            </div>
                         </li>
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
-                            <h3 class="client_card h3">Энергетические
-                                компании</h3>
-                        </li>
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="1s">
-                            <h3 class="client_card h3">Торговые и&nbsp;оптовые компании</h3>
-                        </li>
-                        <li class="our-clients__item wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
-                            <h3 class="client_card h3">Промышленные
-                                компании</h3>
+                        <li class="work-process__item wow fadeInUp" data-wow-delay="1.45s" data-wow-duration="1s">
+                            <h3 class="work-process__title">Экономим ваше время</h3>
+                            <div class="work-process__description">
+                                <p>Благодаря опыту, мы&nbsp;знаем, как оптимизировать процесс перевозки, сэкономить
+                                    время,
+                                    ресурсы и&nbsp;деньги.<br>
+                                    Мы&nbsp;можем организовать комбинированные маршруты (в&nbsp;любой последовательности
+                                    авиа+авто+Ж/Д+морем). Мы&nbsp;имеем партнёрские отношения с&nbsp;перевозчиками
+                                    и&nbsp;доступ к&nbsp;выгодным
+                                    тарифам</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <!--—END SECTION SECTION OUR CLIENTS-->
-        <!--—BEGINN SECTION REVIEWS-->
-        <section class="section reviews" id="reviews">
-            <h2 class="visually-hidden">Отзывы клиентов</h2>
-            <div class="reviews__wrap container">
-                <div class="swiper reviews__swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="reviews__item">
-                                <div class="reviews__item-left">
-                                    <img src="./images/reviews/01.png" alt="Клиент Станицкий Михаил"
-                                        class="reviews__item-photo" />
-                                </div>
-                                <div class="reviews__item-right">
-                                    <div class="reviews__item-info">
-                                        <span class="reviews__item-company">ООО "РосАвтоГабарит"</span>
-                                        <p class="reviews__item-name">
-                                            Станицкий Михаил
-                                        </p>
+            </section>
+            <!--—END SECTION WORK PROCESS-->
+            <!--—BEGIN SECTION PROCESS-->
+            <section class="section process" id="process">
+                <div class="process__inner container">
+                    <h2 class="h2 header-block-on">
+                        Оставляйте заявку.<br>
+                        <span> Посчитаем за час</span>
+
+                    </h2>
+                    <ul class="process__list">
+                        <div class="process__item process__item--active">
+                            <p class="process__text">Оставляете заявку</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </div>
+                        <li class="process__item">
+                            <p class="process__text">Перезваниваем для <br> уточнения деталей</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <p class="process__text">Считаем<br> оптимизированную смету <br>с учётом плана доставки</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <p class="process__text">Контроль на всех<br> этапах</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <p class="process__text">Запускаем в реализацию</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </li>
+                        <li class="process__item">
+                            <p class="process__text">Заключаем договор. <br>Выставляем счёт</p>
+                            <div class="process__circle">
+                                <div class="process__circle-inner"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--—END SECTION PROCESS-->
+            <!--—BEGINN BANNER-->
+            <section class="banner section">
+                <div class="banner__wrap">
+                    <div class="banner__inner container">
+                        <h2 class="banner__title">Доставляем грузы точно в&nbsp;срок, <span> ваш успех начинается
+                                с&nbsp;нас!</span> </h2>
+                        <a class="button button-calc" href="#transportation-cost">
+                            Расчёт стоимости<span class="icon icon--right-arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--—END BANNER-->
+            <!--—BEGIN SECTION FAQ-->
+            <section class="section faq">
+                <div class="faq__inner container">
+                    <div class="faq__header header-block">
+                        <h2 class="faq__title h2"> ЧАСТО ЗАДАВАЕМЫЕ<br> <span>ВОПРОСЫ</span></h2>
+                        <p class="faq__subtitle desc">Мы стараемся осуществлять наше деятельность максимально
+                            прозрачно,<br>
+                            поэтому готовы ответить на любые вопросы, касающиеся грузовых авиаперевозок</p>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq" open>
+                                <summary class="accordion__summary">
+                                    <h4 class="accordion__title h4">
+                                        <span role="term" aria-details="faq-1">Почему авиаперевозки?</span>
+                                        <span class="square"></span>
+                                    </h4>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-1" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>Мы в компании JAR-CARGO считаем, что будущее только за авиасообщением, а в
+                                            условиях закрытых границ при пандемии мы смогли только убедиться в этом.
+                                            Благодаря вашему доверию и нашей усердной работе мы смогли не потерять
+                                            присутствие на рынке, а даже усилить свое влияние. Авиаперевозки — это
+                                            современный быстрый и удобный способ доставки любых грузов по всему миру</p>
                                     </div>
-                                    <blockquote class="reviews__item-quote">
-                                        Обычно мы отправляем грузы автотранспортом, но в режиме пандемии и проблем с
-                                        пропусками возникли накладки в доставке грузов. И благодаря компании JAR-CARGO
-                                        наш груз прибыл в кратчайшие сроки.
-                                    </blockquote>
-                                    <a class="button button-calc" href="#transportation-cost">
-                                        Расчёт стоимости <span class="icon icon--right-arrow"></span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="reviews__item">
-                                <div class="reviews__item-left">
-                                    <img src="./images/reviews/02.png" alt="Клиент Оксана Благодатова"
-                                        class="reviews__item-photo" />
-                                </div>
-                                <div class="reviews__item-right">
-                                    <div class="reviews__item-info">
-                                        <span class="reviews__item-company">INTERNATIONAL POST</span>
-                                        <p class="reviews__item-name">
-                                            Оксана Благодатова
-                                        </p>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h4 class="accordion__title h4">
+                                        <span role="term" aria-details="faq-2">Могу ли я отправить крупный груз за
+                                            рубеж?</span>
+                                        <span class="square"></span>
+                                    </h4>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-2" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non animi excepturi
+                                            quisquam eos distinctio porro nulla. Impedit at vero voluptatem mollitia
+                                            quasi
+                                            veritatis sit quidem eius! Harum nostrum suscipit inventore.</p>
                                     </div>
-                                    <blockquote class="reviews__item-quote">
-                                        Именно в условиях резко изменяющегося рынка доставки грузов по миру JAR-CARGO
-                                        дольше всех сохраняет неизменные условия доставки при достаточно высоком
-                                        качестве сервиса.
-                                    </blockquote>
-                                    <a class="button button-calc" href="#transportation-cost">
-                                        Расчёт стоимости <span class="icon icon--right-arrow"></span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="reviews__item">
-                                <div class="reviews__item-left">
-                                    <img src="./images/reviews/03.png" alt="Клиент Иван Корнер"
-                                        class="reviews__item-photo" />
-                                </div>
-                                <div class="reviews__item-right">
-                                    <div class="reviews__item-info">
-                                        <span class="reviews__item-company">Digital logistic ink.</span>
-                                        <p class="reviews__item-name">
-                                            Иван Корнер
-                                        </p>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h4 class="accordion__title h4">
+                                        <span role="term" aria-details="faq-3">Вы отправляете только крупные грузы или
+                                            берете мелкие посылки?</span>
+                                        <span class="square"></span>
+                                    </h4>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-3" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto. At
+                                            quis
+                                            voluptates sapiente architecto quaerat! Vel atque, iusto itaque deserunt
+                                            praesentium maiores excepturi vero corporis quidem vitae mollitia fugit.</p>
                                     </div>
-                                    <blockquote class="reviews__item-quote">
-                                        Мы уже несколько лет успешно сотрудничаем с Яр-Карго и готовы выразить
-                                        глубочайшее уважение к ответственным сотрудникам вашей компании, желаем вам
-                                        только увеличивать влияние на нашем рынке.
-                                    </blockquote>
-                                    <a class="button button-calc" href="#transportation-cost">
-                                        Расчёт стоимости <span class="icon icon--right-arrow"></span>
-                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h4 class="accordion__title h4">
+                                        <span role="term" aria-details="faq-4">Какой максимальный срок доставки?</span>
+                                        <span class="square"></span>
+                                    </h4>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-4" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quibusdam
+                                            minima
+                                            nihil harum esse quisquam accusantium, fugiat quidem, eaque, cum ipsa
+                                            provident
+                                            placeat? Voluptatum perspiciatis sit blanditiis ducimus eveniet eum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <details class="accordion__details" name="faq">
+                                <summary class="accordion__summary">
+                                    <h4 class="accordion__title h4">
+                                        <span role="term" aria-details="faq-5">Безопасно отправлять продукты питания или
+                                            точную электронику самолетом?</span>
+                                        <span class="square"></span>
+                                    </h4>
+                                </summary>
+                            </details>
+                            <div class="accordion__content" id="faq-5" role="definition">
+                                <div class="accordion__content-inner">
+                                    <div class="accordion__content-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta quia
+                                            rerum quidem! Reprehenderit maxime autem, debitis unde culpa fugiat cumque
+                                            aspernatur est ipsam esse. Quis ab voluptates molestiae nihil?</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination">
-                    </div>
                 </div>
-            </div>
-        </section>
-        <!--—END SECTION REVIEWS-->
-        <!--—BEGIN ADVANTAGES SECTION-->
-        <section class="section advantages">
-            <div class="advantages__inner container">
-                <h2 class="h2 header-block-on">
-                    Почему авиаперевозки?<br>
-                    <span>Это надёжно, срочно,<br> безопасно!</span>
-                </h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item hover-circle hover-circle-top">
-                        <h3 class="advantages__title">Скорость и надёжность доставки</h3>
-                        <div class="advantages__description">
-                            <p>Срочная и прогнозируемая доставка, возможна только с помощью авиаперевозок. В небе нет
-                                пробок.
-                                Действует ускоренный процесс таможенного оформления</p>
-                        </div>
-                    </li>
-                    <li class="advantages__item hover-circle hover-circle-left">
-                        <h3 class="advantages__title ">Доступ к труднодоступным регионам</h3>
-                        <div class="advantages__description">
-                            <p>Дальний Восток, Сибирь, Арктика? Нам не важно!
-                                Преодолеем расстояния там, где другие не могут.</p>
-                        </div>
-                    </li>
-                    <li class="advantages__item hover-circle hover-circle-top">
-                        <h3 class="advantages__title">Широкие возможности для разных грузов</h3>
-                        <div class="advantages__description">
-                            <p>Для крупногабаритного груза проще подобрать транспортный самолёт, чем искать другой
-                                способ везти по земле.</p>
-                        </div>
-                    </li>
-                    <li class="advantages__item hover-circle hover-circle-left">
-                        <h3 class="advantages__title ">Самая высокая безопасность груза</h3>
-                        <div class="advantages__description">
-                            <p>Более высокий уровень безопасности груза, специализированная упаковка, стандарты
-                                безопасности.
-                                Меньше времени в пути - меньше рисков.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--—END ADVANTAGES SECTION-->
-        <!--—BEGINN SECTION OUR AIR PARTNERS-->
-        <section class="section airparnets">
-            <h2 class="h2 header-block-on container">
-                Наши <span>авиа партнёры</span>
-            </h2>
+            </section>
+            <!--—END SECTION FAQ-->
 
-            <div class="airparnets__wrap">
-                <div class="swiper airparnets__swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="airparnets__item">
-                                <img class="airparnets__slide-image" src="./images/airparnets/russia.svg" alt=""
-                                    width="300" height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/s7.svg" alt="" width="300"
-                                    height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/ua.svg" alt="" width="300"
-                                    height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/aeroflot.svg" alt=""
-                                    width="300" height="103" loading="lazy">
-                            </div>
+        </main>
 
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/russia.svg" alt=""
-                                    width="300" height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/s7.svg" alt="" width="300"
-                                    height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/ua.svg" alt="" width="300"
-                                    height="103" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="airparnets__inner">
-                                <img class="airparnets__slide-image" src="./images/airparnets/aeroflot.svg" alt=""
-                                    width="300" height="103" loading="lazy">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!--—END SECTION OUR AIR PARTNERS-->
-        <!--—BEGIN WORKFLOW GALLERY-->
-        <section class="workflow-gallery section">
-            <h2 class="visually-hidden">Галерея рабочего процесса</h2>
-            <div class="workflow-gallery__wrap">
-                <div class="swiper workflow-gallery__swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="workflow-gallery__item">
-                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/01.webp"
-                                    alt="" width="1920" height="800" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="workflow-gallery__item">
-                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/02.webp"
-                                    alt="" width="1920" height="800" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="workflow-gallery__item">
-                                <img class="workflow-gallery__slide-image" src="./images/workflow-gallery/03.webp"
-                                    alt="" width="1920" height="800" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" container">
-                        <div class="workflow-gallery__nav">
-                            <div class="icon-arrow to-left">
-                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 7L1 7M1 7L7.38461 13M1 7L7.38462 0.999999" stroke="#0063C7"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="icon-arrow to-right">
-                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7H20M20 7L13.6154 1M20 7L13.6154 13" stroke="#0063C7" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--—END WORKFLOW GALLERY-->
-
-        <!--—BEGIN SECTION WORK PROCESS-->
-        <section class="section work-process">
-            <div class="work-process__inner container">
-                <div class="work-process__header header-block">
-                    <h2 class="work-process__title h2"> <span>как</span> мы работаем ?</h2>
-                    <p class="work-process__subtitle desc">JAR-CARGO&nbsp;&mdash; организуем процесс доставки<br>
-                        &laquo;под ключ&raquo;, без головной боли для вас.</p>
-                </div>
-                <ul class="work-process__list">
-                    <li class="work-process__item wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
-                        <h3 class="work-process__title">Упрощаем логистику</h3>
-                        <div class="work-process__description">
-                            <p>Авиаперевозчики, как правило, занимаются только транспортировкой с&nbsp;одного аэродрома
-                                на
-                                другой. Это не&nbsp;включает в&nbsp;себя решение вопросов по&nbsp;упаковке,
-                                погрузке/разгрузке,
-                                таможенным вопросам, доставке от/до аэропорта и&nbsp;другие важные аспекты. <br>
-                                Наша компания берёт всю работу и&nbsp;ответственность на&nbsp;себя.</p>
-                        </div>
-                    </li>
-                    <li class="work-process__item wow fadeInUp" data-wow-delay="1.15s" data-wow-duration="1s">
-                        <h3 class="work-process__title">Решение юридических и административных вопросов</h3>
-                        <div class="work-process__description">
-                            <p>Таможенные процедуры, лицензии, разрешения&nbsp;&mdash; это отдельная область,
-                                в&nbsp;которой у&nbsp;Jar-cargo
-                                есть опыт и&nbsp;знания. Вы&nbsp;можете столкнуться с&nbsp;ситуациями, когда перевозка
-                                требует
-                                специфических документов, мы&nbsp;позаботимся об&nbsp;этом заранее.</p>
-                        </div>
-                    </li>
-                    <li class="work-process__item wow fadeInUp" data-wow-delay="1.30s" data-wow-duration="1s">
-                        <h3 class="work-process__title">Обеспечим защиту груза, гарантии и&nbsp;надёжность</h3>
-                        <div class="work-process__description">
-                            <p>Наши специалисты знают, как правильно упаковать и&nbsp;защитить груз, чтобы
-                                минимизировать
-                                риски повреждения. Мы&nbsp;работаем даже с&nbsp;самыми нетривиальными задачами, включая
-                                перевозку
-                                животных или медицинского хрупкого оборудования.<br>
-                                Мы&nbsp;страхуем груз и&nbsp;доставку.</p>
-                        </div>
-                    </li>
-                    <li class="work-process__item wow fadeInUp" data-wow-delay="1.45s" data-wow-duration="1s">
-                        <h3 class="work-process__title">Экономим ваше время</h3>
-                        <div class="work-process__description">
-                            <p>Благодаря опыту, мы&nbsp;знаем, как оптимизировать процесс перевозки, сэкономить время,
-                                ресурсы и&nbsp;деньги.<br>
-                                Мы&nbsp;можем организовать комбинированные маршруты (в&nbsp;любой последовательности
-                                авиа+авто+Ж/Д+морем). Мы&nbsp;имеем партнёрские отношения с&nbsp;перевозчиками
-                                и&nbsp;доступ к&nbsp;выгодным
-                                тарифам</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--—END SECTION WORK PROCESS-->
-        <!--—BEGIN SECTION PROCESS-->
-        <section class="section process" id="process">
-            <div class="process__inner container">
-                <h2 class="h2 header-block-on">
-                    Оставляйте заявку.<br>
-                    <span> Посчитаем за час</span>
-
-                </h2>
-                <ul class="process__list">
-                    <div class="process__item process__item--active">
-                        <p class="process__text">Оставляете заявку</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </div>
-                    <li class="process__item">
-                        <p class="process__text">Перезваниваем для <br> уточнения деталей</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </li>
-                    <li class="process__item">
-                        <p class="process__text">Считаем<br> оптимизированную смету <br>с учётом плана доставки</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </li>
-                    <li class="process__item">
-                        <p class="process__text">Контроль на всех<br> этапах</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </li>
-                    <li class="process__item">
-                        <p class="process__text">Запускаем в реализацию</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </li>
-                    <li class="process__item">
-                        <p class="process__text">Заключаем договор. <br>Выставляем счёт</p>
-                        <div class="process__circle">
-                            <div class="process__circle-inner"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!--—END SECTION PROCESS-->
-        <!--—BEGINN BANNER-->
-        <section class="banner section">
-            <div class="banner__wrap">
-                <div class="banner__inner container">
-                    <h2 class="banner__title">Доставляем грузы точно в&nbsp;срок, <span> ваш успех начинается
-                            с&nbsp;нас!</span> </h2>
-                    <a class="button button-calc" href="#transportation-cost">
-                        Расчёт стоимости<span class="icon icon--right-arrow"></span>
+        <!--—BEGIN FOOTER -->
+        <footer class="footer">
+            <!-- Верхняя часть -->
+            <div class="container">
+                <div class="footer__top ">
+                    <a class="footer__logo logo" href="/" title="Home" aria-label="Home">
+                        <img src="./images/logo.svg" alt="" class="logo__image" width="140" height="32">
+                    </a>
+                    <a class="button button-calc visible-mobile" href="#transportation-cost">
+                        Расчёт стоимости <span class="icon icon--right-arrow"></span>
+                    </a>
+                    <a class=" visible-mobile-only" href="#transportation-cost">
+                        <span class="icon icon--right-arrow"></span>
                     </a>
                 </div>
             </div>
-        </section>
-        <!--—END BANNER-->
-        <!--—BEGIN SECTION FAQ-->
-        <section class="section faq">
-            <div class="faq__inner container">
-                <div class="faq__header header-block">
-                    <h2 class="faq__title h2"> ЧАСТО ЗАДАВАЕМЫЕ<br> <span>ВОПРОСЫ</span></h2>
-                    <p class="faq__subtitle desc">Мы стараемся осуществлять наше деятельность максимально прозрачно,<br>
-                        поэтому готовы ответить на любые вопросы, касающиеся грузовых авиаперевозок</p>
-                </div>
-                <div class="accordion-group">
-                    <div class="accordion">
-                        <details class="accordion__details" name="faq" open>
-                            <summary class="accordion__summary">
-                                <h4 class="accordion__title h4">
-                                    <span role="term" aria-details="faq-1">Почему авиаперевозки?</span>
-                                    <span class="square"></span>
-                                </h4>
-                            </summary>
-                        </details>
-                        <div class="accordion__content" id="faq-1" role="definition">
-                            <div class="accordion__content-inner">
-                                <div class="accordion__content-body">
-                                    <p>Мы в компании JAR-CARGO считаем, что будущее только за авиасообщением, а в
-                                        условиях закрытых границ при пандемии мы смогли только убедиться в этом.
-                                        Благодаря вашему доверию и нашей усердной работе мы смогли не потерять
-                                        присутствие на рынке, а даже усилить свое влияние. Авиаперевозки — это
-                                        современный быстрый и удобный способ доставки любых грузов по всему миру</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="footer__body container">
+                <div class="footer__left">
+                    <div class="footer__navigation">
+                        <ul class="footer__navigation-list">
+                            <li class="footer__navigation-item"><a href="#transportation-cost"
+                                    class="footer__link">Расчёт
+                                    стоимости</a></li>
+                            <li class="footer__navigation-item"><a href="#about" class="footer__link">Преимущества</a>
+                            </li>
+                            <li class="footer__navigation-item"><a href="#cargo-types" class="footer__link">Какие
+                                    грузы</a>
+                            </li>
+                            <li class="footer__navigation-item"><a href="#reviews" class="footer__link">Отзывы</a></li>
+                            <li class="footer__navigation-item"><a href="#process" class="footer__link">Как мы
+                                    работаем</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="accordion">
-                        <details class="accordion__details" name="faq">
-                            <summary class="accordion__summary">
-                                <h4 class="accordion__title h4">
-                                    <span role="term" aria-details="faq-2">Могу ли я отправить крупный груз за
-                                        рубеж?</span>
-                                    <span class="square"></span>
-                                </h4>
-                            </summary>
-                        </details>
-                        <div class="accordion__content" id="faq-2" role="definition">
-                            <div class="accordion__content-inner">
-                                <div class="accordion__content-body">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non animi excepturi
-                                        quisquam eos distinctio porro nulla. Impedit at vero voluptatem mollitia quasi
-                                        veritatis sit quidem eius! Harum nostrum suscipit inventore.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <details class="accordion__details" name="faq">
-                            <summary class="accordion__summary">
-                                <h4 class="accordion__title h4">
-                                    <span role="term" aria-details="faq-3">Вы отправляете только крупные грузы или
-                                        берете мелкие посылки?</span>
-                                    <span class="square"></span>
-                                </h4>
-                            </summary>
-                        </details>
-                        <div class="accordion__content" id="faq-3" role="definition">
-                            <div class="accordion__content-inner">
-                                <div class="accordion__content-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto. At quis
-                                        voluptates sapiente architecto quaerat! Vel atque, iusto itaque deserunt
-                                        praesentium maiores excepturi vero corporis quidem vitae mollitia fugit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <details class="accordion__details" name="faq">
-                            <summary class="accordion__summary">
-                                <h4 class="accordion__title h4">
-                                    <span role="term" aria-details="faq-4">Какой максимальный срок доставки?</span>
-                                    <span class="square"></span>
-                                </h4>
-                            </summary>
-                        </details>
-                        <div class="accordion__content" id="faq-4" role="definition">
-                            <div class="accordion__content-inner">
-                                <div class="accordion__content-body">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quibusdam minima
-                                        nihil harum esse quisquam accusantium, fugiat quidem, eaque, cum ipsa provident
-                                        placeat? Voluptatum perspiciatis sit blanditiis ducimus eveniet eum.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <details class="accordion__details" name="faq">
-                            <summary class="accordion__summary">
-                                <h4 class="accordion__title h4">
-                                    <span role="term" aria-details="faq-5">Безопасно отправлять продукты питания или
-                                        точную электронику самолетом?</span>
-                                    <span class="square"></span>
-                                </h4>
-                            </summary>
-                        </details>
-                        <div class="accordion__content" id="faq-5" role="definition">
-                            <div class="accordion__content-inner">
-                                <div class="accordion__content-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta quia
-                                        rerum quidem! Reprehenderit maxime autem, debitis unde culpa fugiat cumque
-                                        aspernatur est ipsam esse. Quis ab voluptates molestiae nihil?</p>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="footer__contacts">
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item">
+                                <span class="footer__contacts-label footer-label">Почта</span>
+                                <a href="mailto:info@jar-cargo.ru" class="footer__contacts-link">info@jar-cargo.ru</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <span class="footer__contacts-label footer-label">Телефон</span>
+                                <a href="tel:+78003510960" class="footer__contacts-link">+7 (800) 351-09-60</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--—END SECTION FAQ-->
 
-    </main>
-
-    <!--—BEGIN FOOTER -->
-    <footer class="footer">
-        <!-- Верхняя часть -->
-        <div class="container">
-            <div class="footer__top ">
-                <a class="footer__logo logo" href="/" title="Home" aria-label="Home">
-                    <img src="./images/logo.svg" alt="" class="logo__image" width="140" height="32">
-                </a>
-                <a class="button button-calc visible-mobile" href="#transportation-cost">
-                    Расчёт стоимости <span class="icon icon--right-arrow"></span>
-                </a>
-                <a class=" visible-mobile-only" href="#transportation-cost">
-                    <span class="icon icon--right-arrow"></span>
-                </a>
-            </div>
-        </div>
-        <div class="footer__body container">
-            <div class="footer__left">
-                <div class="footer__navigation">
-                    <ul class="footer__navigation-list">
-                        <li class="footer__navigation-item"><a href="#transportation-cost" class="footer__link">Расчёт
-                                стоимости</a></li>
-                        <li class="footer__navigation-item"><a href="#about" class="footer__link">Преимущества</a></li>
-                        <li class="footer__navigation-item"><a href="#cargo-types" class="footer__link">Какие грузы</a>
+                <!-- Правая колонка (социальные сети) -->
+                <div class="footer__right">
+                    <h6 class="footer__title footer-label">Мы в социальных сетях</h6>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="/" target="_blank" aria-label="Вконтакте"
+                                title="Вконтакте">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="21" fill="#0063C7" />
+                                    <path
+                                        d="M30.1963 27.2128H28.0065C27.1783 27.2128 26.9288 26.5676 25.4443 25.1387C24.1469 23.936 23.5989 23.7865 23.2707 23.7865C22.8168 23.7865 22.693 23.9065 22.693 24.5074V26.4015C22.693 26.9137 22.5203 27.2137 21.1288 27.2137C19.7789 27.1265 18.4699 26.732 17.3095 26.0628C16.1491 25.3936 15.1706 24.4689 14.4546 23.3647C12.7552 21.329 11.5723 18.9404 11 16.3883C11 16.0726 11.1248 15.7865 11.7504 15.7865H13.9384C14.5007 15.7865 14.7032 16.0274 14.9239 16.584C15.9862 19.5913 17.7989 22.2072 18.535 22.2072C18.8171 22.2072 18.9399 22.0872 18.9399 21.4106V18.3129C18.8469 16.8997 18.0667 16.7806 18.0667 16.2693C18.0765 16.1343 18.1407 16.0084 18.2455 15.9183C18.3503 15.8282 18.4876 15.7809 18.6281 15.7865H22.0674C22.5376 15.7865 22.693 16.0117 22.693 16.5526V20.734C22.693 21.1854 22.8946 21.3349 23.0366 21.3349C23.3187 21.3349 23.5356 21.1854 24.0528 20.6888C25.1611 19.3879 26.0668 17.9389 26.7417 16.3874C26.8104 16.2009 26.9409 16.0413 27.113 15.9329C27.2851 15.8245 27.4894 15.7734 27.6946 15.7874H29.8835C30.5399 15.7874 30.679 16.1031 30.5399 16.5535C29.7435 18.2688 28.7585 19.8971 27.6015 21.4106C27.3654 21.7567 27.2714 21.9367 27.6015 22.3428C27.8184 22.6585 28.5861 23.2751 29.1014 23.8612C29.8518 24.5812 30.4746 25.4138 30.9458 26.3258C31.1339 26.9128 30.8211 27.2128 30.1963 27.2128Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer__navigation-item"><a href="#reviews" class="footer__link">Отзывы</a></li>
-                        <li class="footer__navigation-item"><a href="#process" class="footer__link">Как мы работаем</a>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="/" target="_blank" aria-label="WhatsApp"
+                                title="WhatsApp">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="21" fill="#0063C7" />
+                                    <path
+                                        d="M28.0854 13.91C27.1639 12.9842 26.0664 12.25 24.8568 11.7504C23.6472 11.2508 22.3498 10.9957 21.0402 11.0001C15.5528 11.0001 11.0804 15.45 11.0804 20.91C11.0804 22.66 11.5427 24.36 12.407 25.86L11 31L16.2764 29.62C17.7337 30.41 19.3719 30.83 21.0402 30.83C26.5276 30.83 31 26.38 31 20.92C31 18.27 29.9648 15.78 28.0854 13.91ZM21.0402 29.15C19.5528 29.15 18.0955 28.75 16.8191 28L16.5176 27.82L13.3819 28.64L14.2161 25.6L14.0151 25.29C13.1885 23.9771 12.7497 22.4593 12.7487 20.91C12.7487 16.37 16.4673 12.67 21.0301 12.67C23.2412 12.67 25.3216 13.53 26.8794 15.09C27.6509 15.8539 28.2622 16.7626 28.678 17.7634C29.0938 18.7641 29.3057 19.8371 29.3015 20.92C29.3216 25.46 25.603 29.15 21.0402 29.15ZM25.5829 22.99C25.3317 22.87 24.1055 22.27 23.8844 22.18C23.6533 22.1 23.4925 22.06 23.3216 22.3C23.1508 22.55 22.6784 23.11 22.5377 23.27C22.397 23.44 22.2462 23.46 21.995 23.33C21.7437 23.21 20.9397 22.94 19.995 22.1C19.2513 21.44 18.7588 20.63 18.608 20.38C18.4673 20.13 18.5879 20 18.7186 19.87C18.8291 19.76 18.9698 19.58 19.0905 19.44C19.2111 19.3 19.2613 19.19 19.3417 19.03C19.4221 18.86 19.3819 18.72 19.3216 18.6C19.2613 18.48 18.7588 17.26 18.5578 16.76C18.3568 16.28 18.1457 16.34 17.995 16.33H17.5126C17.3417 16.33 17.0804 16.39 16.8492 16.64C16.6281 16.89 15.9849 17.49 15.9849 18.71C15.9849 19.93 16.8794 21.11 17 21.27C17.1206 21.44 18.7588 23.94 21.2513 25.01C21.8442 25.27 22.3065 25.42 22.6683 25.53C23.2613 25.72 23.804 25.69 24.2362 25.63C24.7186 25.56 25.7136 25.03 25.9146 24.45C26.1256 23.87 26.1256 23.38 26.0553 23.27C25.9849 23.16 25.8342 23.11 25.5829 22.99Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
                         </li>
-                    </ul>
-                </div>
-
-                <div class="footer__contacts">
-                    <ul class="footer__contacts-list">
-                        <li class="footer__contacts-item">
-                            <span class="footer__contacts-label footer-label">Почта</span>
-                            <a href="mailto:info@jar-cargo.ru" class="footer__contacts-link">info@jar-cargo.ru</a>
-                        </li>
-                        <li class="footer__contacts-item">
-                            <span class="footer__contacts-label footer-label">Телефон</span>
-                            <a href="tel:+78003510960" class="footer__contacts-link">+7 (800) 351-09-60</a>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="/" target="_blank" aria-label="Telegram"
+                                title="Telegram">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21" cy="21" r="21" fill="#0063C7" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M28.9283 13.1163C29.1742 13.0133 29.4434 12.9778 29.7078 13.0134C29.9722 13.0491 30.2221 13.1546 30.4316 13.319C30.6411 13.4833 30.8025 13.7006 30.899 13.9481C30.9955 14.1956 31.0235 14.4643 30.9802 14.7262L28.7234 28.347C28.5044 29.6609 27.0556 30.4144 25.8446 29.7599C24.8316 29.2124 23.327 28.3688 21.9737 27.4886C21.297 27.048 19.2243 25.6371 19.479 24.6332C19.6979 23.7747 23.1807 20.549 25.1709 18.6312C25.952 17.8777 25.5958 17.443 24.6734 18.1361C22.3827 19.8569 18.7048 22.4737 17.4888 23.2104C16.4161 23.8599 15.8569 23.9708 15.1882 23.8599C13.9682 23.6579 12.8368 23.345 11.9134 22.9638C10.6655 22.449 10.7262 20.7421 11.9124 20.245L28.9283 13.1163Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Правая колонка (социальные сети) -->
-            <div class="footer__right">
-                <h6 class="footer__title footer-label">Мы в социальных сетях</h6>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="/" target="_blank" aria-label="Вконтакте"
-                            title="Вконтакте">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="21" fill="#0063C7" />
-                                <path
-                                    d="M30.1963 27.2128H28.0065C27.1783 27.2128 26.9288 26.5676 25.4443 25.1387C24.1469 23.936 23.5989 23.7865 23.2707 23.7865C22.8168 23.7865 22.693 23.9065 22.693 24.5074V26.4015C22.693 26.9137 22.5203 27.2137 21.1288 27.2137C19.7789 27.1265 18.4699 26.732 17.3095 26.0628C16.1491 25.3936 15.1706 24.4689 14.4546 23.3647C12.7552 21.329 11.5723 18.9404 11 16.3883C11 16.0726 11.1248 15.7865 11.7504 15.7865H13.9384C14.5007 15.7865 14.7032 16.0274 14.9239 16.584C15.9862 19.5913 17.7989 22.2072 18.535 22.2072C18.8171 22.2072 18.9399 22.0872 18.9399 21.4106V18.3129C18.8469 16.8997 18.0667 16.7806 18.0667 16.2693C18.0765 16.1343 18.1407 16.0084 18.2455 15.9183C18.3503 15.8282 18.4876 15.7809 18.6281 15.7865H22.0674C22.5376 15.7865 22.693 16.0117 22.693 16.5526V20.734C22.693 21.1854 22.8946 21.3349 23.0366 21.3349C23.3187 21.3349 23.5356 21.1854 24.0528 20.6888C25.1611 19.3879 26.0668 17.9389 26.7417 16.3874C26.8104 16.2009 26.9409 16.0413 27.113 15.9329C27.2851 15.8245 27.4894 15.7734 27.6946 15.7874H29.8835C30.5399 15.7874 30.679 16.1031 30.5399 16.5535C29.7435 18.2688 28.7585 19.8971 27.6015 21.4106C27.3654 21.7567 27.2714 21.9367 27.6015 22.3428C27.8184 22.6585 28.5861 23.2751 29.1014 23.8612C29.8518 24.5812 30.4746 25.4138 30.9458 26.3258C31.1339 26.9128 30.8211 27.2128 30.1963 27.2128Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="/" target="_blank" aria-label="WhatsApp" title="WhatsApp">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="21" fill="#0063C7" />
-                                <path
-                                    d="M28.0854 13.91C27.1639 12.9842 26.0664 12.25 24.8568 11.7504C23.6472 11.2508 22.3498 10.9957 21.0402 11.0001C15.5528 11.0001 11.0804 15.45 11.0804 20.91C11.0804 22.66 11.5427 24.36 12.407 25.86L11 31L16.2764 29.62C17.7337 30.41 19.3719 30.83 21.0402 30.83C26.5276 30.83 31 26.38 31 20.92C31 18.27 29.9648 15.78 28.0854 13.91ZM21.0402 29.15C19.5528 29.15 18.0955 28.75 16.8191 28L16.5176 27.82L13.3819 28.64L14.2161 25.6L14.0151 25.29C13.1885 23.9771 12.7497 22.4593 12.7487 20.91C12.7487 16.37 16.4673 12.67 21.0301 12.67C23.2412 12.67 25.3216 13.53 26.8794 15.09C27.6509 15.8539 28.2622 16.7626 28.678 17.7634C29.0938 18.7641 29.3057 19.8371 29.3015 20.92C29.3216 25.46 25.603 29.15 21.0402 29.15ZM25.5829 22.99C25.3317 22.87 24.1055 22.27 23.8844 22.18C23.6533 22.1 23.4925 22.06 23.3216 22.3C23.1508 22.55 22.6784 23.11 22.5377 23.27C22.397 23.44 22.2462 23.46 21.995 23.33C21.7437 23.21 20.9397 22.94 19.995 22.1C19.2513 21.44 18.7588 20.63 18.608 20.38C18.4673 20.13 18.5879 20 18.7186 19.87C18.8291 19.76 18.9698 19.58 19.0905 19.44C19.2111 19.3 19.2613 19.19 19.3417 19.03C19.4221 18.86 19.3819 18.72 19.3216 18.6C19.2613 18.48 18.7588 17.26 18.5578 16.76C18.3568 16.28 18.1457 16.34 17.995 16.33H17.5126C17.3417 16.33 17.0804 16.39 16.8492 16.64C16.6281 16.89 15.9849 17.49 15.9849 18.71C15.9849 19.93 16.8794 21.11 17 21.27C17.1206 21.44 18.7588 23.94 21.2513 25.01C21.8442 25.27 22.3065 25.42 22.6683 25.53C23.2613 25.72 23.804 25.69 24.2362 25.63C24.7186 25.56 25.7136 25.03 25.9146 24.45C26.1256 23.87 26.1256 23.38 26.0553 23.27C25.9849 23.16 25.8342 23.11 25.5829 22.99Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="/" target="_blank" aria-label="Telegram" title="Telegram">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="21" cy="21" r="21" fill="#0063C7" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M28.9283 13.1163C29.1742 13.0133 29.4434 12.9778 29.7078 13.0134C29.9722 13.0491 30.2221 13.1546 30.4316 13.319C30.6411 13.4833 30.8025 13.7006 30.899 13.9481C30.9955 14.1956 31.0235 14.4643 30.9802 14.7262L28.7234 28.347C28.5044 29.6609 27.0556 30.4144 25.8446 29.7599C24.8316 29.2124 23.327 28.3688 21.9737 27.4886C21.297 27.048 19.2243 25.6371 19.479 24.6332C19.6979 23.7747 23.1807 20.549 25.1709 18.6312C25.952 17.8777 25.5958 17.443 24.6734 18.1361C22.3827 19.8569 18.7048 22.4737 17.4888 23.2104C16.4161 23.8599 15.8569 23.9708 15.1882 23.8599C13.9682 23.6579 12.8368 23.345 11.9134 22.9638C10.6655 22.449 10.7262 20.7421 11.9124 20.245L28.9283 13.1163Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <!-- Бегущая строка -->
+            <div class="footer__ticker">
+                <div class="footer__marquee" aria-hidden="true">
+                    <span class="footer__marquee-text">Грузоперевозки</span>
+                    <span class="footer__marquee-text">Грузоперевозки</span>
+                    <span class="footer__marquee-text">Грузоперевозки</span>
+                    <span class="footer__marquee-text">Грузоперевозки</span>
+                </div>
             </div>
-        </div>
-        <!-- Бегущая строка -->
-        <div class="footer__ticker">
-            <div class="footer__marquee" aria-hidden="true">
-                <span class="footer__marquee-text">Грузоперевозки</span>
-                <span class="footer__marquee-text">Грузоперевозки</span>
-                <span class="footer__marquee-text">Грузоперевозки</span>
-                <span class="footer__marquee-text">Грузоперевозки</span>
+            <div class="footer__bottom container">
+                <div class="footer__year">
+                    © 2025
+                </div>
+                <div class="footer__copyright">
+                    Разработано в <a href="https://vbi.ru" class="footer__link">VBI</a>
+                </div>
             </div>
-        </div>
-        <div class="footer__bottom container">
-            <div class="footer__year">
-                © 2025
-            </div>
-            <div class="footer__copyright">
-                Разработано в <a href="https://vbi.ru" class="footer__link">VBI</a>
-            </div>
-        </div>
-    </footer>
-    <!--—END  FOOTER -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="./libs/plugins/wow.js"></script>
-    <script>
-        wow = new WOW({
-            boxClass: 'wow',
-            animateClass: 'animated',
-            offset: 0,
-            mobile: true,
-            live: true
-        })
-        wow.init();
-    </script>
+        </footer>
+        <!--—END  FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="./libs/plugins/wow.js"></script>
+        <script>
+            wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            })
+            wow.init();
+        </script>
+        <script src="./scripts/loader.js"></script>
+    </div>
 </body>
 
 </html>

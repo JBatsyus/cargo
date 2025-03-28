@@ -6,6 +6,17 @@
     z-index: 100;
     position: sticky;
     top: 0;
+    height: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
+        opacity 0.5s ease;
+    transition: transform 0.2s ease-out, opacity 0.2s ease;
+}
+
+.header__wrap.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .header {
@@ -124,13 +135,15 @@
             padding-block: rem(18);
         }
 
-        
+
     }
 }
+
 a.is-active {
     color: var(--color-blue);
     pointer-events: none;
 }
+
 /*---------HEADER (END)--------*/
 /*---------MOBILE MENU (START)--------*/
 .menu-humb {

@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    const header = document.querySelector('.header__wrap');
+    const headerHeight1 = header.offsetHeight;
+    document.documentElement.style.setProperty('--header-height', headerHeight1 + "px");
+    
+
+
     const menuHumb = document.querySelector('.menu-humb');
     const menuMob = document.querySelector('.menu-mob');
     const headerWrap = document.querySelector('.header__wrap');

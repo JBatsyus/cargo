@@ -8,6 +8,7 @@
 @use 'blocks/logo';
 @use 'blocks/button';
 @use 'blocks/header';
+@use 'blocks/loading-screen';
 @use 'blocks/tile';
 @use 'blocks/hero';
 @use 'blocks/transportation-cost';
@@ -26,5 +27,6 @@
 @use 'blocks/process';
 @use 'blocks/cargo-types';
 @use 'blocks/footer';
+
 
 
