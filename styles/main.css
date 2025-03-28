@@ -1543,16 +1543,16 @@ a.is-active {
   opacity: 1;
 }
 .about__item:nth-child(1) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/01.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url(".././images/about/01.png");
 }
 .about__item:nth-child(2) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/03.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url(".././images/about/03.png");
 }
 .about__item:nth-child(3) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/02.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url(".././images/about/02.png");
 }
 .about__item:nth-child(4) .about-card::before {
-  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url("/images/about/04.png");
+  background-image: linear-gradient(rgba(0, 99, 199, 0.8), rgba(0, 99, 199, 0.8)), url(".././images/about/04.png");
 }
 @media (width <= 63.99875rem) {
   .about-card {
@@ -2175,7 +2175,7 @@ a.is-active {
   aspect-ratio: 96/25;
   height: 500px;
   width: 100%;
-  background-image: url("/images/banner.webp");
+  background-image: url(".././images/banner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2637,15 +2637,15 @@ a.is-active {
   color: var(--color-light);
 }
 .cargo-types__item:nth-child(1) {
-  background-image: url("/images/cargo-types/1.png");
+  background-image: url(".././images/cargo-types/1.png");
   order: 1;
 }
 .cargo-types__item:nth-child(2) {
-  background-image: url("/images/cargo-types/2.png");
+  background-image: url(".././images/cargo-types/2.png");
   order: 2;
 }
 .cargo-types__item:nth-child(3) {
-  background-image: url("/images/cargo-types/3.png");
+  background-image: url(".././images/cargo-types/3.png");
   order: 3;
 }
 @media (width <= 90.06125rem) {
@@ -2659,7 +2659,7 @@ a.is-active {
   }
 }
 .cargo-types__item:nth-child(4) {
-  background-image: url("/images/cargo-types/4.png");
+  background-image: url(".././images/cargo-types/4.png");
   order: 4;
 }
 @media (width <= 90.06125rem) {
@@ -2673,11 +2673,11 @@ a.is-active {
   }
 }
 .cargo-types__item:nth-child(5) {
-  background-image: url("/images/cargo-types/5.png");
+  background-image: url(".././images/cargo-types/5.png");
   order: 5;
 }
 .cargo-types__item:nth-child(6) {
-  background-image: url("/images/cargo-types/6.png");
+  background-image: url(".././images/cargo-types/6.png");
   background-position-y: 35px;
   order: 6;
 }

@@ -84,17 +84,17 @@
         }
 
         &:nth-child(1) {
-            background-image: url("/images/cargo-types/1.png");
+            background-image: url(".././images/cargo-types/1.png");
             order: 1;
         }
 
         &:nth-child(2) {
-            background-image: url("/images/cargo-types/2.png");
+            background-image: url(".././images/cargo-types/2.png");
             order: 2;
         }
 
         &:nth-child(3) {
-            background-image: url("/images/cargo-types/3.png");
+            background-image: url(".././images/cargo-types/3.png");
             order: 3;
 
             @include laptop {
@@ -107,7 +107,7 @@
         }
 
         &:nth-child(4) {
-            background-image: url("/images/cargo-types/4.png");
+            background-image: url(".././images/cargo-types/4.png");
             order: 4;
 
             @include laptop {
@@ -120,12 +120,12 @@
         }
 
         &:nth-child(5) {
-            background-image: url("/images/cargo-types/5.png");
+            background-image: url(".././images/cargo-types/5.png");
             order: 5;
         }
 
         &:nth-child(6) {
-            background-image: url("/images/cargo-types/6.png");
+            background-image: url(".././images/cargo-types/6.png");
             background-position-y: 35px;
             order: 6;
         }
