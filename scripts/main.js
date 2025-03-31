@@ -152,7 +152,7 @@ var swiperAirparnets = new Swiper(".airparnets__swiper", {
     autoplay: {
         delay: 0,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
     },
 });
 var swiperReviews = new Swiper(".reviews__swiper", {
