@@ -121,11 +121,11 @@ document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 items.forEach((item) => item.classList.remove("process__item--active"));
                 currentIndex = 0;
-            }, 1500); // Задержка перед началом нового цикла
+            }, 1000); // Задержка перед началом нового цикла
         }
     }
 
-    // Запускаем анимацию каждые 2 секунды
+    // Запускаем анимацию каждые 1,5 секунды
     setInterval(animateProcess, 1500);
 });
 
