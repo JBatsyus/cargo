@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-
-
     const header = document.querySelector('.header__wrap');
     const headerHeight1 = header.offsetHeight;
     document.documentElement.style.setProperty('--header-height', headerHeight1 + "px");
@@ -10,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const menuHumb = document.querySelector('.menu-humb');
     const menuMob = document.querySelector('.menu-mob');
-    const headerWrap = document.querySelector('.header__wrap');
+    const headerWrapper = document.querySelector('.header__wrap');
 
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     const headerHeight = document.querySelector('.header').offsetHeight;
@@ -20,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menuHumb.addEventListener('click', function () {
         menuHumb.classList.toggle('active');
         menuMob.classList.toggle('active');
-        headerWrap.classList.toggle('menu_active');
+        headerWrapper.classList.toggle('menu_active');
     });
 
     // Закрытие меню при клике вне его области
@@ -28,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!e.target.closest('.menu-mob') && !e.target.closest('.header__wrap')) {
             menuHumb.classList.remove('active');
             menuMob.classList.remove('active');
-            headerWrap.classList.remove('menu_active');
+            headerWrapper.classList.remove('menu_active');
         }
     });
     // Закрытие меню при клике на ссылку
@@ -36,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         anchor.addEventListener('click', function () {
             menuHumb.classList.remove('active');
             menuMob.classList.remove('active');
-            headerWrap.classList.remove('menu_active');
+            headerWrapper.classList.remove('menu_active');
         });
     })
 
@@ -139,7 +136,7 @@ var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
     autoplay: {
         delay: 1500,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
     },
     navigation: {
         nextEl: ".to-right",

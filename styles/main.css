@@ -240,7 +240,7 @@ svg * {
 }
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  src: url("../fonts/InterBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1335,6 +1335,14 @@ a.is-active {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.transportation-cost {
+  padding-top: 150px;
+}
+@media (width <= 63.99875rem) {
+  .transportation-cost {
+    padding-top: 100px;
+  }
+}
 .transportation-cost__wrap {
   display: flex;
   flex-direction: column;
