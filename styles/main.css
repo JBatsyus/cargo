@@ -3140,6 +3140,11 @@ a.is-active {
   font-size: 18px;
   color: var(--color-light);
 }
+@media (width <= 47.99875rem) {
+  .footer__bottom {
+    font-size: 14px;
+  }
+}
 .footer__copyright a {
   text-decoration: underline;
 }

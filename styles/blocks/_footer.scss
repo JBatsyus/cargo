@@ -218,6 +218,9 @@
         align-items: center;
         font-size: 18px;
         color: var(--color-light);
+        @include mobile {
+            font-size: 14px;
+        }
     }
     &__copyright{
         a{
