@@ -2822,7 +2822,7 @@ a.is-active {
 @media (width <= 47.99875rem) {
   .cargo-types__modal-inner {
     order: 2;
-    padding-left: 1.5rem;
+    padding-left: 1.625rem;
   }
 }
 .cargo-types__modal-close {
