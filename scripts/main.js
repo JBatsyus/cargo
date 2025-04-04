@@ -98,36 +98,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Анимация процесса
-    const items = document.querySelectorAll(".process__item");
+    // Анимация процесса-закрыта от 04.04.2025
+//     const items = document.querySelectorAll(".process__item");
 
-    let currentIndex = 0;
+//     let currentIndex = 0;
 
-    function animateProcess() {
-        // Удаляем класс active у всех элементов
-        items.forEach((item) => item.classList.remove("process__item--active"));
+//     function animateProcess() {
+//         // Удаляем класс active у всех элементов
+//         items.forEach((item) => item.classList.remove("process__item--active"));
 
-        if (currentIndex < items.length) {
-            // Добавляем класс active к текущему элементу
-            items[currentIndex].classList.add("process__item--active");
+//         if (currentIndex < items.length) {
+//             // Добавляем класс active к текущему элементу
+//             items[currentIndex].classList.add("process__item--active");
 
-            // Переходим к следующему элементу
-            currentIndex++;
-        } else {
-            // Когда доходим до последнего элемента, активируем все элементы
-            items.forEach((item) => item.classList.add("process__item--active"));
+//             // Переходим к следующему элементу
+//             currentIndex++;
+//         } else {
+//             // Когда доходим до последнего элемента, активируем все элементы
+//             items.forEach((item) => item.classList.add("process__item--active"));
 
-            // Сбрасываем индекс для начала цикла заново
-            setTimeout(() => {
-                items.forEach((item) => item.classList.remove("process__item--active"));
-                currentIndex = 0;
-            }, 1000); // Задержка перед началом нового цикла
-        }
-    }
+//             // Сбрасываем индекс для начала цикла заново
+//             setTimeout(() => {
+//                 items.forEach((item) => item.classList.remove("process__item--active"));
+//                 currentIndex = 0;
+//             }, 1000); // Задержка перед началом нового цикла
+//         }
+//     }
 
-    // Запускаем анимацию каждые 1,5 секунды
-    setInterval(animateProcess, 1500);
-});
+//     // Запускаем анимацию каждые 1,5 секунды
+//     setInterval(animateProcess, 1500);
+// });
 
 var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
     lazy: true,
