@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
 //     }
 
 //     // Запускаем анимацию каждые 1,5 секунды
-//     setInterval(animateProcess, 1500);
-// });
+    // setInterval(animateProcess, 1500);
+});
 
 var swiperWorkflowGallery = new Swiper(".workflow-gallery__swiper", {
     lazy: true,

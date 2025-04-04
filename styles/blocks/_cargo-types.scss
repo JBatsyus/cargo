@@ -215,6 +215,7 @@
         &-inner {
             display: grid;
             justify-content: center;
+            align-content: flex-start;
             background-color: var(--color-base);
             width: 100%;
             max-width: 1000px;
@@ -272,6 +273,7 @@
             font-size: 24px;
             line-height: 1.20833;
             color: var(--color-blue);
+            margin-bottom: 30px;
 
             @include tablet {
                 font-size: 18px;
