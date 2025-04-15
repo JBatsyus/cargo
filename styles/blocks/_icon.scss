@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    background-color: var(--color-light);
+    background-color: var(--color-blue);
     cursor: pointer;
     transition:
         background-color var(--transition-duration) var(--transition-easing),
@@ -76,7 +76,7 @@
         will-change: transform; // Оптимизация анимации
 
         path {
-            stroke: var(--color-blue);
+            stroke: var(--color-light);
             stroke-width: 2;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -86,7 +86,7 @@
     }
 
     @include hover {
-        background-color: var(--color-blue);
+        background-color: var(--color-accent);
 
         svg path {
             stroke: var(--color-light);

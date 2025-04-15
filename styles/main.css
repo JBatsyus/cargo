@@ -601,7 +601,7 @@ a[class] {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  background-color: var(--color-light);
+  background-color: var(--color-blue);
   cursor: pointer;
   transition: background-color var(--transition-duration) var(--transition-easing), transform 0.2s ease;
 }
@@ -611,7 +611,7 @@ a[class] {
   will-change: transform;
 }
 .icon-close1 svg path {
-  stroke: var(--color-blue);
+  stroke: var(--color-light);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -619,7 +619,7 @@ a[class] {
 }
 @media (any-hover: hover) {
   .icon-close1:hover {
-    background-color: var(--color-blue);
+    background-color: var(--color-accent);
   }
   .icon-close1:hover svg path {
     stroke: var(--color-light);
@@ -628,7 +628,7 @@ a[class] {
 }
 @media (any-hover: none) {
   .icon-close1:active {
-    background-color: var(--color-blue);
+    background-color: var(--color-accent);
   }
   .icon-close1:active svg path {
     stroke: var(--color-light);
@@ -897,7 +897,16 @@ a[class] {
 }
 @media (width <= 47.99875rem) {
   .header__phone {
-    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-inline: 0px;
+    background-color: transparent;
+    color: var(--color-blue);
+  }
+}
+@media (width <= 30.06125rem) {
+  .header__phone {
+    font-weight: 400;
   }
 }
 .header__phone:hover {
@@ -1047,7 +1056,7 @@ a.is-active {
   padding: 0px 30px 80px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10%;
   height: 100%;
   overflow-y: auto;
 }
@@ -1169,6 +1178,12 @@ a.is-active {
   background-color: transparent;
   z-index: 0;
 }
+@media (width <= 47.99875rem) {
+  .loading-screen__svg-wrap {
+    width: 220px;
+    height: 220px;
+  }
+}
 .loading-screen__circle {
   position: absolute;
   top: 50%;
@@ -1177,6 +1192,12 @@ a.is-active {
   width: 304px;
   height: 303px;
   z-index: -1;
+}
+@media (width <= 47.99875rem) {
+  .loading-screen__circle {
+    width: 200px;
+    height: 200px;
+  }
 }
 .loading-screen__aim-wrap {
   position: relative;
@@ -1187,9 +1208,15 @@ a.is-active {
   background-color: transparent;
   z-index: 0;
   animation-name: rotation;
-  animation-duration: 6s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
+}
+@media (width <= 47.99875rem) {
+  .loading-screen__aim-wrap {
+    width: 220px;
+    height: 220px;
+  }
 }
 .loading-screen__text {
   font-weight: 700;
@@ -1205,6 +1232,11 @@ a.is-active {
   transition: opacity 0.2s ease-in-out;
   opacity: 1;
 }
+@media (width <= 47.99875rem) {
+  .loading-screen__text {
+    font-size: 16px;
+  }
+}
 .loading-screen__plan {
   position: absolute;
   bottom: -3px;
@@ -1212,25 +1244,18 @@ a.is-active {
   transform: translateX(-50%);
   z-index: 1;
 }
+@media (width <= 47.99875rem) {
+  .loading-screen__plan {
+    width: 22px;
+    height: 24px;
+    bottom: 1px;
+  }
+}
 
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
     animation-timing-function: cubic-bezier(0.5, 0, 0.75, 1);
-  }
-  20% {
-    transform: rotate(90deg);
-    animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
-  }
-  30% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-    animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
-  }
-  60% {
-    transform: rotate(180deg);
   }
   80%, 100% {
     transform: rotate(270deg);
@@ -2520,7 +2545,9 @@ a.is-active {
 @media (width <= 47.99875rem) {
   .reviews__item .button {
     margin-left: 0;
-    margin-right: auto;
+    justify-content: space-between;
+    justify-self: center;
+    max-width: 100%;
   }
 }
 
@@ -2781,6 +2808,11 @@ a.is-active {
   .cargo-types__item-description .icon-arrow {
     width: 28px;
     height: 28px;
+    aspect-ratio: 1;
+  }
+  .cargo-types__item-description .icon-arrow svg {
+    width: 12px;
+    height: 8px;
   }
 }
 .cargo-types__content {
@@ -2797,7 +2829,7 @@ a.is-active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
+  align-content: center;
   align-items: center;
   z-index: 999;
   opacity: 0;
@@ -2898,7 +2930,7 @@ a.is-active {
   display: grid;
   grid-template-columns: auto 60px;
   justify-content: center;
-  width: 99%;
+  width: 98%;
   height: 100%;
   background-color: var(--color-base);
   padding-block: 6.25rem;

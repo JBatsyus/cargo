@@ -23,6 +23,11 @@
         border-radius: 50%;
         background-color: transparent;
         z-index: 0;
+        @include mobile {
+            width: 220px;
+            height: 220px;
+
+        }
     }
 
     &__circle {
@@ -33,6 +38,11 @@
         width: 304px;
         height: 303px;
         z-index: -1;
+        @include mobile {
+            width: 200px;
+            height: 200px;
+
+        }
     }
 
     &__aim-wrap {
@@ -44,9 +54,14 @@
         background-color: transparent;
         z-index: 0;
         animation-name: rotation;
-        animation-duration: 6s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear;
+        @include mobile {
+            width: 220px;
+            height: 220px;
+
+        }
     }
 
     &__text {
@@ -62,6 +77,10 @@
         transform: translateX(-50%);
         transition: opacity 0.2s ease-in-out;
         opacity: 1;
+        @include mobile {
+            font-size: 16px;
+
+        }
     }
 
     &__plan {
@@ -70,6 +89,12 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
+        @include mobile {
+            width: 22px;
+            height: 24px;
+            bottom: 1px;
+
+        }
 
     }
 
@@ -81,23 +106,23 @@
         animation-timing-function: cubic-bezier(0.5, 0, 0.75, 1);
     }
 
-    20% {
-        transform: rotate(90deg);
-        animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
-    }
+    // 20% {
+    //     transform: rotate(90deg);
+    //     animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    // }
 
-    30% {
-        transform: rotate(90deg);
-    }
+    // 30% {
+    //     transform: rotate(90deg);
+    // }
 
-    50% {
-        transform: rotate(180deg);
-        animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
-    }
+    // 50% {
+    //     transform: rotate(180deg);
+    //     animation-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+    // }
 
-    60% {
-        transform: rotate(180deg);
-    }
+    // 60% {
+    //     transform: rotate(180deg);
+    // }
 
     80%,
     100% {

@@ -16,19 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Тексты для каждой позиции самолетика
     const texts = [{
             angle: 0,
-            text: 'Сбор груза'
+            text: 'JAR-CARGO'
         },
         {
             angle: 90,
-            text: 'Груз в пути'
+            text: 'JAR-CARGO'
         },
         {
             angle: 180,
-            text: 'Груз доставлен'
+            text: 'JAR-CARGO'
         },
         {
             angle: 270,
-            text: 'Груз у вас'
+            text: 'JAR-CARGO'
         }
     ];
 
@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // Инициализируем анимации для основного контента
                     initContentAnimations();
-                }, 500);
-            }, 1000);
+                }, 200);
+            }, 250);
         }
 
         // Обновление текста
